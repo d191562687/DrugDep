@@ -1,0 +1,1287 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B332EF41EF8CCB8004B2135 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B332EF31EF8CCB8004B2135 /* main.m */; };
+		3B332EF71EF8CCB8004B2135 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B332EF61EF8CCB8004B2135 /* AppDelegate.m */; };
+		3B332EFF1EF8CCB8004B2135 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B332EFE1EF8CCB8004B2135 /* Assets.xcassets */; };
+		3B332F021EF8CCB8004B2135 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B332F001EF8CCB8004B2135 /* LaunchScreen.storyboard */; };
+		3B332F0D1EF8CCB8004B2135 /* DrugDepTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B332F0C1EF8CCB8004B2135 /* DrugDepTests.m */; };
+		3B332F181EF8CCB8004B2135 /* DrugDepUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B332F171EF8CCB8004B2135 /* DrugDepUITests.m */; };
+		3B332F321EF8CE21004B2135 /* NormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B332F2D1EF8CE21004B2135 /* NormalTableViewCell.m */; };
+		3B332F331EF8CE21004B2135 /* RootNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B332F2F1EF8CE21004B2135 /* RootNavgationController.m */; };
+		3B332F341EF8CE21004B2135 /* SuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B332F311EF8CE21004B2135 /* SuperViewController.m */; };
+		3B332F391EF8CE9A004B2135 /* ConstKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B332F381EF8CE9A004B2135 /* ConstKey.m */; };
+		3B332F4D1EF8E1D1004B2135 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B332F3C1EF8E1D1004B2135 /* Foundation+Log.m */; };
+		3B332F4E1EF8E1D1004B2135 /* NSDate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B332F3E1EF8E1D1004B2135 /* NSDate+Category.m */; };
+		3B332F4F1EF8E1D1004B2135 /* NSDateFormatter+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B332F401EF8E1D1004B2135 /* NSDateFormatter+Category.m */; };
+		3B332F501EF8E1D1004B2135 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B332F421EF8E1D1004B2135 /* NSString+Category.m */; };
+		3B332F511EF8E1D1004B2135 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B332F441EF8E1D1004B2135 /* UIBarButtonItem+Extension.m */; };
+		3B332F521EF8E1D1004B2135 /* UIButton+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B332F461EF8E1D1004B2135 /* UIButton+Category.m */; };
+		3B332F531EF8E1D1004B2135 /* UIImage+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B332F481EF8E1D1004B2135 /* UIImage+Category.m */; };
+		3B332F541EF8E1D1004B2135 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B332F4A1EF8E1D1004B2135 /* UIView+Extension.m */; };
+		3B332F551EF8E1D1004B2135 /* UIViewController+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B332F4C1EF8E1D1004B2135 /* UIViewController+Category.m */; };
+		3B332F5E1EF8E1E6004B2135 /* CMPopTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B332F581EF8E1E6004B2135 /* CMPopTipView.m */; };
+		3B332F5F1EF8E1E6004B2135 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B332F5B1EF8E1E6004B2135 /* MBProgressHUD+MJ.m */; };
+		3B332F601EF8E1E6004B2135 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B332F5D1EF8E1E6004B2135 /* MBProgressHUD.m */; };
+		3B332F631EF8E254004B2135 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B332F621EF8E254004B2135 /* HomeViewController.m */; };
+		3B332F661EF8E2AD004B2135 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B332F651EF8E2AD004B2135 /* LoginViewController.m */; };
+		3B332F6E1EF8E31A004B2135 /* HTTPLimiteCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B332F691EF8E31A004B2135 /* HTTPLimiteCache.m */; };
+		3B332F6F1EF8E31A004B2135 /* HTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B332F6B1EF8E31A004B2135 /* HTTPManager.m */; };
+		3B332F721EF8E368004B2135 /* HomeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B332F711EF8E368004B2135 /* HomeManager.m */; };
+		3B332F771EF8E3B7004B2135 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B332F741EF8E3B7004B2135 /* Account.m */; };
+		3B332F781EF8E3B7004B2135 /* AccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B332F761EF8E3B7004B2135 /* AccountTool.m */; };
+		3B332F7B1EF8E420004B2135 /* UserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B332F7A1EF8E420004B2135 /* UserInfoModel.m */; };
+		3B332F7E1EF8E42C004B2135 /* UserInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B332F7D1EF8E42C004B2135 /* UserInfoManager.m */; };
+		3B332F811EF8E477004B2135 /* NetWorkDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B332F801EF8E477004B2135 /* NetWorkDataManager.m */; };
+		3B38CCC21F04D02400B76A75 /* UpDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B38CCC11F04D02400B76A75 /* UpDownViewController.m */; };
+		4C9EAF9A9F42F23B5601C630 /* libPods-DrugDepUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1870D410A831CEBDF67E7A0 /* libPods-DrugDepUITests.a */; };
+		C05163DA4C2AB735F93B3BC3 /* libPods-DrugDepTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F88A15CA3A4082D01D7469 /* libPods-DrugDepTests.a */; };
+		CD8B7B04E05788308170E220 /* libPods-DrugDep.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A8E52BC894C384201880659 /* libPods-DrugDep.a */; };
+		F104E2731F3C39CD005EDEE3 /* StatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F104E2721F3C39CD005EDEE3 /* StatisticsViewController.m */; };
+		F104E2771F3C3C23005EDEE3 /* AStatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F104E2761F3C3C23005EDEE3 /* AStatisticsViewController.m */; };
+		F104E27A1F3C3C32005EDEE3 /* BStatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F104E2791F3C3C32005EDEE3 /* BStatisticsViewController.m */; };
+		F104E27D1F3C3C3E005EDEE3 /* CStatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F104E27C1F3C3C3E005EDEE3 /* CStatisticsViewController.m */; };
+		F1499BDF1EFB627B00B6042B /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1499BDE1EFB627B00B6042B /* HomeTableViewCell.m */; };
+		F1499C091EFB9CF700B6042B /* TrackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1499C071EFB9CF700B6042B /* TrackViewController.m */; };
+		F1499C0A1EFB9CF700B6042B /* TrackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1499C081EFB9CF700B6042B /* TrackViewController.xib */; };
+		F1499C181EFB9D3900B6042B /* EveryDayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1499C161EFB9D3900B6042B /* EveryDayViewController.m */; };
+		F1499C191EFB9D3900B6042B /* EveryDayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1499C171EFB9D3900B6042B /* EveryDayViewController.xib */; };
+		F15B503D1F5F8A8100900C4E /* AddListTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F15B503C1F5F8A8100900C4E /* AddListTextViewController.m */; };
+		F18642191F023B5700054425 /* UpdownHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = F18642181F023B5700054425 /* UpdownHeadView.m */; };
+		F1866B391F5FCE2F0072C131 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1866B271F5FCE2F0072C131 /* BaseView.m */; };
+		F1866B3A1F5FCE2F0072C131 /* BRDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1866B2B1F5FCE2F0072C131 /* BRDatePickerView.m */; };
+		F1866B3B1F5FCE2F0072C131 /* BRStringPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1866B2E1F5FCE2F0072C131 /* BRStringPickerView.m */; };
+		F1866B421F5FCE820072C131 /* BRTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F1866B3F1F5FCE820072C131 /* BRTextField.m */; };
+		F1866B431F5FCE820072C131 /* NSDate+BRAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = F1866B411F5FCE820072C131 /* NSDate+BRAdd.m */; };
+		F1B6FBF81F396097000433A6 /* FrontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B6FBF71F396097000433A6 /* FrontViewController.m */; };
+		F1BCCD1E1F1C8A0F0037B552 /* ZJBLStoreShopTypeAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BCCD1D1F1C8A0F0037B552 /* ZJBLStoreShopTypeAlert.m */; };
+		F1BCCD211F1C8A1F0037B552 /* UIColor+JGHexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BCCD201F1C8A1F0037B552 /* UIColor+JGHexColor.m */; };
+		F1D717DB1F60D5FC007C723A /* StockViewControllerTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D717DA1F60D5FC007C723A /* StockViewControllerTextViewController.m */; };
+		F1D717DE1F60E172007C723A /* PurchaseViewTextController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D717DD1F60E172007C723A /* PurchaseViewTextController.m */; };
+		F1F9C1CC1F3AAE1000CDD3BF /* FrontViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F9C1CB1F3AAE1000CDD3BF /* FrontViewModel.m */; };
+		F1F9C1D21F3AB34A00CDD3BF /* FrontTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F9C1D01F3AB34A00CDD3BF /* FrontTableViewCell.m */; };
+		F1F9C1D31F3AB34A00CDD3BF /* FrontTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1F9C1D11F3AB34A00CDD3BF /* FrontTableViewCell.xib */; };
+		F1F9D6731F42E4960083249F /* UpDownSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F9D6721F42E4960083249F /* UpDownSearchViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B332F091EF8CCB8004B2135 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B332EE71EF8CCB8004B2135 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B332EEE1EF8CCB8004B2135;
+			remoteInfo = DrugDep;
+		};
+		3B332F141EF8CCB8004B2135 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B332EE71EF8CCB8004B2135 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B332EEE1EF8CCB8004B2135;
+			remoteInfo = DrugDep;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A8E52BC894C384201880659 /* libPods-DrugDep.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DrugDep.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D2EF450DFB5E5781B288EAC /* Pods-DrugDepUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrugDepUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrugDepUITests/Pods-DrugDepUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2B8F7F62D4466F5D647BEAB0 /* Pods-DrugDep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrugDep.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrugDep/Pods-DrugDep.release.xcconfig"; sourceTree = "<group>"; };
+		3B332EEF1EF8CCB8004B2135 /* DrugDep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrugDep.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B332EF31EF8CCB8004B2135 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3B332EF51EF8CCB8004B2135 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3B332EF61EF8CCB8004B2135 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3B332EFE1EF8CCB8004B2135 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B332F011EF8CCB8004B2135 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B332F031EF8CCB8004B2135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B332F081EF8CCB8004B2135 /* DrugDepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrugDepTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B332F0C1EF8CCB8004B2135 /* DrugDepTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrugDepTests.m; sourceTree = "<group>"; };
+		3B332F0E1EF8CCB8004B2135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B332F131EF8CCB8004B2135 /* DrugDepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrugDepUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B332F171EF8CCB8004B2135 /* DrugDepUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrugDepUITests.m; sourceTree = "<group>"; };
+		3B332F191EF8CCB8004B2135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B332F2C1EF8CE21004B2135 /* NormalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalTableViewCell.h; sourceTree = "<group>"; };
+		3B332F2D1EF8CE21004B2135 /* NormalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalTableViewCell.m; sourceTree = "<group>"; };
+		3B332F2E1EF8CE21004B2135 /* RootNavgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootNavgationController.h; sourceTree = "<group>"; };
+		3B332F2F1EF8CE21004B2135 /* RootNavgationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootNavgationController.m; sourceTree = "<group>"; };
+		3B332F301EF8CE21004B2135 /* SuperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperViewController.h; sourceTree = "<group>"; };
+		3B332F311EF8CE21004B2135 /* SuperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperViewController.m; sourceTree = "<group>"; };
+		3B332F351EF8CE4B004B2135 /* PrefixHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.h; sourceTree = "<group>"; };
+		3B332F361EF8CE8C004B2135 /* DefineKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefineKey.h; sourceTree = "<group>"; };
+		3B332F371EF8CE9A004B2135 /* ConstKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstKey.h; sourceTree = "<group>"; };
+		3B332F381EF8CE9A004B2135 /* ConstKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstKey.m; sourceTree = "<group>"; };
+		3B332F3C1EF8E1D1004B2135 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		3B332F3D1EF8E1D1004B2135 /* NSDate+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Category.h"; sourceTree = "<group>"; };
+		3B332F3E1EF8E1D1004B2135 /* NSDate+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Category.m"; sourceTree = "<group>"; };
+		3B332F3F1EF8E1D1004B2135 /* NSDateFormatter+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Category.h"; sourceTree = "<group>"; };
+		3B332F401EF8E1D1004B2135 /* NSDateFormatter+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Category.m"; sourceTree = "<group>"; };
+		3B332F411EF8E1D1004B2135 /* NSString+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
+		3B332F421EF8E1D1004B2135 /* NSString+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
+		3B332F431EF8E1D1004B2135 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		3B332F441EF8E1D1004B2135 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		3B332F451EF8E1D1004B2135 /* UIButton+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Category.h"; sourceTree = "<group>"; };
+		3B332F461EF8E1D1004B2135 /* UIButton+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Category.m"; sourceTree = "<group>"; };
+		3B332F471EF8E1D1004B2135 /* UIImage+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Category.h"; sourceTree = "<group>"; };
+		3B332F481EF8E1D1004B2135 /* UIImage+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Category.m"; sourceTree = "<group>"; };
+		3B332F491EF8E1D1004B2135 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		3B332F4A1EF8E1D1004B2135 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		3B332F4B1EF8E1D1004B2135 /* UIViewController+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Category.h"; sourceTree = "<group>"; };
+		3B332F4C1EF8E1D1004B2135 /* UIViewController+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Category.m"; sourceTree = "<group>"; };
+		3B332F571EF8E1E6004B2135 /* CMPopTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPopTipView.h; sourceTree = "<group>"; };
+		3B332F581EF8E1E6004B2135 /* CMPopTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMPopTipView.m; sourceTree = "<group>"; };
+		3B332F5A1EF8E1E6004B2135 /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
+		3B332F5B1EF8E1E6004B2135 /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		3B332F5C1EF8E1E6004B2135 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		3B332F5D1EF8E1E6004B2135 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		3B332F611EF8E254004B2135 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		3B332F621EF8E254004B2135 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		3B332F641EF8E2AD004B2135 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		3B332F651EF8E2AD004B2135 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		3B332F681EF8E31A004B2135 /* HTTPLimiteCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPLimiteCache.h; sourceTree = "<group>"; };
+		3B332F691EF8E31A004B2135 /* HTTPLimiteCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPLimiteCache.m; sourceTree = "<group>"; };
+		3B332F6A1EF8E31A004B2135 /* HTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPManager.h; sourceTree = "<group>"; };
+		3B332F6B1EF8E31A004B2135 /* HTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPManager.m; sourceTree = "<group>"; };
+		3B332F701EF8E368004B2135 /* HomeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeManager.h; sourceTree = "<group>"; };
+		3B332F711EF8E368004B2135 /* HomeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeManager.m; sourceTree = "<group>"; };
+		3B332F731EF8E3B7004B2135 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		3B332F741EF8E3B7004B2135 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		3B332F751EF8E3B7004B2135 /* AccountTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountTool.h; sourceTree = "<group>"; };
+		3B332F761EF8E3B7004B2135 /* AccountTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountTool.m; sourceTree = "<group>"; };
+		3B332F791EF8E420004B2135 /* UserInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoModel.h; sourceTree = "<group>"; };
+		3B332F7A1EF8E420004B2135 /* UserInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoModel.m; sourceTree = "<group>"; };
+		3B332F7C1EF8E42C004B2135 /* UserInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoManager.h; sourceTree = "<group>"; };
+		3B332F7D1EF8E42C004B2135 /* UserInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoManager.m; sourceTree = "<group>"; };
+		3B332F7F1EF8E477004B2135 /* NetWorkDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkDataManager.h; sourceTree = "<group>"; };
+		3B332F801EF8E477004B2135 /* NetWorkDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkDataManager.m; sourceTree = "<group>"; };
+		3B38CCC01F04D02400B76A75 /* UpDownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpDownViewController.h; sourceTree = "<group>"; };
+		3B38CCC11F04D02400B76A75 /* UpDownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpDownViewController.m; sourceTree = "<group>"; };
+		4FD5AB0E7FDED25FA0365DD6 /* Pods-DrugDepUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrugDepUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrugDepUITests/Pods-DrugDepUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		69FBF43F5C53BFE41EB82114 /* Pods-DrugDep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrugDep.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrugDep/Pods-DrugDep.debug.xcconfig"; sourceTree = "<group>"; };
+		91F88A15CA3A4082D01D7469 /* libPods-DrugDepTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DrugDepTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1870D410A831CEBDF67E7A0 /* libPods-DrugDepUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DrugDepUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C72ABECDBB05AD9F259C45A1 /* Pods-DrugDepTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrugDepTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrugDepTests/Pods-DrugDepTests.release.xcconfig"; sourceTree = "<group>"; };
+		F104E2711F3C39CD005EDEE3 /* StatisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticsViewController.h; sourceTree = "<group>"; };
+		F104E2721F3C39CD005EDEE3 /* StatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticsViewController.m; sourceTree = "<group>"; };
+		F104E2751F3C3C23005EDEE3 /* AStatisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AStatisticsViewController.h; sourceTree = "<group>"; };
+		F104E2761F3C3C23005EDEE3 /* AStatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AStatisticsViewController.m; sourceTree = "<group>"; };
+		F104E2781F3C3C32005EDEE3 /* BStatisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BStatisticsViewController.h; sourceTree = "<group>"; };
+		F104E2791F3C3C32005EDEE3 /* BStatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BStatisticsViewController.m; sourceTree = "<group>"; };
+		F104E27B1F3C3C3E005EDEE3 /* CStatisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CStatisticsViewController.h; sourceTree = "<group>"; };
+		F104E27C1F3C3C3E005EDEE3 /* CStatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CStatisticsViewController.m; sourceTree = "<group>"; };
+		F1499BDD1EFB627B00B6042B /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
+		F1499BDE1EFB627B00B6042B /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
+		F1499C061EFB9CF700B6042B /* TrackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackViewController.h; sourceTree = "<group>"; };
+		F1499C071EFB9CF700B6042B /* TrackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackViewController.m; sourceTree = "<group>"; };
+		F1499C081EFB9CF700B6042B /* TrackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrackViewController.xib; sourceTree = "<group>"; };
+		F1499C151EFB9D3900B6042B /* EveryDayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EveryDayViewController.h; sourceTree = "<group>"; };
+		F1499C161EFB9D3900B6042B /* EveryDayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EveryDayViewController.m; sourceTree = "<group>"; };
+		F1499C171EFB9D3900B6042B /* EveryDayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EveryDayViewController.xib; sourceTree = "<group>"; };
+		F15B503B1F5F8A8100900C4E /* AddListTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddListTextViewController.h; sourceTree = "<group>"; };
+		F15B503C1F5F8A8100900C4E /* AddListTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddListTextViewController.m; sourceTree = "<group>"; };
+		F18642171F023B5700054425 /* UpdownHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdownHeadView.h; sourceTree = "<group>"; };
+		F18642181F023B5700054425 /* UpdownHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdownHeadView.m; sourceTree = "<group>"; };
+		F1866B261F5FCE2F0072C131 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		F1866B271F5FCE2F0072C131 /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		F1866B281F5FCE2F0072C131 /* BRPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPickerView.h; sourceTree = "<group>"; };
+		F1866B2A1F5FCE2F0072C131 /* BRDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRDatePickerView.h; sourceTree = "<group>"; };
+		F1866B2B1F5FCE2F0072C131 /* BRDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDatePickerView.m; sourceTree = "<group>"; };
+		F1866B2D1F5FCE2F0072C131 /* BRStringPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRStringPickerView.h; sourceTree = "<group>"; };
+		F1866B2E1F5FCE2F0072C131 /* BRStringPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRStringPickerView.m; sourceTree = "<group>"; };
+		F1866B3E1F5FCE820072C131 /* BRTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRTextField.h; sourceTree = "<group>"; };
+		F1866B3F1F5FCE820072C131 /* BRTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRTextField.m; sourceTree = "<group>"; };
+		F1866B401F5FCE820072C131 /* NSDate+BRAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+BRAdd.h"; sourceTree = "<group>"; };
+		F1866B411F5FCE820072C131 /* NSDate+BRAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+BRAdd.m"; sourceTree = "<group>"; };
+		F1B6FBF61F396097000433A6 /* FrontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontViewController.h; sourceTree = "<group>"; };
+		F1B6FBF71F396097000433A6 /* FrontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontViewController.m; sourceTree = "<group>"; };
+		F1BCCD1C1F1C8A0F0037B552 /* ZJBLStoreShopTypeAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJBLStoreShopTypeAlert.h; sourceTree = "<group>"; };
+		F1BCCD1D1F1C8A0F0037B552 /* ZJBLStoreShopTypeAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJBLStoreShopTypeAlert.m; sourceTree = "<group>"; };
+		F1BCCD1F1F1C8A1F0037B552 /* UIColor+JGHexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JGHexColor.h"; sourceTree = "<group>"; };
+		F1BCCD201F1C8A1F0037B552 /* UIColor+JGHexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JGHexColor.m"; sourceTree = "<group>"; };
+		F1D717D91F60D5FC007C723A /* StockViewControllerTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockViewControllerTextViewController.h; sourceTree = "<group>"; };
+		F1D717DA1F60D5FC007C723A /* StockViewControllerTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockViewControllerTextViewController.m; sourceTree = "<group>"; };
+		F1D717DC1F60E172007C723A /* PurchaseViewTextController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseViewTextController.h; sourceTree = "<group>"; };
+		F1D717DD1F60E172007C723A /* PurchaseViewTextController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseViewTextController.m; sourceTree = "<group>"; };
+		F1F9C1CA1F3AAE1000CDD3BF /* FrontViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontViewModel.h; sourceTree = "<group>"; };
+		F1F9C1CB1F3AAE1000CDD3BF /* FrontViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontViewModel.m; sourceTree = "<group>"; };
+		F1F9C1CF1F3AB34A00CDD3BF /* FrontTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontTableViewCell.h; sourceTree = "<group>"; };
+		F1F9C1D01F3AB34A00CDD3BF /* FrontTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontTableViewCell.m; sourceTree = "<group>"; };
+		F1F9C1D11F3AB34A00CDD3BF /* FrontTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FrontTableViewCell.xib; sourceTree = "<group>"; };
+		F1F9D6711F42E4960083249F /* UpDownSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpDownSearchViewController.h; sourceTree = "<group>"; };
+		F1F9D6721F42E4960083249F /* UpDownSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpDownSearchViewController.m; sourceTree = "<group>"; };
+		FB19DD295B173AED8D23C01E /* Pods-DrugDepTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrugDepTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrugDepTests/Pods-DrugDepTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B332EEC1EF8CCB8004B2135 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8B7B04E05788308170E220 /* libPods-DrugDep.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B332F051EF8CCB8004B2135 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C05163DA4C2AB735F93B3BC3 /* libPods-DrugDepTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B332F101EF8CCB8004B2135 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C9EAF9A9F42F23B5601C630 /* libPods-DrugDepUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B332EE61EF8CCB8004B2135 = {
+			isa = PBXGroup;
+			children = (
+				3B332EF11EF8CCB8004B2135 /* DrugDep */,
+				3B332F0B1EF8CCB8004B2135 /* DrugDepTests */,
+				3B332F161EF8CCB8004B2135 /* DrugDepUITests */,
+				3B332EF01EF8CCB8004B2135 /* Products */,
+				E15F9FBC7ACF89E2ED48D0CD /* Pods */,
+				D9C24F9085B8A80AFB3255A9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3B332EF01EF8CCB8004B2135 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B332EEF1EF8CCB8004B2135 /* DrugDep.app */,
+				3B332F081EF8CCB8004B2135 /* DrugDepTests.xctest */,
+				3B332F131EF8CCB8004B2135 /* DrugDepUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B332EF11EF8CCB8004B2135 /* DrugDep */ = {
+			isa = PBXGroup;
+			children = (
+				3B332F261EF8CD85004B2135 /* Classes */,
+				3B332F251EF8CD65004B2135 /* 系统文件 */,
+			);
+			path = DrugDep;
+			sourceTree = "<group>";
+		};
+		3B332EF21EF8CCB8004B2135 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B332EF31EF8CCB8004B2135 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3B332F0B1EF8CCB8004B2135 /* DrugDepTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B332F0C1EF8CCB8004B2135 /* DrugDepTests.m */,
+				3B332F0E1EF8CCB8004B2135 /* Info.plist */,
+			);
+			path = DrugDepTests;
+			sourceTree = "<group>";
+		};
+		3B332F161EF8CCB8004B2135 /* DrugDepUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3B332F171EF8CCB8004B2135 /* DrugDepUITests.m */,
+				3B332F191EF8CCB8004B2135 /* Info.plist */,
+			);
+			path = DrugDepUITests;
+			sourceTree = "<group>";
+		};
+		3B332F251EF8CD65004B2135 /* 系统文件 */ = {
+			isa = PBXGroup;
+			children = (
+				3B332EF51EF8CCB8004B2135 /* AppDelegate.h */,
+				3B332EF61EF8CCB8004B2135 /* AppDelegate.m */,
+				3B332EFE1EF8CCB8004B2135 /* Assets.xcassets */,
+				3B332F001EF8CCB8004B2135 /* LaunchScreen.storyboard */,
+				3B332F031EF8CCB8004B2135 /* Info.plist */,
+				3B332EF21EF8CCB8004B2135 /* Supporting Files */,
+			);
+			name = "系统文件";
+			sourceTree = "<group>";
+		};
+		3B332F261EF8CD85004B2135 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F1499BE01EFB9A3000B6042B /* 分页面 */,
+				3B332F271EF8CDDC004B2135 /* 管理器 */,
+				3B332F281EF8CDDC004B2135 /* 其他类库 */,
+				3B332F291EF8CDDC004B2135 /* 主界面 */,
+				3B332F2A1EF8CDDC004B2135 /* 主要基类 */,
+				3B332F2B1EF8CDDC004B2135 /* PCH */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3B332F271EF8CDDC004B2135 /* 管理器 */ = {
+			isa = PBXGroup;
+			children = (
+				3B332F6D1EF8E31A004B2135 /* HomeManager */,
+				3B332F671EF8E31A004B2135 /* 网络请求 */,
+				3B332F6C1EF8E31A004B2135 /* 用户信息 */,
+			);
+			path = "管理器";
+			sourceTree = "<group>";
+		};
+		3B332F281EF8CDDC004B2135 /* 其他类库 */ = {
+			isa = PBXGroup;
+			children = (
+				3B332F3B1EF8E1D1004B2135 /* Category */,
+				3B332F3A1EF8E1C3004B2135 /* Libs */,
+			);
+			path = "其他类库";
+			sourceTree = "<group>";
+		};
+		3B332F291EF8CDDC004B2135 /* 主界面 */ = {
+			isa = PBXGroup;
+			children = (
+				3B332F611EF8E254004B2135 /* HomeViewController.h */,
+				3B332F621EF8E254004B2135 /* HomeViewController.m */,
+				F1499BDD1EFB627B00B6042B /* HomeTableViewCell.h */,
+				F1499BDE1EFB627B00B6042B /* HomeTableViewCell.m */,
+				3B332F641EF8E2AD004B2135 /* LoginViewController.h */,
+				3B332F651EF8E2AD004B2135 /* LoginViewController.m */,
+			);
+			path = "主界面";
+			sourceTree = "<group>";
+		};
+		3B332F2A1EF8CDDC004B2135 /* 主要基类 */ = {
+			isa = PBXGroup;
+			children = (
+				3B332F2C1EF8CE21004B2135 /* NormalTableViewCell.h */,
+				3B332F2D1EF8CE21004B2135 /* NormalTableViewCell.m */,
+				3B332F2E1EF8CE21004B2135 /* RootNavgationController.h */,
+				3B332F2F1EF8CE21004B2135 /* RootNavgationController.m */,
+				3B332F301EF8CE21004B2135 /* SuperViewController.h */,
+				3B332F311EF8CE21004B2135 /* SuperViewController.m */,
+			);
+			path = "主要基类";
+			sourceTree = "<group>";
+		};
+		3B332F2B1EF8CDDC004B2135 /* PCH */ = {
+			isa = PBXGroup;
+			children = (
+				3B332F351EF8CE4B004B2135 /* PrefixHeader.h */,
+				3B332F361EF8CE8C004B2135 /* DefineKey.h */,
+				3B332F371EF8CE9A004B2135 /* ConstKey.h */,
+				3B332F381EF8CE9A004B2135 /* ConstKey.m */,
+			);
+			path = PCH;
+			sourceTree = "<group>";
+		};
+		3B332F3A1EF8E1C3004B2135 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				3B332F561EF8E1E6004B2135 /* 气泡提示 */,
+				3B332F591EF8E1E6004B2135 /* MBProgressHUD */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		3B332F3B1EF8E1D1004B2135 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				3B332F3C1EF8E1D1004B2135 /* Foundation+Log.m */,
+				3B332F3D1EF8E1D1004B2135 /* NSDate+Category.h */,
+				3B332F3E1EF8E1D1004B2135 /* NSDate+Category.m */,
+				3B332F3F1EF8E1D1004B2135 /* NSDateFormatter+Category.h */,
+				3B332F401EF8E1D1004B2135 /* NSDateFormatter+Category.m */,
+				3B332F411EF8E1D1004B2135 /* NSString+Category.h */,
+				3B332F421EF8E1D1004B2135 /* NSString+Category.m */,
+				3B332F431EF8E1D1004B2135 /* UIBarButtonItem+Extension.h */,
+				3B332F441EF8E1D1004B2135 /* UIBarButtonItem+Extension.m */,
+				3B332F451EF8E1D1004B2135 /* UIButton+Category.h */,
+				3B332F461EF8E1D1004B2135 /* UIButton+Category.m */,
+				3B332F471EF8E1D1004B2135 /* UIImage+Category.h */,
+				3B332F481EF8E1D1004B2135 /* UIImage+Category.m */,
+				3B332F491EF8E1D1004B2135 /* UIView+Extension.h */,
+				3B332F4A1EF8E1D1004B2135 /* UIView+Extension.m */,
+				3B332F4B1EF8E1D1004B2135 /* UIViewController+Category.h */,
+				3B332F4C1EF8E1D1004B2135 /* UIViewController+Category.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		3B332F561EF8E1E6004B2135 /* 气泡提示 */ = {
+			isa = PBXGroup;
+			children = (
+				3B332F571EF8E1E6004B2135 /* CMPopTipView.h */,
+				3B332F581EF8E1E6004B2135 /* CMPopTipView.m */,
+			);
+			path = "气泡提示";
+			sourceTree = "<group>";
+		};
+		3B332F591EF8E1E6004B2135 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				3B332F5A1EF8E1E6004B2135 /* MBProgressHUD+MJ.h */,
+				3B332F5B1EF8E1E6004B2135 /* MBProgressHUD+MJ.m */,
+				3B332F5C1EF8E1E6004B2135 /* MBProgressHUD.h */,
+				3B332F5D1EF8E1E6004B2135 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		3B332F671EF8E31A004B2135 /* 网络请求 */ = {
+			isa = PBXGroup;
+			children = (
+				3B332F7F1EF8E477004B2135 /* NetWorkDataManager.h */,
+				3B332F801EF8E477004B2135 /* NetWorkDataManager.m */,
+				3B332F681EF8E31A004B2135 /* HTTPLimiteCache.h */,
+				3B332F691EF8E31A004B2135 /* HTTPLimiteCache.m */,
+				3B332F6A1EF8E31A004B2135 /* HTTPManager.h */,
+				3B332F6B1EF8E31A004B2135 /* HTTPManager.m */,
+			);
+			path = "网络请求";
+			sourceTree = "<group>";
+		};
+		3B332F6C1EF8E31A004B2135 /* 用户信息 */ = {
+			isa = PBXGroup;
+			children = (
+				3B332F731EF8E3B7004B2135 /* Account.h */,
+				3B332F741EF8E3B7004B2135 /* Account.m */,
+				3B332F751EF8E3B7004B2135 /* AccountTool.h */,
+				3B332F761EF8E3B7004B2135 /* AccountTool.m */,
+				3B332F791EF8E420004B2135 /* UserInfoModel.h */,
+				3B332F7A1EF8E420004B2135 /* UserInfoModel.m */,
+				3B332F7C1EF8E42C004B2135 /* UserInfoManager.h */,
+				3B332F7D1EF8E42C004B2135 /* UserInfoManager.m */,
+			);
+			path = "用户信息";
+			sourceTree = "<group>";
+		};
+		3B332F6D1EF8E31A004B2135 /* HomeManager */ = {
+			isa = PBXGroup;
+			children = (
+				3B332F701EF8E368004B2135 /* HomeManager.h */,
+				3B332F711EF8E368004B2135 /* HomeManager.m */,
+			);
+			path = HomeManager;
+			sourceTree = "<group>";
+		};
+		D9C24F9085B8A80AFB3255A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A8E52BC894C384201880659 /* libPods-DrugDep.a */,
+				91F88A15CA3A4082D01D7469 /* libPods-DrugDepTests.a */,
+				A1870D410A831CEBDF67E7A0 /* libPods-DrugDepUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E15F9FBC7ACF89E2ED48D0CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69FBF43F5C53BFE41EB82114 /* Pods-DrugDep.debug.xcconfig */,
+				2B8F7F62D4466F5D647BEAB0 /* Pods-DrugDep.release.xcconfig */,
+				FB19DD295B173AED8D23C01E /* Pods-DrugDepTests.debug.xcconfig */,
+				C72ABECDBB05AD9F259C45A1 /* Pods-DrugDepTests.release.xcconfig */,
+				4FD5AB0E7FDED25FA0365DD6 /* Pods-DrugDepUITests.debug.xcconfig */,
+				1D2EF450DFB5E5781B288EAC /* Pods-DrugDepUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F104E26A1F3C3336005EDEE3 /* 药房补货列表 */ = {
+			isa = PBXGroup;
+			children = (
+				F1866B3E1F5FCE820072C131 /* BRTextField.h */,
+				F1866B3F1F5FCE820072C131 /* BRTextField.m */,
+				F1866B401F5FCE820072C131 /* NSDate+BRAdd.h */,
+				F1866B411F5FCE820072C131 /* NSDate+BRAdd.m */,
+				F15B503B1F5F8A8100900C4E /* AddListTextViewController.h */,
+				F15B503C1F5F8A8100900C4E /* AddListTextViewController.m */,
+				F1866B1E1F5FCE2F0072C131 /* BRPickerView */,
+			);
+			path = "药房补货列表";
+			sourceTree = "<group>";
+		};
+		F104E2741F3C3BA4005EDEE3 /* 配送子页面 */ = {
+			isa = PBXGroup;
+			children = (
+				F104E2751F3C3C23005EDEE3 /* AStatisticsViewController.h */,
+				F104E2761F3C3C23005EDEE3 /* AStatisticsViewController.m */,
+				F104E2781F3C3C32005EDEE3 /* BStatisticsViewController.h */,
+				F104E2791F3C3C32005EDEE3 /* BStatisticsViewController.m */,
+				F104E27B1F3C3C3E005EDEE3 /* CStatisticsViewController.h */,
+				F104E27C1F3C3C3E005EDEE3 /* CStatisticsViewController.m */,
+			);
+			name = "配送子页面";
+			sourceTree = "<group>";
+		};
+		F1499BE01EFB9A3000B6042B /* 分页面 */ = {
+			isa = PBXGroup;
+			children = (
+				F104E26A1F3C3336005EDEE3 /* 药房补货列表 */,
+				F1499BE11EFB9A3000B6042B /* 前置库库存查询 */,
+				F1499BE21EFB9A3000B6042B /* 实时追踪 */,
+				F1499BE31EFB9A3000B6042B /* 药品采购目录遴选 */,
+				F1499BE41EFB9A3000B6042B /* 药房上下限补货 */,
+				F1499BE51EFB9A3000B6042B /* 药房日均量补货 */,
+				F1499BE61EFB9A3000B6042B /* 配送商库存查询 */,
+				F1499BE71EFB9A3000B6042B /* 配送统计信息查看 */,
+			);
+			path = "分页面";
+			sourceTree = "<group>";
+		};
+		F1499BE11EFB9A3000B6042B /* 前置库库存查询 */ = {
+			isa = PBXGroup;
+			children = (
+				F1B6FBF61F396097000433A6 /* FrontViewController.h */,
+				F1B6FBF71F396097000433A6 /* FrontViewController.m */,
+				F1F9C1C91F3AADD300CDD3BF /* M */,
+				F1F9C1CE1F3AB2F200CDD3BF /* C */,
+			);
+			path = "前置库库存查询";
+			sourceTree = "<group>";
+		};
+		F1499BE21EFB9A3000B6042B /* 实时追踪 */ = {
+			isa = PBXGroup;
+			children = (
+				F1BCCD1F1F1C8A1F0037B552 /* UIColor+JGHexColor.h */,
+				F1BCCD201F1C8A1F0037B552 /* UIColor+JGHexColor.m */,
+				F1BCCD1C1F1C8A0F0037B552 /* ZJBLStoreShopTypeAlert.h */,
+				F1BCCD1D1F1C8A0F0037B552 /* ZJBLStoreShopTypeAlert.m */,
+				F1499C061EFB9CF700B6042B /* TrackViewController.h */,
+				F1499C071EFB9CF700B6042B /* TrackViewController.m */,
+				F1499C081EFB9CF700B6042B /* TrackViewController.xib */,
+			);
+			path = "实时追踪";
+			sourceTree = "<group>";
+		};
+		F1499BE31EFB9A3000B6042B /* 药品采购目录遴选 */ = {
+			isa = PBXGroup;
+			children = (
+				F1D717DC1F60E172007C723A /* PurchaseViewTextController.h */,
+				F1D717DD1F60E172007C723A /* PurchaseViewTextController.m */,
+			);
+			path = "药品采购目录遴选";
+			sourceTree = "<group>";
+		};
+		F1499BE41EFB9A3000B6042B /* 药房上下限补货 */ = {
+			isa = PBXGroup;
+			children = (
+				3B38CCC01F04D02400B76A75 /* UpDownViewController.h */,
+				3B38CCC11F04D02400B76A75 /* UpDownViewController.m */,
+				F18642171F023B5700054425 /* UpdownHeadView.h */,
+				F18642181F023B5700054425 /* UpdownHeadView.m */,
+				F19199EE1F0357CC00805D63 /* 上下限新增查询 */,
+			);
+			path = "药房上下限补货";
+			sourceTree = "<group>";
+		};
+		F1499BE51EFB9A3000B6042B /* 药房日均量补货 */ = {
+			isa = PBXGroup;
+			children = (
+				F1499C151EFB9D3900B6042B /* EveryDayViewController.h */,
+				F1499C161EFB9D3900B6042B /* EveryDayViewController.m */,
+				F1499C171EFB9D3900B6042B /* EveryDayViewController.xib */,
+			);
+			path = "药房日均量补货";
+			sourceTree = "<group>";
+		};
+		F1499BE61EFB9A3000B6042B /* 配送商库存查询 */ = {
+			isa = PBXGroup;
+			children = (
+				F1D717D91F60D5FC007C723A /* StockViewControllerTextViewController.h */,
+				F1D717DA1F60D5FC007C723A /* StockViewControllerTextViewController.m */,
+			);
+			path = "配送商库存查询";
+			sourceTree = "<group>";
+		};
+		F1499BE71EFB9A3000B6042B /* 配送统计信息查看 */ = {
+			isa = PBXGroup;
+			children = (
+				F104E2711F3C39CD005EDEE3 /* StatisticsViewController.h */,
+				F104E2721F3C39CD005EDEE3 /* StatisticsViewController.m */,
+				F104E2741F3C3BA4005EDEE3 /* 配送子页面 */,
+			);
+			path = "配送统计信息查看";
+			sourceTree = "<group>";
+		};
+		F1866B1E1F5FCE2F0072C131 /* BRPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				F1866B251F5FCE2F0072C131 /* Base */,
+				F1866B281F5FCE2F0072C131 /* BRPickerView.h */,
+				F1866B291F5FCE2F0072C131 /* DatePickerView */,
+				F1866B2C1F5FCE2F0072C131 /* StringPickerView */,
+				F1866B2F1F5FCE2F0072C131 /* Vendor */,
+			);
+			path = BRPickerView;
+			sourceTree = "<group>";
+		};
+		F1866B251F5FCE2F0072C131 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F1866B261F5FCE2F0072C131 /* BaseView.h */,
+				F1866B271F5FCE2F0072C131 /* BaseView.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F1866B291F5FCE2F0072C131 /* DatePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				F1866B2A1F5FCE2F0072C131 /* BRDatePickerView.h */,
+				F1866B2B1F5FCE2F0072C131 /* BRDatePickerView.m */,
+			);
+			path = DatePickerView;
+			sourceTree = "<group>";
+		};
+		F1866B2C1F5FCE2F0072C131 /* StringPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				F1866B2D1F5FCE2F0072C131 /* BRStringPickerView.h */,
+				F1866B2E1F5FCE2F0072C131 /* BRStringPickerView.m */,
+			);
+			path = StringPickerView;
+			sourceTree = "<group>";
+		};
+		F1866B2F1F5FCE2F0072C131 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		F19199EE1F0357CC00805D63 /* 上下限新增查询 */ = {
+			isa = PBXGroup;
+			children = (
+				F1F9D6711F42E4960083249F /* UpDownSearchViewController.h */,
+				F1F9D6721F42E4960083249F /* UpDownSearchViewController.m */,
+			);
+			name = "上下限新增查询";
+			sourceTree = "<group>";
+		};
+		F1F9C1C91F3AADD300CDD3BF /* M */ = {
+			isa = PBXGroup;
+			children = (
+				F1F9C1CA1F3AAE1000CDD3BF /* FrontViewModel.h */,
+				F1F9C1CB1F3AAE1000CDD3BF /* FrontViewModel.m */,
+			);
+			name = M;
+			sourceTree = "<group>";
+		};
+		F1F9C1CE1F3AB2F200CDD3BF /* C */ = {
+			isa = PBXGroup;
+			children = (
+				F1F9C1CF1F3AB34A00CDD3BF /* FrontTableViewCell.h */,
+				F1F9C1D01F3AB34A00CDD3BF /* FrontTableViewCell.m */,
+				F1F9C1D11F3AB34A00CDD3BF /* FrontTableViewCell.xib */,
+			);
+			name = C;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B332EEE1EF8CCB8004B2135 /* DrugDep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B332F1C1EF8CCB8004B2135 /* Build configuration list for PBXNativeTarget "DrugDep" */;
+			buildPhases = (
+				C88CD365A470FBE89482790F /* [CP] Check Pods Manifest.lock */,
+				3B332EEB1EF8CCB8004B2135 /* Sources */,
+				3B332EEC1EF8CCB8004B2135 /* Frameworks */,
+				3B332EED1EF8CCB8004B2135 /* Resources */,
+				89E31B71141B675C2A7027E3 /* [CP] Embed Pods Frameworks */,
+				297174721BDED28E355933EB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrugDep;
+			productName = DrugDep;
+			productReference = 3B332EEF1EF8CCB8004B2135 /* DrugDep.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B332F071EF8CCB8004B2135 /* DrugDepTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B332F1F1EF8CCB8004B2135 /* Build configuration list for PBXNativeTarget "DrugDepTests" */;
+			buildPhases = (
+				C49ED904D7398953917FF41F /* [CP] Check Pods Manifest.lock */,
+				3B332F041EF8CCB8004B2135 /* Sources */,
+				3B332F051EF8CCB8004B2135 /* Frameworks */,
+				3B332F061EF8CCB8004B2135 /* Resources */,
+				B59CDDFAB5897841DA8D9B17 /* [CP] Embed Pods Frameworks */,
+				517C7BFD19FE20AB5E67CB17 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B332F0A1EF8CCB8004B2135 /* PBXTargetDependency */,
+			);
+			name = DrugDepTests;
+			productName = DrugDepTests;
+			productReference = 3B332F081EF8CCB8004B2135 /* DrugDepTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3B332F121EF8CCB8004B2135 /* DrugDepUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B332F221EF8CCB8004B2135 /* Build configuration list for PBXNativeTarget "DrugDepUITests" */;
+			buildPhases = (
+				46F94C30E24B51B3E94DC56C /* [CP] Check Pods Manifest.lock */,
+				3B332F0F1EF8CCB8004B2135 /* Sources */,
+				3B332F101EF8CCB8004B2135 /* Frameworks */,
+				3B332F111EF8CCB8004B2135 /* Resources */,
+				DD160F49E8792AC65B9A7616 /* [CP] Embed Pods Frameworks */,
+				AB5F2D449A6527D301366A22 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B332F151EF8CCB8004B2135 /* PBXTargetDependency */,
+			);
+			name = DrugDepUITests;
+			productName = DrugDepUITests;
+			productReference = 3B332F131EF8CCB8004B2135 /* DrugDepUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B332EE71EF8CCB8004B2135 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "杜彪";
+				TargetAttributes = {
+					3B332EEE1EF8CCB8004B2135 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = WSSADP2883;
+						ProvisioningStyle = Automatic;
+					};
+					3B332F071EF8CCB8004B2135 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = ATR2R32RX5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3B332EEE1EF8CCB8004B2135;
+					};
+					3B332F121EF8CCB8004B2135 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = ATR2R32RX5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3B332EEE1EF8CCB8004B2135;
+					};
+				};
+			};
+			buildConfigurationList = 3B332EEA1EF8CCB8004B2135 /* Build configuration list for PBXProject "DrugDep" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B332EE61EF8CCB8004B2135;
+			productRefGroup = 3B332EF01EF8CCB8004B2135 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B332EEE1EF8CCB8004B2135 /* DrugDep */,
+				3B332F071EF8CCB8004B2135 /* DrugDepTests */,
+				3B332F121EF8CCB8004B2135 /* DrugDepUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B332EED1EF8CCB8004B2135 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1499C191EFB9D3900B6042B /* EveryDayViewController.xib in Resources */,
+				F1499C0A1EFB9CF700B6042B /* TrackViewController.xib in Resources */,
+				3B332F021EF8CCB8004B2135 /* LaunchScreen.storyboard in Resources */,
+				3B332EFF1EF8CCB8004B2135 /* Assets.xcassets in Resources */,
+				F1F9C1D31F3AB34A00CDD3BF /* FrontTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B332F061EF8CCB8004B2135 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B332F111EF8CCB8004B2135 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		297174721BDED28E355933EB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrugDep/Pods-DrugDep-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46F94C30E24B51B3E94DC56C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		517C7BFD19FE20AB5E67CB17 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrugDepTests/Pods-DrugDepTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89E31B71141B675C2A7027E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrugDep/Pods-DrugDep-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB5F2D449A6527D301366A22 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrugDepUITests/Pods-DrugDepUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B59CDDFAB5897841DA8D9B17 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrugDepTests/Pods-DrugDepTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C49ED904D7398953917FF41F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C88CD365A470FBE89482790F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DD160F49E8792AC65B9A7616 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrugDepUITests/Pods-DrugDepUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B332EEB1EF8CCB8004B2135 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B332F5E1EF8E1E6004B2135 /* CMPopTipView.m in Sources */,
+				3B332EF71EF8CCB8004B2135 /* AppDelegate.m in Sources */,
+				3B332F7B1EF8E420004B2135 /* UserInfoModel.m in Sources */,
+				3B332F4F1EF8E1D1004B2135 /* NSDateFormatter+Category.m in Sources */,
+				F1866B421F5FCE820072C131 /* BRTextField.m in Sources */,
+				3B332F4D1EF8E1D1004B2135 /* Foundation+Log.m in Sources */,
+				3B332F661EF8E2AD004B2135 /* LoginViewController.m in Sources */,
+				F1866B431F5FCE820072C131 /* NSDate+BRAdd.m in Sources */,
+				3B332F811EF8E477004B2135 /* NetWorkDataManager.m in Sources */,
+				F15B503D1F5F8A8100900C4E /* AddListTextViewController.m in Sources */,
+				3B332F501EF8E1D1004B2135 /* NSString+Category.m in Sources */,
+				3B332F321EF8CE21004B2135 /* NormalTableViewCell.m in Sources */,
+				F1BCCD211F1C8A1F0037B552 /* UIColor+JGHexColor.m in Sources */,
+				3B332F341EF8CE21004B2135 /* SuperViewController.m in Sources */,
+				3B332F6E1EF8E31A004B2135 /* HTTPLimiteCache.m in Sources */,
+				F1499BDF1EFB627B00B6042B /* HomeTableViewCell.m in Sources */,
+				F1F9C1D21F3AB34A00CDD3BF /* FrontTableViewCell.m in Sources */,
+				3B332F7E1EF8E42C004B2135 /* UserInfoManager.m in Sources */,
+				F1866B391F5FCE2F0072C131 /* BaseView.m in Sources */,
+				3B332F771EF8E3B7004B2135 /* Account.m in Sources */,
+				F1866B3B1F5FCE2F0072C131 /* BRStringPickerView.m in Sources */,
+				3B332F781EF8E3B7004B2135 /* AccountTool.m in Sources */,
+				F1D717DE1F60E172007C723A /* PurchaseViewTextController.m in Sources */,
+				3B332F511EF8E1D1004B2135 /* UIBarButtonItem+Extension.m in Sources */,
+				F104E27D1F3C3C3E005EDEE3 /* CStatisticsViewController.m in Sources */,
+				3B332F5F1EF8E1E6004B2135 /* MBProgressHUD+MJ.m in Sources */,
+				3B332F551EF8E1D1004B2135 /* UIViewController+Category.m in Sources */,
+				F104E2771F3C3C23005EDEE3 /* AStatisticsViewController.m in Sources */,
+				3B332F4E1EF8E1D1004B2135 /* NSDate+Category.m in Sources */,
+				3B332F391EF8CE9A004B2135 /* ConstKey.m in Sources */,
+				F1F9C1CC1F3AAE1000CDD3BF /* FrontViewModel.m in Sources */,
+				3B332F521EF8E1D1004B2135 /* UIButton+Category.m in Sources */,
+				F1B6FBF81F396097000433A6 /* FrontViewController.m in Sources */,
+				3B332F601EF8E1E6004B2135 /* MBProgressHUD.m in Sources */,
+				F1D717DB1F60D5FC007C723A /* StockViewControllerTextViewController.m in Sources */,
+				F104E2731F3C39CD005EDEE3 /* StatisticsViewController.m in Sources */,
+				F1866B3A1F5FCE2F0072C131 /* BRDatePickerView.m in Sources */,
+				F104E27A1F3C3C32005EDEE3 /* BStatisticsViewController.m in Sources */,
+				3B332F541EF8E1D1004B2135 /* UIView+Extension.m in Sources */,
+				3B332F721EF8E368004B2135 /* HomeManager.m in Sources */,
+				F1BCCD1E1F1C8A0F0037B552 /* ZJBLStoreShopTypeAlert.m in Sources */,
+				3B332EF41EF8CCB8004B2135 /* main.m in Sources */,
+				3B38CCC21F04D02400B76A75 /* UpDownViewController.m in Sources */,
+				3B332F331EF8CE21004B2135 /* RootNavgationController.m in Sources */,
+				3B332F6F1EF8E31A004B2135 /* HTTPManager.m in Sources */,
+				F1499C091EFB9CF700B6042B /* TrackViewController.m in Sources */,
+				3B332F631EF8E254004B2135 /* HomeViewController.m in Sources */,
+				F1F9D6731F42E4960083249F /* UpDownSearchViewController.m in Sources */,
+				3B332F531EF8E1D1004B2135 /* UIImage+Category.m in Sources */,
+				F1499C181EFB9D3900B6042B /* EveryDayViewController.m in Sources */,
+				F18642191F023B5700054425 /* UpdownHeadView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B332F041EF8CCB8004B2135 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B332F0D1EF8CCB8004B2135 /* DrugDepTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B332F0F1EF8CCB8004B2135 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B332F181EF8CCB8004B2135 /* DrugDepUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B332F0A1EF8CCB8004B2135 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B332EEE1EF8CCB8004B2135 /* DrugDep */;
+			targetProxy = 3B332F091EF8CCB8004B2135 /* PBXContainerItemProxy */;
+		};
+		3B332F151EF8CCB8004B2135 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B332EEE1EF8CCB8004B2135 /* DrugDep */;
+			targetProxy = 3B332F141EF8CCB8004B2135 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B332F001EF8CCB8004B2135 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B332F011EF8CCB8004B2135 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B332F1A1EF8CCB8004B2135 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3B332F1B1EF8CCB8004B2135 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B332F1D1EF8CCB8004B2135 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69FBF43F5C53BFE41EB82114 /* Pods-DrugDep.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WSSADP2883;
+				GCC_PREFIX_HEADER = $SRCROOT/DrugDep/Classes/PCH/PrefixHeader.h;
+				INFOPLIST_FILE = DrugDep/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DrugDep.www;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3B332F1E1EF8CCB8004B2135 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B8F7F62D4466F5D647BEAB0 /* Pods-DrugDep.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WSSADP2883;
+				GCC_PREFIX_HEADER = $SRCROOT/DrugDep/Classes/PCH/PrefixHeader.h;
+				INFOPLIST_FILE = DrugDep/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DrugDep.www;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3B332F201EF8CCB8004B2135 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB19DD295B173AED8D23C01E /* Pods-DrugDepTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ATR2R32RX5;
+				INFOPLIST_FILE = DrugDepTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.studiomanager.www.DrugDepTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrugDep.app/DrugDep";
+			};
+			name = Debug;
+		};
+		3B332F211EF8CCB8004B2135 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C72ABECDBB05AD9F259C45A1 /* Pods-DrugDepTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ATR2R32RX5;
+				INFOPLIST_FILE = DrugDepTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.studiomanager.www.DrugDepTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrugDep.app/DrugDep";
+			};
+			name = Release;
+		};
+		3B332F231EF8CCB8004B2135 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FD5AB0E7FDED25FA0365DD6 /* Pods-DrugDepUITests.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = ATR2R32RX5;
+				INFOPLIST_FILE = DrugDepUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.studiomanager.www.DrugDepUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DrugDep;
+			};
+			name = Debug;
+		};
+		3B332F241EF8CCB8004B2135 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D2EF450DFB5E5781B288EAC /* Pods-DrugDepUITests.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = ATR2R32RX5;
+				INFOPLIST_FILE = DrugDepUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.studiomanager.www.DrugDepUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DrugDep;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B332EEA1EF8CCB8004B2135 /* Build configuration list for PBXProject "DrugDep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B332F1A1EF8CCB8004B2135 /* Debug */,
+				3B332F1B1EF8CCB8004B2135 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B332F1C1EF8CCB8004B2135 /* Build configuration list for PBXNativeTarget "DrugDep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B332F1D1EF8CCB8004B2135 /* Debug */,
+				3B332F1E1EF8CCB8004B2135 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B332F1F1EF8CCB8004B2135 /* Build configuration list for PBXNativeTarget "DrugDepTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B332F201EF8CCB8004B2135 /* Debug */,
+				3B332F211EF8CCB8004B2135 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B332F221EF8CCB8004B2135 /* Build configuration list for PBXNativeTarget "DrugDepUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B332F231EF8CCB8004B2135 /* Debug */,
+				3B332F241EF8CCB8004B2135 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B332EE71EF8CCB8004B2135 /* Project object */;
+}
