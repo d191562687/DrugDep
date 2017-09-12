@@ -49,7 +49,7 @@
     button.layer.cornerRadius = 10;
     [button setFrame:CGRectMake(20, 20, SCREEN_WIDTH - 40, 40)];
     [button addBlockForControlEvents:UIControlEventTouchUpInside block:^(id  _Nonnull sender) {
-        NSLog(@"11--%@--%@--%@--%@",_companyTF.text,_endTimeTF.text);
+    
         
     }];
     [footView addSubview:button];

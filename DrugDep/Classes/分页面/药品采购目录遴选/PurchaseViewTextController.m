@@ -10,6 +10,9 @@
 #import "BRPickerView.h"
 #import "BRTextField.h"
 #import "NSDate+BRAdd.h"
+
+#import "PurchaseSearchViewController.h"
+
 @interface PurchaseViewTextController ()<UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
 @property (nonatomic, strong) UITableView *tableView;
 /** 产品编码 */
@@ -28,6 +31,7 @@
 @property (nonatomic, strong) BRTextField *packFormatTF;
 /** 生产企业名称 */
 @property (nonatomic, strong) BRTextField *companyNameTF;
+
 
 @property (nonatomic, strong) NSArray *titleArr;
 
@@ -56,7 +60,9 @@
     button.layer.cornerRadius = 10;
     [button setFrame:CGRectMake(20, 20, SCREEN_WIDTH - 40, 40)];
     [button addBlockForControlEvents:UIControlEventTouchUpInside block:^(id  _Nonnull sender) {
- 
+        NSLog(@"产品编码——%@,产品名称-%@",_numberTF.text,_drugNameTF.text);
+        PurchaseSearchViewController * purchaseSearchV = [[PurchaseSearchViewController alloc]init];
+        [self.navigationController pushViewController:purchaseSearchV animated:YES];
         
     }];
     [footView addSubview:button];
