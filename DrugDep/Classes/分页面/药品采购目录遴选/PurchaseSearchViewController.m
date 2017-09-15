@@ -12,12 +12,17 @@
 #import "MBProgressHUD.h"
 #import "PurchaseModel.h"
 #import "PurchaseTableViewCell.h"
+#import "UserInfoManager.h"
+
 
 @interface PurchaseSearchViewController ()<UITableViewDelegate,UITableViewDataSource>
 /** 表 */
 @property (nonatomic, strong) UITableView * tableView;
 /** 数据 */
 @property (nonatomic, strong) NSMutableArray * resultArray;
+
+@property (strong,nonatomic) NSString * pass;
+@property (strong,nonatomic) NSString * user;
 
 @end
 
@@ -48,39 +53,57 @@
     //内网ip：192.168.1.70
     //外网ip：124.207.212.87
     //http://192.168.1.236:9000/transfer-manager-web/app/drugStoresPurchasePlan/purchaseSelectionList.do
+    //    json={
+    //        "currentPage": "1",
+    //        "officeId": "95ce99bda3cd4309b0b114d05ffda55c",
+    //        "pageSize": "2",
+    //        "passWord": "test1234",
+    //        "userName": "majp01",
+    //        "code": "",
+    //        "medicalname": "",
+    //        "productname": "",
+    //        "factoryname": "",
+    //        "medicalmode": "",
+    //        "packageSpec": "",
+    //        "medicalspec": "",
+    //        "metricname": ""
+    //    }
+    //
     
-    NSString *url = @"http://192.168.1.34:9000/app/drugStoresPurchasePlan/purchaseSelectionList";
-//    json={
-//        "currentPage": "1",
-//        "officeId": "95ce99bda3cd4309b0b114d05ffda55c",
-//        "pageSize": "2",
-//        "passWord": "test1234",
-//        "userName": "majp01",
-//        "code": "",
-//        "medicalname": "",
-//        "productname": "",
-//        "factoryname": "",
-//        "medicalmode": "",
-//        "packageSpec": "",
-//        "medicalspec": "",
-//        "metricname": ""
-//    }
+    
+      NSString *url = @"http://192.168.1.34:9000/app/drugStoresPurchasePlan/purchaseSelectionList";
+    //读取
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString * code = [defaults objectForKey:@"code"];
+    NSString * medicalname = [defaults objectForKey:@"medicalname"];
+    NSString * productname = [defaults objectForKey:@"productname"];
+    NSString * factoryname = [defaults objectForKey:@"factoryname"];
+    NSString * medicalmode = [defaults objectForKey:@"medicalmode"];
+    NSString * packageSpec = [defaults objectForKey:@"packageSpec"];
+    NSString * medicalspec = [defaults objectForKey:@"medicalspec"];
+    NSString * metricname = [defaults objectForKey:@"metricname"];
+    UserInfoModel *userModel = [[UserInfoManager sharedManager] getUserInfo];
+    self.pass = userModel.passWord;
+    self.user = userModel.loginName;
+    NSLog(@"%@====%@",self.user,self.pass);
+  
+//    NSLog(@"%@-%@-%@-%@-%@-%@-%@-%@-",code,medicalname,productname,factoryname,medicalmode,packageSpec,medicalspec,metricname);
     NSDictionary *params = @{
                              @"currentPage": @"1",
                              @"officeId": @"95ce99bda3cd4309b0b114d05ffda55c",
                              @"pageSize": @"10",
-                             @"passWord": @"test1234",
-                             @"userName": @"majp01",
-                             @"code": @"",
-                             @"medicalname": @"",
-                             @"productname": @"",
-                             @"factoryname": @"",
-                             @"medicalmode": @"",
-                             @"packageSpec": @"",
-                             @"medicalspec": @"",
-                             @"metricname": @""
+                             @"passWord": self.pass,
+                             @"userName": self.user,
+                             @"code": code,
+                             @"medicalname": medicalname,
+                             @"productname": productname,
+                             @"factoryname": factoryname,
+                             @"medicalmode": medicalmode,
+                             @"packageSpec": packageSpec,
+                             @"medicalspec": medicalspec,
+                             @"metricname": metricname
                              };
-    
+
     NSString *p1Str = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:params options:0 error:nil] encoding:NSUTF8StringEncoding];
     NSDictionary *json = @{@"json":p1Str};
     

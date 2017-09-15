@@ -539,7 +539,6 @@
 				F104E26A1F3C3336005EDEE3 /* 药房补货列表 */,
 				F1499BE11EFB9A3000B6042B /* 前置库库存查询 */,
 				F1499BE21EFB9A3000B6042B /* 实时追踪 */,
-				F1499BE31EFB9A3000B6042B /* 药品采购目录遴选 */,
 				F1499BE41EFB9A3000B6042B /* 药房上下限补货 */,
 				F1499BE51EFB9A3000B6042B /* 药房日均量补货 */,
 				F1499BE61EFB9A3000B6042B /* 配送商库存查询 */,
@@ -562,6 +561,7 @@
 		F1499BE21EFB9A3000B6042B /* 实时追踪 */ = {
 			isa = PBXGroup;
 			children = (
+				F1499BE31EFB9A3000B6042B /* 药品采购目录遴选 */,
 				F1BCCD1F1F1C8A1F0037B552 /* UIColor+JGHexColor.h */,
 				F1BCCD201F1C8A1F0037B552 /* UIColor+JGHexColor.m */,
 				F1BCCD1C1F1C8A0F0037B552 /* ZJBLStoreShopTypeAlert.h */,
@@ -580,7 +580,8 @@
 				F1D717DD1F60E172007C723A /* PurchaseViewTextController.m */,
 				F1B8CB671F676D6A007D4383 /* 查询 */,
 			);
-			path = "药品采购目录遴选";
+			name = "药品采购目录遴选";
+			path = "../药品采购目录遴选";
 			sourceTree = "<group>";
 		};
 		F1499BE41EFB9A3000B6042B /* 药房上下限补货 */ = {

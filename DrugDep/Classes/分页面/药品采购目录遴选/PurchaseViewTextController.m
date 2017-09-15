@@ -61,6 +61,17 @@
     [button setFrame:CGRectMake(20, 20, SCREEN_WIDTH - 40, 40)];
     [button addBlockForControlEvents:UIControlEventTouchUpInside block:^(id  _Nonnull sender) {
         NSLog(@"产品编码——%@,产品名称-%@",_numberTF.text,_drugNameTF.text);
+        //存储
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        [defaults setObject:_numberTF.text forKey:@"code"];
+        [defaults setObject:_drugNameTF.text forKey:@"medicalname"];
+        [defaults setObject:_wareNameTF.text forKey:@"productname"];
+        [defaults setObject:_drugContentTF.text forKey:@"factoryname"];
+        [defaults setObject:_drugFormatTF.text forKey:@"medicalmode"];
+        [defaults setObject:_drugCompanyTF.text forKey:@"packageSpec"];
+        [defaults setObject:_packFormatTF.text forKey:@"medicalspec"];
+        [defaults setObject:_companyNameTF.text forKey:@"metricname"];
+
         PurchaseSearchViewController * purchaseSearchV = [[PurchaseSearchViewController alloc]init];
         [self.navigationController pushViewController:purchaseSearchV animated:YES];
         
@@ -208,7 +219,7 @@
 }
 #pragma mark - 药品剂型 textField
 - (void)setupDrugContentTF:(UITableViewCell *)cell {
-    if (_drugContentTF) {
+    if (!_drugContentTF) {
         _drugContentTF = [self getTextField:cell];
         _drugContentTF.placeholder = @"";
         _drugContentTF.returnKeyType = UIReturnKeyDone;
@@ -217,7 +228,7 @@
 }
 #pragma mark - 药品规格 textField
 - (void)setupDrugFormatTF:(UITableViewCell *)cell {
-    if (_drugFormatTF) {
+    if (!_drugFormatTF) {
         _drugFormatTF = [self getTextField:cell];
         _drugFormatTF.placeholder = @"";
         _drugFormatTF.returnKeyType = UIReturnKeyDone;
@@ -226,7 +237,7 @@
 }
 #pragma mark - 药品单位 textField
 - (void)setupDrugCompanyTF:(UITableViewCell *)cell {
-    if (_drugCompanyTF) {
+    if (!_drugCompanyTF) {
         _drugCompanyTF = [self getTextField:cell];
         _drugCompanyTF.placeholder = @"";
         _drugCompanyTF.returnKeyType = UIReturnKeyDone;
@@ -235,7 +246,7 @@
 }
 #pragma mark - 药品包装规格 textField
 - (void)setupPackFormatTF:(UITableViewCell *)cell {
-    if (_packFormatTF) {
+    if (!_packFormatTF) {
         _packFormatTF = [self getTextField:cell];
         _packFormatTF.placeholder = @"";
         _packFormatTF.returnKeyType = UIReturnKeyDone;
@@ -244,7 +255,7 @@
 }
 #pragma mark - 生产企业名称 textField
 - (void)setupCompanyNameTF:(UITableViewCell *)cell {
-    if (_companyNameTF) {
+    if (!_companyNameTF) {
         _companyNameTF = [self getTextField:cell];
         _companyNameTF.placeholder = @"";
         _companyNameTF.returnKeyType = UIReturnKeyDone;
@@ -258,16 +269,18 @@
 
 #pragma mark - UITextFieldDelegate
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    if (textField.tag == 0 || textField.tag == 4) {
+    if (textField.tag == 0 || textField.tag == 7) {
         [textField resignFirstResponder];
     }
     return YES;
 }
 - (NSArray *)titleArr {
     if (!_titleArr) {
-        _titleArr = @[@" 产品编码:", @" 药品名称:", @" 商品名称:", @" 药品剂型:",@" 药品规格:",@" 药品单位:",@" 药品包装规格:",@" 生产企业名称:",@""];
+        _titleArr = @[@" 产品编码:", @" 药品名称:", @" 商品名称:", @" 药品剂型:",@" 药品规格:",@" 药品单位:",@"药品包装规格:",@"生产企业名称:",@""];
     }
     return _titleArr;
 }
+
+
 
 @end

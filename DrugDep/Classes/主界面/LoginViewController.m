@@ -95,7 +95,7 @@
     clickButton.titleLabel.font = [UIFont boldSystemFontOfSize:18];
     [clickButton addTarget:self action:@selector(loginClickAction) forControlEvents:UIControlEventTouchUpInside];
     clickButton.layer.masksToBounds = YES;
-    clickButton.layer.cornerRadius = 5;
+    clickButton.layer.cornerRadius =  5;
     clickButton.backgroundColor = RGBACOLOR(15, 104, 186, 1);
     [backImgView addSubview:clickButton];
     [clickButton mas_makeConstraints:^(MASConstraintMaker *make) {

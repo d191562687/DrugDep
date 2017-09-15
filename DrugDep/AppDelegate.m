@@ -35,7 +35,7 @@
 {
     Account *account = [AccountTool account];
 //    if (account) {
-//        // 已登录，去主界面
+//        // 已登录，去主界面 
 //        HomeViewController *homeVC = [[HomeViewController alloc]init];
 //        RootNavgationController *nav = [[RootNavgationController alloc]initWithRootViewController:homeVC];
 //        self.window.rootViewController = nav;
