@@ -11,23 +11,25 @@
 #import "HomeTableViewCell.h"
 #import "UpDownSearchViewController.h"
 
-#import "HomeTableViewCell.h"
-#import "FrontViewController.h"
-#import "TrackViewController.h"
-#import "PurchaseViewTextController.h"
-#import "UpDownViewController.h"
-#import "EveryDayViewController.h"
-#import "StatisticsViewController.h"
-#import "StockViewControllerTextViewController.h"
+#import <MJRefresh.h>
+#import <MJExtension.h>
+#import "MBProgressHUD.h"
+#import "UserInfoManager.h"
+#import "UpDownNewModel.h"
+#import "UpDownNewTableViewCell.h"
 
-@interface UpDownViewController ()<UITableViewDataSource,UITableViewDelegate>
+
+@interface UpDownViewController ()<UITableViewDataSource,UITableViewDelegate,UpDownNewCellDelegate>
 
 @property (strong,nonatomic) UITableView *tableView;
 
-@property (copy,nonatomic) NSArray *array;
+/** 数据 */
+@property (nonatomic, strong) NSMutableArray * resultArray;
 
 @property (strong,nonatomic) UpdownHeadView *headView;
 
+@property (weak, nonatomic) NSString  * totalPriceLabel;
+@property (weak, nonatomic) IBOutlet UIButton *buyButton;
 
 @end
 
@@ -42,13 +44,13 @@
 - (void)setupSubViews
 {
     
-    self.array = @[@[@"过度页-icon1",@"过度页-icon2",@"过度页-icon2",@"过度页-icon2",@"过度页-icon2",@"过度页-icon2",@"过度页-icon2",@"过度页-icon2",@"过度页-icon2",@"过度页-icon2",@"过度页-icon2",@"过度页-icon3",@"过度页-icon3"],@[@"药房日均量补货",@"配送统计信息查看"]];
-    
+
     self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height - 64) style:UITableViewStyleGrouped];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
-    self.tableView.rowHeight = 60;
+    self.tableView.rowHeight = 160;
     self.tableView.backgroundColor = self.view.backgroundColor;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.contentInset = UIEdgeInsetsMake(10, 0, 0, 0);
     [self.view addSubview:self.tableView];
     
@@ -75,85 +77,37 @@
     _headView.backgroundColor = [UIColor whiteColor];
     self.tableView.tableHeaderView = self.headView;
     
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        //数据请求
+        [self loadWithName];
+    }];
+    /** 每次加载先刷新数据 */
+    [self.tableView.mj_header beginRefreshing];
+    
+    
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return self.array.count;
+    return 1;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.array[section] count];
+    return self.resultArray.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSArray * iconArr = @[@[@"过度页-icon1",@"过度页-icon2",@"过度页-icon2",@"过度页-icon2",@"过度页-icon2",@"过度页-icon2",@"过度页-icon2",@"过度页-icon2",@"过度页-icon2",@"过度页-icon2",@"过度页-icon2",@"过度页-icon3",@"过度页-icon3"],@[@"过度页-icon6",@"过度页-icon7"]];
+    /** 搜索前全查 */
+    /** 创建cell */
+    UpDownNewTableViewCell * cell = [UpDownNewTableViewCell actcellWithactFrontModel:tableView];
+    /** 获取当前的模型，设置cell数据 */
+    cell.ActFrontModel = self.resultArray[indexPath.row];
+    cell.delegate = self;
     
-    HomeTableViewCell *cell = [HomeTableViewCell sharedHomeTableViewCell:tableView];
-    cell.imageV.image = [UIImage imageNamed:iconArr[indexPath.section][indexPath.row]];
-    cell.label.text = self.array[indexPath.section][indexPath.row];
     return cell;
 }
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-    //分页面跳转
-    if (indexPath.section == 0) {
-        if (indexPath.row == 0) {
-            //实时追踪
-            TrackViewController * TrackVC = [[TrackViewController alloc]init];
-            [self
-             .navigationController pushViewController:TrackVC animated:YES];
-            
-        }else if (indexPath.row == 1)
-        {
-            //前置库库存查询
-            FrontViewController * FrontVC = [[FrontViewController alloc]init];
-            [self
-             .navigationController pushViewController:FrontVC animated:YES];
-            
-            
-            
-        }else if (indexPath.row == 2)
-        {
-            
-            //药房上下限补货
-            UpDownViewController * UpDownVC = [[UpDownViewController alloc]init];
-            [self
-             .navigationController pushViewController:UpDownVC animated:YES];
-            
-            
-        }else if (indexPath.row == 3)
-        {
-            //药房上下限补货
-            UpDownViewController * UpDownVC = [[UpDownViewController alloc]init];
-            [self
-             .navigationController pushViewController:UpDownVC animated:YES];
-            
-            
-            
-        }
-    }
-    if (indexPath.section == 1) {
-        if (indexPath.row == 0) {
-            
-            //配送商库存查询
-            StockViewControllerTextViewController * StockVC = [[StockViewControllerTextViewController alloc]init];
-            [self
-             .navigationController pushViewController:StockVC animated:YES];
-            
-        }else if (indexPath.row == 1)
-        {
-            //药品采购目录遴选
-            PurchaseViewTextController * PurchaseVC = [[PurchaseViewTextController alloc]init];
-            [self
-             .navigationController pushViewController:PurchaseVC animated:YES];
-            
-            
-        }
-    }
-}
+
+
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
     return 9;
@@ -173,10 +127,61 @@
     UIView *headView = [[UIView alloc]initWithFrame:CGRectZero];
     headView.backgroundColor = [UIColor clearColor];
     return headView;
+    
 }
 
 
 
+#pragma mark - 数据请求
+- (void)loadWithName;
+{
+    NSString *url = @"http://192.168.1.34:9000/app/drugStoresPurchasePlan/stockList";
+    NSDictionary *params = @{
+                             @"currentPage":@"1",
+                             @"officeId":@"95ce99bda3cd4309b0b114d05ffda55c",
+                             @"pageSize":@"10",
+                             @"passWord":@"test1234",
+                             @"typeCode":@"",
+                             @"keywords":@"",
+                             @"userName":@"majp01"
+                             };
+    
+    NSString *p1Str = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:params options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSDictionary *json = @{@"json":p1Str};
+    
+    [HTTPManager POST:url params:json success:^(NSURLSessionDataTask *task, id responseObject) {
+        [self.tableView.mj_header endRefreshing];
+        
+        // 成功
+        NSArray *data = [responseObject objectForKey:@"data"];
+        self.resultArray = [UpDownNewModel mj_objectArrayWithKeyValuesArray:data];
+        
+        NSLog(@"self.dataSource = %@",self.resultArray);
+        [self.tableView reloadData];
+        
+    } fail:^(NSURLSessionDataTask *task, NSError *error) {
+        [self.tableView.mj_header endRefreshing];
+        [self sendAlertAction:error.localizedDescription];
+    }];
+}
 
+#pragma mark - UpDownNewCellDelegate
+- (void)updownCellDidClickPlusButton:(UpDownNewTableViewCell *)updownCell{
+    
+    double  totalPrice = self.totalPriceLabel.doubleValue + updownCell.ActFrontModel.costPrice.doubleValue;
+    
+    self.totalPriceLabel = [NSString stringWithFormat:@"%.2f",totalPrice];
+
+}
+
+- (void)updownCellDidClickMinusButton:(UpDownNewTableViewCell *)updownCell{
+    
+//    double  totalPrice = self.totalPriceLabel.text.doubleValue - updownCell.ActFrontModel.price.doubleValue;
+//
+//    self.totalPriceLabel.text = [NSString stringWithFormat:@"%.2f",totalPrice];
+//
+ //   self.buyButton.enabled = (totalPrice > 0);
+    
+}
 
 @end

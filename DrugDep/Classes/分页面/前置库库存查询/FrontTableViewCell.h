@@ -17,3 +17,4 @@
 + (instancetype)actcellWithactFrontModel:(UITableView *)tableView;
 
 @end
+

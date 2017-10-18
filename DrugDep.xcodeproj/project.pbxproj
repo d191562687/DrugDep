@@ -59,6 +59,9 @@
 		F1866B3B1F5FCE2F0072C131 /* BRStringPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1866B2E1F5FCE2F0072C131 /* BRStringPickerView.m */; };
 		F1866B421F5FCE820072C131 /* BRTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F1866B3F1F5FCE820072C131 /* BRTextField.m */; };
 		F1866B431F5FCE820072C131 /* NSDate+BRAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = F1866B411F5FCE820072C131 /* NSDate+BRAdd.m */; };
+		F192E3161F7B7F6700C1EEB9 /* UpDownNewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F192E3141F7B7F6700C1EEB9 /* UpDownNewTableViewCell.m */; };
+		F192E3171F7B7F6700C1EEB9 /* UpDownNewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F192E3151F7B7F6700C1EEB9 /* UpDownNewTableViewCell.xib */; };
+		F198816D1F7DF48A000D1343 /* UpDownNewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F198816C1F7DF48A000D1343 /* UpDownNewModel.m */; };
 		F1B6FBF81F396097000433A6 /* FrontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B6FBF71F396097000433A6 /* FrontViewController.m */; };
 		F1B8CB6A1F676D9D007D4383 /* PurchaseSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B8CB691F676D9D007D4383 /* PurchaseSearchViewController.m */; };
 		F1B8CB6E1F676E51007D4383 /* PurchaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B8CB6D1F676E51007D4383 /* PurchaseModel.m */; };
@@ -199,6 +202,11 @@
 		F1866B3F1F5FCE820072C131 /* BRTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRTextField.m; sourceTree = "<group>"; };
 		F1866B401F5FCE820072C131 /* NSDate+BRAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+BRAdd.h"; sourceTree = "<group>"; };
 		F1866B411F5FCE820072C131 /* NSDate+BRAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+BRAdd.m"; sourceTree = "<group>"; };
+		F192E3131F7B7F6700C1EEB9 /* UpDownNewTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpDownNewTableViewCell.h; sourceTree = "<group>"; };
+		F192E3141F7B7F6700C1EEB9 /* UpDownNewTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpDownNewTableViewCell.m; sourceTree = "<group>"; };
+		F192E3151F7B7F6700C1EEB9 /* UpDownNewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpDownNewTableViewCell.xib; sourceTree = "<group>"; };
+		F198816B1F7DF48A000D1343 /* UpDownNewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpDownNewModel.h; sourceTree = "<group>"; };
+		F198816C1F7DF48A000D1343 /* UpDownNewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpDownNewModel.m; sourceTree = "<group>"; };
 		F1B6FBF61F396097000433A6 /* FrontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontViewController.h; sourceTree = "<group>"; };
 		F1B6FBF71F396097000433A6 /* FrontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontViewController.m; sourceTree = "<group>"; };
 		F1B8CB681F676D9D007D4383 /* PurchaseSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseSearchViewController.h; sourceTree = "<group>"; };
@@ -536,6 +544,7 @@
 		F1499BE01EFB9A3000B6042B /* 分页面 */ = {
 			isa = PBXGroup;
 			children = (
+				F1499BE31EFB9A3000B6042B /* 药品采购目录遴选 */,
 				F104E26A1F3C3336005EDEE3 /* 药房补货列表 */,
 				F1499BE11EFB9A3000B6042B /* 前置库库存查询 */,
 				F1499BE21EFB9A3000B6042B /* 实时追踪 */,
@@ -561,7 +570,6 @@
 		F1499BE21EFB9A3000B6042B /* 实时追踪 */ = {
 			isa = PBXGroup;
 			children = (
-				F1499BE31EFB9A3000B6042B /* 药品采购目录遴选 */,
 				F1BCCD1F1F1C8A1F0037B552 /* UIColor+JGHexColor.h */,
 				F1BCCD201F1C8A1F0037B552 /* UIColor+JGHexColor.m */,
 				F1BCCD1C1F1C8A0F0037B552 /* ZJBLStoreShopTypeAlert.h */,
@@ -580,8 +588,7 @@
 				F1D717DD1F60E172007C723A /* PurchaseViewTextController.m */,
 				F1B8CB671F676D6A007D4383 /* 查询 */,
 			);
-			name = "药品采购目录遴选";
-			path = "../药品采购目录遴选";
+			path = "药品采购目录遴选";
 			sourceTree = "<group>";
 		};
 		F1499BE41EFB9A3000B6042B /* 药房上下限补货 */ = {
@@ -676,8 +683,29 @@
 			children = (
 				F1F9D6711F42E4960083249F /* UpDownSearchViewController.h */,
 				F1F9D6721F42E4960083249F /* UpDownSearchViewController.m */,
+				F192E3121F7B7F2F00C1EEB9 /* C */,
+				F192E3111F7B7F2300C1EEB9 /* M */,
 			);
 			name = "上下限新增查询";
+			sourceTree = "<group>";
+		};
+		F192E3111F7B7F2300C1EEB9 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				F198816B1F7DF48A000D1343 /* UpDownNewModel.h */,
+				F198816C1F7DF48A000D1343 /* UpDownNewModel.m */,
+			);
+			name = M;
+			sourceTree = "<group>";
+		};
+		F192E3121F7B7F2F00C1EEB9 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				F192E3131F7B7F6700C1EEB9 /* UpDownNewTableViewCell.h */,
+				F192E3141F7B7F6700C1EEB9 /* UpDownNewTableViewCell.m */,
+				F192E3151F7B7F6700C1EEB9 /* UpDownNewTableViewCell.xib */,
+			);
+			name = C;
 			sourceTree = "<group>";
 		};
 		F1B8CB671F676D6A007D4383 /* 查询 */ = {
@@ -853,6 +881,7 @@
 				3B332F021EF8CCB8004B2135 /* LaunchScreen.storyboard in Resources */,
 				3B332EFF1EF8CCB8004B2135 /* Assets.xcassets in Resources */,
 				F1F9C1D31F3AB34A00CDD3BF /* FrontTableViewCell.xib in Resources */,
+				F192E3171F7B7F6700C1EEB9 /* UpDownNewTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1058,6 +1087,8 @@
 				F104E27A1F3C3C32005EDEE3 /* BStatisticsViewController.m in Sources */,
 				3B332F541EF8E1D1004B2135 /* UIView+Extension.m in Sources */,
 				3B332F721EF8E368004B2135 /* HomeManager.m in Sources */,
+				F198816D1F7DF48A000D1343 /* UpDownNewModel.m in Sources */,
+				F192E3161F7B7F6700C1EEB9 /* UpDownNewTableViewCell.m in Sources */,
 				F1BCCD1E1F1C8A0F0037B552 /* ZJBLStoreShopTypeAlert.m in Sources */,
 				3B332EF41EF8CCB8004B2135 /* main.m in Sources */,
 				3B38CCC21F04D02400B76A75 /* UpDownViewController.m in Sources */,
