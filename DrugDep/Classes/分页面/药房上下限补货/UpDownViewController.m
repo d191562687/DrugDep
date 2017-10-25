@@ -19,6 +19,7 @@
 #import "UpDownNewTableViewCell.h"
 
 
+
 @interface UpDownViewController ()<UITableViewDataSource,UITableViewDelegate,UpDownNewCellDelegate>
 
 @property (strong,nonatomic) UITableView *tableView;
@@ -39,12 +40,12 @@
     [super viewDidLoad];
     self.title = @"药房库存补货添加";
     [self setupSubViews];
+    
+    [self loadWithOfficeList];
 }
 
 - (void)setupSubViews
 {
-    
-
     self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height - 64) style:UITableViewStyleGrouped];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
@@ -97,6 +98,7 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
     /** 搜索前全查 */
     /** 创建cell */
     UpDownNewTableViewCell * cell = [UpDownNewTableViewCell actcellWithactFrontModel:tableView];
@@ -133,7 +135,7 @@
 
 
 #pragma mark - 数据请求
-- (void)loadWithName;
+- (void)loadWithName
 {
     NSString *url = @"http://192.168.1.34:9000/app/drugStoresPurchasePlan/stockList";
     NSDictionary *params = @{
@@ -145,6 +147,42 @@
                              @"keywords":@"",
                              @"userName":@"majp01"
                              };
+
+    NSString *p1Str = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:params options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSDictionary *json = @{@"json":p1Str};
+
+    [HTTPManager POST:url params:json success:^(NSURLSessionDataTask *task, id responseObject) {
+        [self.tableView.mj_header endRefreshing];
+
+        // 成功
+        NSArray *data = [responseObject objectForKey:@"data"];
+        self.resultArray = [UpDownNewModel mj_objectArrayWithKeyValuesArray:data];
+
+        [self.tableView reloadData];
+
+    } fail:^(NSURLSessionDataTask *task, NSError *error) {
+        [self.tableView.mj_header endRefreshing];
+        [self sendAlertAction:error.localizedDescription];
+    }];
+        //读取
+//    [self.tableView.mj_header endRefreshing];
+//    NSUserDefaults * user = [NSUserDefaults standardUserDefaults];
+//    NSArray * data = [user objectForKey:@"userData"];
+//    NSLog(@"shuju --  %@",data);
+//
+//    self.resultArray = [UpDownNewModel mj_objectArrayWithKeyValuesArray:data];
+//    NSLog(@"self.dataSource = %@",self.resultArray);
+//   [self.tableView reloadData];
+
+}
+- (void)loadWithOfficeList
+{
+    NSString *url = @"http://192.168.1.34:9000/app/drugStoresPurchasePlan/officeList";
+    NSDictionary *params = @{
+                             @"officeId":@"95ce99bda3cd4309b0b114d05ffda55c",
+                             @"passWord":@"test1234",
+                             @"userName":@"majp01"
+                             };
     
     NSString *p1Str = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:params options:0 error:nil] encoding:NSUTF8StringEncoding];
     NSDictionary *json = @{@"json":p1Str};
@@ -154,34 +192,34 @@
         
         // 成功
         NSArray *data = [responseObject objectForKey:@"data"];
-        self.resultArray = [UpDownNewModel mj_objectArrayWithKeyValuesArray:data];
-        
-        NSLog(@"self.dataSource = %@",self.resultArray);
+        NSLog(@"机构列表 = %@",data);
         [self.tableView reloadData];
         
     } fail:^(NSURLSessionDataTask *task, NSError *error) {
         [self.tableView.mj_header endRefreshing];
         [self sendAlertAction:error.localizedDescription];
     }];
+    
+    
 }
-
+//没用到
 #pragma mark - UpDownNewCellDelegate
 - (void)updownCellDidClickPlusButton:(UpDownNewTableViewCell *)updownCell{
-    
+
     double  totalPrice = self.totalPriceLabel.doubleValue + updownCell.ActFrontModel.costPrice.doubleValue;
-    
+
     self.totalPriceLabel = [NSString stringWithFormat:@"%.2f",totalPrice];
 
 }
 
 - (void)updownCellDidClickMinusButton:(UpDownNewTableViewCell *)updownCell{
-    
+
 //    double  totalPrice = self.totalPriceLabel.text.doubleValue - updownCell.ActFrontModel.price.doubleValue;
 //
 //    self.totalPriceLabel.text = [NSString stringWithFormat:@"%.2f",totalPrice];
 //
- //   self.buyButton.enabled = (totalPrice > 0);
-    
+//    self.buyButton.enabled = (totalPrice > 0);
+
 }
 
 @end

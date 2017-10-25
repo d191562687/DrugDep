@@ -105,7 +105,7 @@
     self.LdrugName.text = actFrontModel.drugName;
     self.LdrugSpec.text = actFrontModel.drugSpec;
     self.Lmanufacturer.text = actFrontModel.manufacturer;
-    self.LcostPrice.text =[NSString stringWithFormat:@"¥%@",actFrontModel.costPrice]; ;
+    self.LcostPrice.text =[NSString stringWithFormat:@"¥%@",actFrontModel.costPrice];
 
     // 根据count决定countLabel显示文字
     self.countLabel.text = [NSString stringWithFormat:@"%ld",(long)self.ActFrontModel.count];

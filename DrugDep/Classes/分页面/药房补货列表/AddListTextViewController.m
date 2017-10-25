@@ -10,6 +10,7 @@
 #import "BRPickerView.h"
 #import "BRTextField.h"
 #import "NSDate+BRAdd.h"
+#import "AddListViewController.h"
 
 @interface AddListTextViewController ()<UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
 @property (nonatomic, strong) UITableView *tableView;
@@ -21,6 +22,8 @@
 @property (nonatomic, strong) BRTextField *startTimeTF;
 /** 结束时间 */
 @property (nonatomic, strong) BRTextField *endTimeTF;
+/** 状态选择 */
+@property (nonatomic, strong) BRTextField *statusTF;
 
 @property (nonatomic, strong) NSArray *titleArr;
 
@@ -50,7 +53,9 @@
     [button setFrame:CGRectMake(20, 20, SCREEN_WIDTH - 40, 40)];
     [button addBlockForControlEvents:UIControlEventTouchUpInside block:^(id  _Nonnull sender) {
     
-        
+        //查询后跳转
+        AddListViewController * AddListSearchV = [[AddListViewController alloc]init];
+        [self.navigationController pushViewController:AddListSearchV animated:YES];
     }];
     [footView addSubview:button];
     
@@ -123,6 +128,12 @@
             [self setupEndTimeTF:cell];
         }
             break;
+        case 4:
+        {
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            [self setupStatusTF:cell];
+        }
+            break;
      
             
         default:
@@ -163,7 +174,7 @@
         _pharmcyTF.placeholder = @"请选择药房";
         __weak typeof(self) weakSelf = self;
         _pharmcyTF.tapAcitonBlock = ^{
-            [BRStringPickerView showStringPickerWithTitle:@"请选择药房：" dataSource:@[@"西成药房",@"中成药房"] defaultSelValue:@"丰台区马家堡街道角门东里社区卫生服务中心" isAutoSelect:YES resultBlock:^(id selectValue) {
+            [BRStringPickerView showStringPickerWithTitle:@"请选择药房：" dataSource:@[@"西成药房",@"中成药房"] defaultSelValue:@"" isAutoSelect:YES resultBlock:^(id selectValue) {
                 weakSelf.pharmcyTF.text = selectValue;
             }];
         };
@@ -183,7 +194,20 @@
         };
     }
 }
-#pragma mark - 开始日期 textField
+#pragma mark - 状态 textField
+- (void)setupStatusTF:(UITableViewCell *)cell {
+    if (!_statusTF) {
+        _statusTF = [self getTextField:cell];
+        _statusTF.placeholder = @"请选择状态";
+        __weak typeof(self) weakSelf = self;
+        _statusTF.tapAcitonBlock = ^{
+            [BRStringPickerView showStringPickerWithTitle:@"请选择状态：" dataSource:@[@"暂存",@"提交"] defaultSelValue:@"" isAutoSelect:YES resultBlock:^(id selectValue) {
+                weakSelf.statusTF.text = selectValue;
+            }];
+        };
+    }
+}
+#pragma mark - 结束日期 textField
 - (void)setupEndTimeTF:(UITableViewCell *)cell {
     if (!_endTimeTF) {
         _endTimeTF = [self getTextField:cell];
@@ -211,7 +235,7 @@
 }
 - (NSArray *)titleArr {
     if (!_titleArr) {
-        _titleArr = @[@" 机构选择:", @" 药房选择:", @" 开始时间:", @" 结束时间:",@""];
+        _titleArr = @[@" 机构选择:", @" 药房选择:", @" 开始时间:", @" 结束时间:", @" 状态选择:",@""];
     }
     return _titleArr;
 }

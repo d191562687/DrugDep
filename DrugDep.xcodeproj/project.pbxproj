@@ -52,7 +52,12 @@
 		F1499C0A1EFB9CF700B6042B /* TrackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1499C081EFB9CF700B6042B /* TrackViewController.xib */; };
 		F1499C181EFB9D3900B6042B /* EveryDayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1499C161EFB9D3900B6042B /* EveryDayViewController.m */; };
 		F1499C191EFB9D3900B6042B /* EveryDayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1499C171EFB9D3900B6042B /* EveryDayViewController.xib */; };
+		F154FC9D1F9EE560002DEC70 /* AddListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F154FC9C1F9EE560002DEC70 /* AddListViewController.m */; };
+		F1550A751F9F2B09007496C4 /* AddListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1550A741F9F2B09007496C4 /* AddListModel.m */; };
+		F1550A791F9F2B21007496C4 /* AddListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1550A771F9F2B21007496C4 /* AddListTableViewCell.m */; };
+		F1550A7A1F9F2B21007496C4 /* AddListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1550A781F9F2B21007496C4 /* AddListTableViewCell.xib */; };
 		F15B503D1F5F8A8100900C4E /* AddListTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F15B503C1F5F8A8100900C4E /* AddListTextViewController.m */; };
+		F17492151F98B8A1002A359D /* HQPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F17492141F98B8A0002A359D /* HQPickerView.m */; };
 		F18642191F023B5700054425 /* UpdownHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = F18642181F023B5700054425 /* UpdownHeadView.m */; };
 		F1866B391F5FCE2F0072C131 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1866B271F5FCE2F0072C131 /* BaseView.m */; };
 		F1866B3A1F5FCE2F0072C131 /* BRDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1866B2B1F5FCE2F0072C131 /* BRDatePickerView.m */; };
@@ -71,6 +76,10 @@
 		F1BCCD211F1C8A1F0037B552 /* UIColor+JGHexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BCCD201F1C8A1F0037B552 /* UIColor+JGHexColor.m */; };
 		F1D717DB1F60D5FC007C723A /* StockViewControllerTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D717DA1F60D5FC007C723A /* StockViewControllerTextViewController.m */; };
 		F1D717DE1F60E172007C723A /* PurchaseViewTextController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D717DD1F60E172007C723A /* PurchaseViewTextController.m */; };
+		F1D88FB41F9DC7EC007602DF /* StockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D88FB31F9DC7EC007602DF /* StockModel.m */; };
+		F1D88FB81F9DC9D0007602DF /* StockTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D88FB61F9DC9D0007602DF /* StockTableViewCell.m */; };
+		F1D88FB91F9DC9D0007602DF /* StockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1D88FB71F9DC9D0007602DF /* StockTableViewCell.xib */; };
+		F1D88FBD1F9DD5A4007602DF /* StockSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D88FBC1F9DD5A4007602DF /* StockSearchViewController.m */; };
 		F1F9C1CC1F3AAE1000CDD3BF /* FrontViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F9C1CB1F3AAE1000CDD3BF /* FrontViewModel.m */; };
 		F1F9C1D21F3AB34A00CDD3BF /* FrontTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F9C1D01F3AB34A00CDD3BF /* FrontTableViewCell.m */; };
 		F1F9C1D31F3AB34A00CDD3BF /* FrontTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1F9C1D11F3AB34A00CDD3BF /* FrontTableViewCell.xib */; };
@@ -187,8 +196,17 @@
 		F1499C151EFB9D3900B6042B /* EveryDayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EveryDayViewController.h; sourceTree = "<group>"; };
 		F1499C161EFB9D3900B6042B /* EveryDayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EveryDayViewController.m; sourceTree = "<group>"; };
 		F1499C171EFB9D3900B6042B /* EveryDayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EveryDayViewController.xib; sourceTree = "<group>"; };
+		F154FC9B1F9EE560002DEC70 /* AddListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddListViewController.h; sourceTree = "<group>"; };
+		F154FC9C1F9EE560002DEC70 /* AddListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddListViewController.m; sourceTree = "<group>"; };
+		F1550A731F9F2B09007496C4 /* AddListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddListModel.h; sourceTree = "<group>"; };
+		F1550A741F9F2B09007496C4 /* AddListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddListModel.m; sourceTree = "<group>"; };
+		F1550A761F9F2B21007496C4 /* AddListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddListTableViewCell.h; sourceTree = "<group>"; };
+		F1550A771F9F2B21007496C4 /* AddListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddListTableViewCell.m; sourceTree = "<group>"; };
+		F1550A781F9F2B21007496C4 /* AddListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddListTableViewCell.xib; sourceTree = "<group>"; };
 		F15B503B1F5F8A8100900C4E /* AddListTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddListTextViewController.h; sourceTree = "<group>"; };
 		F15B503C1F5F8A8100900C4E /* AddListTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddListTextViewController.m; sourceTree = "<group>"; };
+		F17492131F98B8A0002A359D /* HQPickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HQPickerView.h; sourceTree = "<group>"; };
+		F17492141F98B8A0002A359D /* HQPickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HQPickerView.m; sourceTree = "<group>"; };
 		F18642171F023B5700054425 /* UpdownHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdownHeadView.h; sourceTree = "<group>"; };
 		F18642181F023B5700054425 /* UpdownHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdownHeadView.m; sourceTree = "<group>"; };
 		F1866B261F5FCE2F0072C131 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
@@ -224,6 +242,13 @@
 		F1D717DA1F60D5FC007C723A /* StockViewControllerTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockViewControllerTextViewController.m; sourceTree = "<group>"; };
 		F1D717DC1F60E172007C723A /* PurchaseViewTextController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseViewTextController.h; sourceTree = "<group>"; };
 		F1D717DD1F60E172007C723A /* PurchaseViewTextController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseViewTextController.m; sourceTree = "<group>"; };
+		F1D88FB21F9DC7EC007602DF /* StockModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockModel.h; sourceTree = "<group>"; };
+		F1D88FB31F9DC7EC007602DF /* StockModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockModel.m; sourceTree = "<group>"; };
+		F1D88FB51F9DC9D0007602DF /* StockTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockTableViewCell.h; sourceTree = "<group>"; };
+		F1D88FB61F9DC9D0007602DF /* StockTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockTableViewCell.m; sourceTree = "<group>"; };
+		F1D88FB71F9DC9D0007602DF /* StockTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockTableViewCell.xib; sourceTree = "<group>"; };
+		F1D88FBB1F9DD5A4007602DF /* StockSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockSearchViewController.h; sourceTree = "<group>"; };
+		F1D88FBC1F9DD5A4007602DF /* StockSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockSearchViewController.m; sourceTree = "<group>"; };
 		F1F9C1CA1F3AAE1000CDD3BF /* FrontViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontViewModel.h; sourceTree = "<group>"; };
 		F1F9C1CB1F3AAE1000CDD3BF /* FrontViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontViewModel.m; sourceTree = "<group>"; };
 		F1F9C1CF1F3AB34A00CDD3BF /* FrontTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontTableViewCell.h; sourceTree = "<group>"; };
@@ -523,6 +548,7 @@
 				F1866B411F5FCE820072C131 /* NSDate+BRAdd.m */,
 				F15B503B1F5F8A8100900C4E /* AddListTextViewController.h */,
 				F15B503C1F5F8A8100900C4E /* AddListTextViewController.m */,
+				F154FC981F9EE533002DEC70 /* 查询 */,
 				F1866B1E1F5FCE2F0072C131 /* BRPickerView */,
 			);
 			path = "药房补货列表";
@@ -598,6 +624,8 @@
 				3B38CCC11F04D02400B76A75 /* UpDownViewController.m */,
 				F18642171F023B5700054425 /* UpdownHeadView.h */,
 				F18642181F023B5700054425 /* UpdownHeadView.m */,
+				F17492131F98B8A0002A359D /* HQPickerView.h */,
+				F17492141F98B8A0002A359D /* HQPickerView.m */,
 				F19199EE1F0357CC00805D63 /* 上下限新增查询 */,
 			);
 			path = "药房上下限补货";
@@ -618,6 +646,9 @@
 			children = (
 				F1D717D91F60D5FC007C723A /* StockViewControllerTextViewController.h */,
 				F1D717DA1F60D5FC007C723A /* StockViewControllerTextViewController.m */,
+				F1D88FBA1F9DD556007602DF /* 查询 */,
+				F1D88FB11F9DC776007602DF /* C */,
+				F1D88FB01F9DC76F007602DF /* M */,
 			);
 			path = "配送商库存查询";
 			sourceTree = "<group>";
@@ -630,6 +661,36 @@
 				F104E2741F3C3BA4005EDEE3 /* 配送子页面 */,
 			);
 			path = "配送统计信息查看";
+			sourceTree = "<group>";
+		};
+		F154FC981F9EE533002DEC70 /* 查询 */ = {
+			isa = PBXGroup;
+			children = (
+				F154FC9B1F9EE560002DEC70 /* AddListViewController.h */,
+				F154FC9C1F9EE560002DEC70 /* AddListViewController.m */,
+				F154FC9A1F9EE542002DEC70 /* C */,
+				F154FC991F9EE539002DEC70 /* M */,
+			);
+			path = "查询";
+			sourceTree = "<group>";
+		};
+		F154FC991F9EE539002DEC70 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				F1550A731F9F2B09007496C4 /* AddListModel.h */,
+				F1550A741F9F2B09007496C4 /* AddListModel.m */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		F154FC9A1F9EE542002DEC70 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				F1550A761F9F2B21007496C4 /* AddListTableViewCell.h */,
+				F1550A771F9F2B21007496C4 /* AddListTableViewCell.m */,
+				F1550A781F9F2B21007496C4 /* AddListTableViewCell.xib */,
+			);
+			path = C;
 			sourceTree = "<group>";
 		};
 		F1866B1E1F5FCE2F0072C131 /* BRPickerView */ = {
@@ -736,6 +797,34 @@
 				F1B8CB721F676E88007D4383 /* PurchaseTableViewCell.xib */,
 			);
 			name = C;
+			sourceTree = "<group>";
+		};
+		F1D88FB01F9DC76F007602DF /* M */ = {
+			isa = PBXGroup;
+			children = (
+				F1D88FB21F9DC7EC007602DF /* StockModel.h */,
+				F1D88FB31F9DC7EC007602DF /* StockModel.m */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		F1D88FB11F9DC776007602DF /* C */ = {
+			isa = PBXGroup;
+			children = (
+				F1D88FB51F9DC9D0007602DF /* StockTableViewCell.h */,
+				F1D88FB61F9DC9D0007602DF /* StockTableViewCell.m */,
+				F1D88FB71F9DC9D0007602DF /* StockTableViewCell.xib */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		F1D88FBA1F9DD556007602DF /* 查询 */ = {
+			isa = PBXGroup;
+			children = (
+				F1D88FBB1F9DD5A4007602DF /* StockSearchViewController.h */,
+				F1D88FBC1F9DD5A4007602DF /* StockSearchViewController.m */,
+			);
+			path = "查询";
 			sourceTree = "<group>";
 		};
 		F1F9C1C91F3AADD300CDD3BF /* M */ = {
@@ -881,6 +970,8 @@
 				3B332F021EF8CCB8004B2135 /* LaunchScreen.storyboard in Resources */,
 				3B332EFF1EF8CCB8004B2135 /* Assets.xcassets in Resources */,
 				F1F9C1D31F3AB34A00CDD3BF /* FrontTableViewCell.xib in Resources */,
+				F1550A7A1F9F2B21007496C4 /* AddListTableViewCell.xib in Resources */,
+				F1D88FB91F9DC9D0007602DF /* StockTableViewCell.xib in Resources */,
 				F192E3171F7B7F6700C1EEB9 /* UpDownNewTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1049,15 +1140,20 @@
 				3B332F7B1EF8E420004B2135 /* UserInfoModel.m in Sources */,
 				3B332F4F1EF8E1D1004B2135 /* NSDateFormatter+Category.m in Sources */,
 				F1866B421F5FCE820072C131 /* BRTextField.m in Sources */,
+				F154FC9D1F9EE560002DEC70 /* AddListViewController.m in Sources */,
 				3B332F4D1EF8E1D1004B2135 /* Foundation+Log.m in Sources */,
+				F1550A751F9F2B09007496C4 /* AddListModel.m in Sources */,
 				3B332F661EF8E2AD004B2135 /* LoginViewController.m in Sources */,
+				F1D88FB81F9DC9D0007602DF /* StockTableViewCell.m in Sources */,
 				F1866B431F5FCE820072C131 /* NSDate+BRAdd.m in Sources */,
 				3B332F811EF8E477004B2135 /* NetWorkDataManager.m in Sources */,
 				F15B503D1F5F8A8100900C4E /* AddListTextViewController.m in Sources */,
+				F1550A791F9F2B21007496C4 /* AddListTableViewCell.m in Sources */,
 				3B332F501EF8E1D1004B2135 /* NSString+Category.m in Sources */,
 				3B332F321EF8CE21004B2135 /* NormalTableViewCell.m in Sources */,
 				F1BCCD211F1C8A1F0037B552 /* UIColor+JGHexColor.m in Sources */,
 				3B332F341EF8CE21004B2135 /* SuperViewController.m in Sources */,
+				F17492151F98B8A1002A359D /* HQPickerView.m in Sources */,
 				3B332F6E1EF8E31A004B2135 /* HTTPLimiteCache.m in Sources */,
 				F1499BDF1EFB627B00B6042B /* HomeTableViewCell.m in Sources */,
 				F1F9C1D21F3AB34A00CDD3BF /* FrontTableViewCell.m in Sources */,
@@ -1069,6 +1165,7 @@
 				F1B8CB6E1F676E51007D4383 /* PurchaseModel.m in Sources */,
 				F1D717DE1F60E172007C723A /* PurchaseViewTextController.m in Sources */,
 				3B332F511EF8E1D1004B2135 /* UIBarButtonItem+Extension.m in Sources */,
+				F1D88FB41F9DC7EC007602DF /* StockModel.m in Sources */,
 				F104E27D1F3C3C3E005EDEE3 /* CStatisticsViewController.m in Sources */,
 				3B332F5F1EF8E1E6004B2135 /* MBProgressHUD+MJ.m in Sources */,
 				3B332F551EF8E1D1004B2135 /* UIViewController+Category.m in Sources */,
@@ -1088,6 +1185,7 @@
 				3B332F541EF8E1D1004B2135 /* UIView+Extension.m in Sources */,
 				3B332F721EF8E368004B2135 /* HomeManager.m in Sources */,
 				F198816D1F7DF48A000D1343 /* UpDownNewModel.m in Sources */,
+				F1D88FBD1F9DD5A4007602DF /* StockSearchViewController.m in Sources */,
 				F192E3161F7B7F6700C1EEB9 /* UpDownNewTableViewCell.m in Sources */,
 				F1BCCD1E1F1C8A0F0037B552 /* ZJBLStoreShopTypeAlert.m in Sources */,
 				3B332EF41EF8CCB8004B2135 /* main.m in Sources */,
@@ -1244,7 +1342,7 @@
 				DEVELOPMENT_TEAM = 36CGP7LVDZ;
 				GCC_PREFIX_HEADER = $SRCROOT/DrugDep/Classes/PCH/PrefixHeader.h;
 				INFOPLIST_FILE = DrugDep/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DrugDep.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1259,7 +1357,7 @@
 				DEVELOPMENT_TEAM = 36CGP7LVDZ;
 				GCC_PREFIX_HEADER = $SRCROOT/DrugDep/Classes/PCH/PrefixHeader.h;
 				INFOPLIST_FILE = DrugDep/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DrugDep.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";

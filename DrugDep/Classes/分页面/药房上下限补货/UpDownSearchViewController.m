@@ -97,7 +97,13 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    //存储
+//    FrontViewModel * status = self.dataSource[indexPath.row];
+//    NSDictionary *statusDict = status.mj_keyValues;
+//    NSUserDefaults *user = [NSUserDefaults standardUserDefaults];
+//    [user setObject:statusDict forKey:@"userData"];
     
+    [self.navigationController popViewControllerAnimated:YES];  
 }
 
 

@@ -35,7 +35,7 @@
 
 - (void)setupSubViews
 {
-    UserInfoModel *userModel = [[UserInfoManager sharedManager] getUserInfo];
+//    UserInfoModel *userModel = [[UserInfoManager sharedManager] getUserInfo];
     
 //    [self showEmptyViewWithMessage:[NSString stringWithFormat:@"检测用户信息是否保存\r  .userModel.name = %@",userModel.name]];
   

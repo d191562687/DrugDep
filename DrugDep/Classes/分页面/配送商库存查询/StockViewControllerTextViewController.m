@@ -10,6 +10,7 @@
 #import "BRPickerView.h"
 #import "BRTextField.h"
 #import "NSDate+BRAdd.h"
+#import "StockSearchViewController.h"
 
 @interface StockViewControllerTextViewController ()<UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
 @property (nonatomic, strong) UITableView *tableView;
@@ -26,6 +27,8 @@
 
 @property (nonatomic, strong) NSArray *titleArr;
 
+/** 搜索数据 */
+@property (nonatomic, strong) NSMutableArray * dataSource;
 
 @end
 
@@ -38,7 +41,7 @@
     self.tableView.hidden = NO;
     
     [self setupSubViews];
-    
+
 }
 //设置视图
 - (void)setupSubViews
@@ -54,6 +57,17 @@
     [button setFrame:CGRectMake(20, 20, SCREEN_WIDTH - 40, 40)];
     [button addBlockForControlEvents:UIControlEventTouchUpInside block:^(id  _Nonnull sender) {
    
+        //存储
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        [defaults setObject:_numberTF.text forKey:@"numberTF"];
+        [defaults setObject:_nameTF.text forKey:@"nameTF"];
+        [defaults setObject:_productionTF.text forKey:@"productionTF"];
+        [defaults setObject:_identificationTF.text forKey:@"identificationTF"];
+        [defaults setObject:_dispatchingTF.text forKey:@"dispatchingTF"];
+
+        //查询后跳转
+        StockSearchViewController * stockSearchV = [[StockSearchViewController alloc]init];
+        [self.navigationController pushViewController:stockSearchV animated:YES];
         
     }];
     [footView addSubview:button];
@@ -226,6 +240,7 @@
     }
     return _titleArr;
 }
+
 
 
 @end
