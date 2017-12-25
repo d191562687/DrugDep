@@ -10,4 +10,10 @@
 
 @interface PurchaseSearchViewController : SuperViewController
 
+@property (assign,nonatomic) int ccont;
+
+- (void)add;
+- (void)subtract;
+- (void)clear;
+
 @end

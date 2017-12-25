@@ -10,13 +10,19 @@
 #import "HomeTableViewCell.h"
 //分页面
 #import "FrontViewController.h"
+//Car
+#import "CarViewController.h"
 #import "TrackViewController.h"
+//
 #import "PurchaseViewTextController.h"
 #import "UpDownViewController.h"
 #import "EveryDayViewController.h"
 #import "StatisticsViewController.h"
 #import "AddListTextViewController.h"
 #import "StockViewControllerTextViewController.h"
+
+#import "StatisticsViewController.h"
+
 
 @interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (strong,nonatomic) UITableView * tableView;
@@ -39,7 +45,7 @@
     
 //    [self showEmptyViewWithMessage:[NSString stringWithFormat:@"检测用户信息是否保存\r  .userModel.name = %@",userModel.name]];
   
-    self.array = @[@[@"实时追踪",@"前置库库存查询",@"药房上下限补货",@"药房补货列表"],@[@"配送商库存查询",@"药品采购目录遴选"],@[@"药房日均量补货",@"配送统计信息查看"]];
+    self.array = @[@[@"实时追踪",@"前置库库存查询",@"药房上下限补货",@"药房补货列表"],@[@"配送商库存查询",@"药品采购目录遴选"],@[@"药房日均量补货"],@[@"HIS入库"]];
     [self.view addSubview:self.tableView];
     
 }
@@ -59,7 +65,7 @@
 {
     HomeTableViewCell * cell = [HomeTableViewCell sharedHomeTableViewCell:tableView];
     //icon 图片
-    NSArray * iconArr = @[@[@"过度页-icon1",@"过度页-icon2",@"过度页-icon3",@"过度页-icon3"],@[@"过度页-icon4",@"过度页-icon5"],@[@"过度页-icon6",@"过度页-icon7"]];
+    NSArray * iconArr = @[@[@"过度页-icon1",@"过度页-icon2",@"过度页-icon3",@"过度页-icon3"],@[@"过度页-icon4",@"过度页-icon5"],@[@"过度页-icon6"],@[@"过度页-icon7"]];
     cell.imageV.image = [UIImage imageNamed:iconArr[indexPath.section][indexPath.row]];
     cell.label.text = self.array[indexPath.section][indexPath.row];
     return cell;
@@ -135,12 +141,15 @@
              .navigationController pushViewController:EveryDayVC animated:YES];
 
             
-        }else if (indexPath.row == 1)
-        {
-            //配送统计信息查看
-            StatisticsViewController * StatisticsVC = [[StatisticsViewController alloc]init];
+        }
+    }
+    if (indexPath.section == 3) {
+        if (indexPath.row == 0) {
+            
+            //HIS入库
+            StatisticsViewController * statisVC = [[StatisticsViewController alloc]init];
             [self
-             .navigationController pushViewController:StatisticsVC animated:YES];
+             .navigationController pushViewController:statisVC animated:YES];
             
             
         }

@@ -11,6 +11,7 @@ target 'DrugDep' do
     pod 'MJRefresh', '~> 3.1.12'
     pod 'YYKit'
     pod 'LCActionSheet'
+    pod 'HMQRCodeScanner'
 
     
   target 'DrugDepTests' do

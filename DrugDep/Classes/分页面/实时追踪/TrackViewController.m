@@ -15,6 +15,7 @@
 }
 @property (strong, nonatomic) IBOutlet UIWebView *carWebView;
 
+@property (strong, nonatomic) IBOutlet UIButton *carbutton;
 
 @end
 
@@ -26,11 +27,44 @@
     
     titles = @[@"京HX1890",@"京HX1890",@"京HX1890",@"京HX1890",@"京HX1890",@"京HX1890",@"京HX1890"];
     
+    
+ //   [self loadWithN];
 
-    [self loadWithCar];
+ //   [self loadWithCar];
     
-    [self loadWithCarNumbe];
+// [self loadWithCarNumbe];
     
+    
+    _carWebView = [[UIWebView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+    NSURLRequest *request=[NSURLRequest requestWithURL:[NSURL URLWithString:@"www.baidu.com"]];
+    _carWebView.backgroundColor = [UIColor redColor];
+    [self.carWebView loadRequest:request];
+    [self.view addSubview:self.carWebView];
+}
+
+
+#pragma mark - 数据请求
+- (void)loadWithN;
+{
+  
+    NSString *url = @"http://192.168.1.231:9000/transfer-manager-web/app/appCarSingeRealLocation/areaDetal.do";
+
+    NSDictionary *params = @{
+                             @"vehicle":@"京HX1890"
+                             };
+    
+    NSString *p1Str = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:params options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSDictionary *json = @{@"json":p1Str};
+    
+    [HTTPManager POST:url params:json success:^(NSURLSessionDataTask *task, id responseObject) {
+  
+        NSLog(@"成功  %@",responseObject);
+      
+        
+    } fail:^(NSURLSessionDataTask *task, NSError *error) {
+      
+        [self sendAlertAction:error.localizedDescription];
+    }];
 }
 
 - (void)setupSubViews{
@@ -44,6 +78,7 @@
     } selectValue:^(NSString *selectValue) {
         NSLog(@"选择的值为%@",selectValue);
         self.title = selectValue;
+        self.carbutton.titleLabel.text = selectValue;
     } showCloseButton:NO];
     
     
@@ -103,35 +138,33 @@
     
     [HTTPManager POST:url params:json success:^(NSURLSessionDataTask *task, id responseObject) {
         NSLog(@"追踪 = %@",responseObject);
-        NSDictionary *mapurl = [responseObject objectForKey:@"mapurl"];
+//        NSDictionary *mapurl = [responseObject objectForKey:@"mapurl"];
+//        
+//        NSString * url = [NSString stringWithFormat:@"%@", mapurl];
+//        
+//        NSData *data = [[NSData alloc] initWithBase64EncodedString:url options:0];
+//        
+//        NSString *text = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+//        //
+//        NSData *decodedData = [[NSData alloc] initWithBase64EncodedString:url options:0];
+//        NSString *decodedString = [[NSString alloc] initWithData:decodedData encoding:NSUTF8StringEncoding];
+//        
+//         NSData *d6 = [[NSData alloc] initWithBase64EncodedString:url options:0];
+//
+//        
+//        NSLog(@"mapurl = %@",mapurl);
+//        
+//        NSLog(@"data = %@",data);
+//        
+//        NSLog(@"url = %@",url);
+//        
+//        NSLog(@"text = %@",text);
+//        
+//        NSLog(@"d6 = %@",d6);
+//        
+//        NSLog(@"decodedString = %@",decodedString);
         
-        NSString * url = [NSString stringWithFormat:@"%@", mapurl];
         
-        NSData *data = [[NSData alloc] initWithBase64EncodedString:url options:0];
-        
-        NSString *text = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-        //
-        NSData *decodedData = [[NSData alloc] initWithBase64EncodedString:url options:0];
-        NSString *decodedString = [[NSString alloc] initWithData:decodedData encoding:NSUTF8StringEncoding];
-        
-         NSData *d6 = [[NSData alloc] initWithBase64EncodedString:url options:0];
-
-        
-        NSLog(@"mapurl = %@",mapurl);
-        
-        NSLog(@"data = %@",data);
-        
-        NSLog(@"url = %@",url);
-        
-        NSLog(@"text = %@",text);
-        
-        NSLog(@"d6 = %@",d6);
-        
-        NSLog(@"decodedString = %@",decodedString);
-        
-        NSURLRequest *request=[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.baidu.com"]];
-        _carWebView.backgroundColor = [UIColor redColor];
-        [self.carWebView loadRequest:request];
         
         
         

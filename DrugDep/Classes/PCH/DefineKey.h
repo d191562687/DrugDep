@@ -20,6 +20,12 @@
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 
+#define screen_width [UIScreen mainScreen].bounds.size.width
+#define screen_height [UIScreen mainScreen].bounds.size.height
+
+#define nav_height 64
+#define tabbar_height 48
+
 // 主色调
 #define MainColor RGBACOLOR(18, 150, 219, 1)
 // DisEnbled颜色
@@ -33,7 +39,11 @@
 // 控制器背景颜色 RGBACOLOR(250, 246, 232, 1)
 #define BackColor RGBACOLOR(239, 239, 249, 1)
 
-
+#define WT_COLOR_TABBAR    [UIColor colorWithRed:65.0/255 green:164.0/255 blue:249.0/255 alpha:1]
+//
+#define IMG(name)       [UIImage imageNamed:name]
+//
+#define RGB_COLOR(r,g,b)     [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
 // 子线程
 #define ZCGlobalQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 // 主线程

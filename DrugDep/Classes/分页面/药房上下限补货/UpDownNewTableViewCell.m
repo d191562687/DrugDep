@@ -7,9 +7,9 @@
 //
 
 #import "UpDownNewTableViewCell.h"
+#import "UITextField+IndexPath.h"
 
-
-@interface UpDownNewTableViewCell ()
+@interface UpDownNewTableViewCell ()<UITextFieldDelegate>
 //名称
 @property (strong, nonatomic) IBOutlet UILabel *LdrugName;
 //规格
@@ -22,13 +22,15 @@
 @property (weak, nonatomic) IBOutlet NSString * allPrice;
 //总价显示
 @property (weak, nonatomic) IBOutlet UILabel * allPriceText;
-
 //购买数量
-@property (weak, nonatomic) IBOutlet UILabel *countLabel;
+@property (weak, nonatomic) IBOutlet UITextField *countLabel;
+@property (weak, nonatomic) IBOutlet UILabel *quantity;
 
 @property (weak, nonatomic) IBOutlet UIButton *minusBtu;
 
+@property (nonatomic, copy) NSString *string;
 
+@property (strong,nonatomic) MBProgressHUD * HUD;
 @end
 
 @implementation UpDownNewTableViewCell
@@ -91,12 +93,15 @@
 }
 
 
+
+
 /**
  重写set方法
  
  @param actFrontModel 赋值操作
  */
 - (void)setActFrontModel:(UpDownNewModel *)actFrontModel
+            andIndexPath:(NSIndexPath *)indexPath
 {
     
     //为模型赋值
@@ -106,12 +111,26 @@
     self.LdrugSpec.text = actFrontModel.drugSpec;
     self.Lmanufacturer.text = actFrontModel.manufacturer;
     self.LcostPrice.text =[NSString stringWithFormat:@"¥%@",actFrontModel.costPrice];
+    self.quantity.text = [NSString stringWithFormat:@"最多补货：%@",actFrontModel.quantity];
+    self.countLabel.text = actFrontModel.quantity;
 
+    self.countLabel.text = [NSString stringWithFormat:@"%@",actFrontModel.quantity];
+    double total = self.countLabel.text.doubleValue * _ActFrontModel.costPrice.doubleValue;
+    self.allPriceText.text = [NSString stringWithFormat:@"%.2f",total];
+    
+    self.countLabel.indexPath = indexPath;
     // 根据count决定countLabel显示文字
-    self.countLabel.text = [NSString stringWithFormat:@"%ld",(long)self.ActFrontModel.count];
+//    self.countLabel.text = [NSString stringWithFormat:@"%ld",(long)self.ActFrontModel.count];
     // 根据count决定减号按钮是否能够被点击（如果不写这一行代码，会出现cell复用)
     //    _minusBtu.enabled = (actFrontModel.count > 0);;
     
 }
+
+//- (void)setDataString:(NSString *)dataString andIndexPath:(NSIndexPath *)indexPath{
+//    // 核心代码
+//    self.countLabel.indexPath = indexPath;
+//    self.countLabel.text = dataString;
+//}
+
 
 @end

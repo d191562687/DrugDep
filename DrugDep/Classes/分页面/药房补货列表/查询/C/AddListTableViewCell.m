@@ -38,7 +38,7 @@
     _officeCode.text = actAddListModel.officeCode;
     //判断状态
     if ([actAddListModel.status  isEqual: @"1"]) {
-        _status.text = @"暂停";
+        _status.text = @"暂存";
     }else if ([actAddListModel.status  isEqual: @"2"]){
         _status.text = @"提交";
     }

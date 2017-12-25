@@ -67,6 +67,9 @@
     _minimun.text = actPurchaseModel.minimun;
     _offer.text = actPurchaseModel.offer;
     _catalog.text = actPurchaseModel.catalog;
+    
+    
+
 
 }
 

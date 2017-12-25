@@ -47,17 +47,33 @@
 		F104E2771F3C3C23005EDEE3 /* AStatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F104E2761F3C3C23005EDEE3 /* AStatisticsViewController.m */; };
 		F104E27A1F3C3C32005EDEE3 /* BStatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F104E2791F3C3C32005EDEE3 /* BStatisticsViewController.m */; };
 		F104E27D1F3C3C3E005EDEE3 /* CStatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F104E27C1F3C3C3E005EDEE3 /* CStatisticsViewController.m */; };
+		F112C8141FECDA7E00BFB5B1 /* TNCustomSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = F112C8131FECDA7E00BFB5B1 /* TNCustomSegment.m */; };
+		F1257A861FB2DFF20010A0F7 /* EveryNewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1257A851FB2DFF20010A0F7 /* EveryNewModel.m */; };
+		F1257A8A1FB2E03B0010A0F7 /* EveryNewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1257A881FB2E03B0010A0F7 /* EveryNewTableViewCell.m */; };
+		F1257A8B1FB2E03B0010A0F7 /* EveryNewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1257A891FB2E03B0010A0F7 /* EveryNewTableViewCell.xib */; };
 		F1499BDF1EFB627B00B6042B /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1499BDE1EFB627B00B6042B /* HomeTableViewCell.m */; };
 		F1499C091EFB9CF700B6042B /* TrackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1499C071EFB9CF700B6042B /* TrackViewController.m */; };
 		F1499C0A1EFB9CF700B6042B /* TrackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1499C081EFB9CF700B6042B /* TrackViewController.xib */; };
-		F1499C181EFB9D3900B6042B /* EveryDayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1499C161EFB9D3900B6042B /* EveryDayViewController.m */; };
-		F1499C191EFB9D3900B6042B /* EveryDayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1499C171EFB9D3900B6042B /* EveryDayViewController.xib */; };
+		F14D49FB1FCAA6F5000BDAAA /* HisSearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F14D49FA1FCAA6F5000BDAAA /* HisSearchModel.m */; };
+		F14D49FF1FCAA76E000BDAAA /* HisSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F14D49FD1FCAA76E000BDAAA /* HisSearchTableViewCell.m */; };
+		F14D4A001FCAA76E000BDAAA /* HisSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F14D49FE1FCAA76E000BDAAA /* HisSearchTableViewCell.xib */; };
 		F154FC9D1F9EE560002DEC70 /* AddListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F154FC9C1F9EE560002DEC70 /* AddListViewController.m */; };
 		F1550A751F9F2B09007496C4 /* AddListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1550A741F9F2B09007496C4 /* AddListModel.m */; };
 		F1550A791F9F2B21007496C4 /* AddListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1550A771F9F2B21007496C4 /* AddListTableViewCell.m */; };
 		F1550A7A1F9F2B21007496C4 /* AddListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1550A781F9F2B21007496C4 /* AddListTableViewCell.xib */; };
 		F15B503D1F5F8A8100900C4E /* AddListTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F15B503C1F5F8A8100900C4E /* AddListTextViewController.m */; };
+		F166D94D1FE0C8EB007CBE8D /* ScanListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F166D94B1FE0C8EB007CBE8D /* ScanListTableViewCell.m */; };
+		F166D94E1FE0C8EB007CBE8D /* ScanListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F166D94C1FE0C8EB007CBE8D /* ScanListTableViewCell.xib */; };
+		F166D9511FE0C90B007CBE8D /* ScanListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F166D9501FE0C90B007CBE8D /* ScanListModel.m */; };
+		F168A25D1FD51C6300CC97B0 /* ShopCarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F168A25C1FD51C6300CC97B0 /* ShopCarModel.m */; };
+		F168A2641FD51F2B00CC97B0 /* GoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F168A2621FD51F2B00CC97B0 /* GoodsCell.m */; };
+		F168A2651FD51F2B00CC97B0 /* GoodsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F168A2631FD51F2B00CC97B0 /* GoodsCell.xib */; };
+		F16E0DB01FB9223200A2F23F /* EveryShopHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F16E0DAF1FB9223200A2F23F /* EveryShopHeaderFooterView.m */; };
 		F17492151F98B8A1002A359D /* HQPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F17492141F98B8A0002A359D /* HQPickerView.m */; };
+		F1787AE61FF0A825009B14E1 /* PasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1787AE51FF0A825009B14E1 /* PasswordView.m */; };
+		F17ADC431FCFECEF005E08B2 /* DifferenceListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F17ADC421FCFECEF005E08B2 /* DifferenceListModel.m */; };
+		F17ADC471FCFED0E005E08B2 /* DifferenceListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F17ADC451FCFED0E005E08B2 /* DifferenceListTableViewCell.m */; };
+		F17ADC481FCFED0E005E08B2 /* DifferenceListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F17ADC461FCFED0E005E08B2 /* DifferenceListTableViewCell.xib */; };
 		F18642191F023B5700054425 /* UpdownHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = F18642181F023B5700054425 /* UpdownHeadView.m */; };
 		F1866B391F5FCE2F0072C131 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1866B271F5FCE2F0072C131 /* BaseView.m */; };
 		F1866B3A1F5FCE2F0072C131 /* BRDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1866B2B1F5FCE2F0072C131 /* BRDatePickerView.m */; };
@@ -66,20 +82,44 @@
 		F1866B431F5FCE820072C131 /* NSDate+BRAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = F1866B411F5FCE820072C131 /* NSDate+BRAdd.m */; };
 		F192E3161F7B7F6700C1EEB9 /* UpDownNewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F192E3141F7B7F6700C1EEB9 /* UpDownNewTableViewCell.m */; };
 		F192E3171F7B7F6700C1EEB9 /* UpDownNewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F192E3151F7B7F6700C1EEB9 /* UpDownNewTableViewCell.xib */; };
+		F19364AC1FAAEE0C002F0CE2 /* EveryDayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19364AA1FAAEE0C002F0CE2 /* EveryDayViewController.m */; };
+		F19364B51FAAF202002F0CE2 /* EveryNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19364B31FAAF202002F0CE2 /* EveryNewViewController.m */; };
+		F19364B61FAAF202002F0CE2 /* EveryNewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F19364B41FAAF202002F0CE2 /* EveryNewViewController.xib */; };
 		F198816D1F7DF48A000D1343 /* UpDownNewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F198816C1F7DF48A000D1343 /* UpDownNewModel.m */; };
+		F1A7ECFC1FCEAEA60028CB18 /* ScanListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A7ECFB1FCEAEA60028CB18 /* ScanListViewController.m */; };
+		F1B2A1D51FC2815D0056CCD3 /* EceryHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B2A1D41FC2815D0056CCD3 /* EceryHeadView.m */; };
 		F1B6FBF81F396097000433A6 /* FrontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B6FBF71F396097000433A6 /* FrontViewController.m */; };
 		F1B8CB6A1F676D9D007D4383 /* PurchaseSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B8CB691F676D9D007D4383 /* PurchaseSearchViewController.m */; };
 		F1B8CB6E1F676E51007D4383 /* PurchaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B8CB6D1F676E51007D4383 /* PurchaseModel.m */; };
 		F1B8CB731F676E88007D4383 /* PurchaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B8CB711F676E88007D4383 /* PurchaseTableViewCell.m */; };
 		F1B8CB741F676E88007D4383 /* PurchaseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1B8CB721F676E88007D4383 /* PurchaseTableViewCell.xib */; };
+		F1BC20B41FA80B50006A3F25 /* CarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BC20B21FA80B50006A3F25 /* CarViewController.m */; };
+		F1BC20B51FA80B50006A3F25 /* CarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1BC20B31FA80B50006A3F25 /* CarViewController.xib */; };
 		F1BCCD1E1F1C8A0F0037B552 /* ZJBLStoreShopTypeAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BCCD1D1F1C8A0F0037B552 /* ZJBLStoreShopTypeAlert.m */; };
 		F1BCCD211F1C8A1F0037B552 /* UIColor+JGHexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BCCD201F1C8A1F0037B552 /* UIColor+JGHexColor.m */; };
+		F1CE37C51FA1C80D005F23D0 /* comboDownArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = F1CE37BF1FA1C80D005F23D0 /* comboDownArrow.png */; };
+		F1CE37C61FA1C80D005F23D0 /* comboDownArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F1CE37C01FA1C80D005F23D0 /* comboDownArrow@2x.png */; };
+		F1CE37C71FA1C80D005F23D0 /* FSComboListView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CE37C21FA1C80D005F23D0 /* FSComboListView.m */; };
+		F1CE37C81FA1C80D005F23D0 /* UIImage+FSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CE37C41FA1C80D005F23D0 /* UIImage+FSAdditions.m */; };
+		F1CEF95B1FC7BC8100C18D42 /* HisIntoSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CEF95A1FC7BC8100C18D42 /* HisIntoSearchViewController.m */; };
+		F1D418C51FD6226800323FC4 /* BcodeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D418C41FD6226800323FC4 /* BcodeModel.m */; };
+		F1D418C91FD6228400323FC4 /* BcodeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D418C71FD6228400323FC4 /* BcodeTableViewCell.m */; };
+		F1D418CA1FD6228400323FC4 /* BcodeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1D418C81FD6228400323FC4 /* BcodeTableViewCell.xib */; };
 		F1D717DB1F60D5FC007C723A /* StockViewControllerTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D717DA1F60D5FC007C723A /* StockViewControllerTextViewController.m */; };
 		F1D717DE1F60E172007C723A /* PurchaseViewTextController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D717DD1F60E172007C723A /* PurchaseViewTextController.m */; };
 		F1D88FB41F9DC7EC007602DF /* StockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D88FB31F9DC7EC007602DF /* StockModel.m */; };
 		F1D88FB81F9DC9D0007602DF /* StockTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D88FB61F9DC9D0007602DF /* StockTableViewCell.m */; };
 		F1D88FB91F9DC9D0007602DF /* StockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1D88FB71F9DC9D0007602DF /* StockTableViewCell.xib */; };
 		F1D88FBD1F9DD5A4007602DF /* StockSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D88FBC1F9DD5A4007602DF /* StockSearchViewController.m */; };
+		F1DB210E1FC8F7E500E56F76 /* HisIntoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DB210D1FC8F7E500E56F76 /* HisIntoViewController.m */; };
+		F1DE73141FCBAE370099DF4D /* HisDetailedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DE73131FCBAE370099DF4D /* HisDetailedViewController.m */; };
+		F1DE73171FCBE6760099DF4D /* HisDetailedHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DE73161FCBE6760099DF4D /* HisDetailedHeadView.m */; };
+		F1DF2A021FD7837700D15206 /* UITextField+IndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DF2A011FD7837700D15206 /* UITextField+IndexPath.m */; };
+		F1F6BDEC1FBD15D100D07B86 /* WTShopcatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F6BDE31FBD15D000D07B86 /* WTShopcatViewController.m */; };
+		F1F6BDED1FBD15D100D07B86 /* WTShopcatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F6BDE41FBD15D000D07B86 /* WTShopcatCell.m */; };
+		F1F6BDEE1FBD15D100D07B86 /* WTShopcatHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F6BDE51FBD15D000D07B86 /* WTShopcatHeadView.m */; };
+		F1F6BDEF1FBD15D100D07B86 /* WTShopcatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F6BDEA1FBD15D000D07B86 /* WTShopcatModel.m */; };
+		F1F6BDF01FBD15D100D07B86 /* WTShopcatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1F6BDEB1FBD15D100D07B86 /* WTShopcatCell.xib */; };
 		F1F9C1CC1F3AAE1000CDD3BF /* FrontViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F9C1CB1F3AAE1000CDD3BF /* FrontViewModel.m */; };
 		F1F9C1D21F3AB34A00CDD3BF /* FrontTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F9C1D01F3AB34A00CDD3BF /* FrontTableViewCell.m */; };
 		F1F9C1D31F3AB34A00CDD3BF /* FrontTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1F9C1D11F3AB34A00CDD3BF /* FrontTableViewCell.xib */; };
@@ -188,14 +228,23 @@
 		F104E2791F3C3C32005EDEE3 /* BStatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BStatisticsViewController.m; sourceTree = "<group>"; };
 		F104E27B1F3C3C3E005EDEE3 /* CStatisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CStatisticsViewController.h; sourceTree = "<group>"; };
 		F104E27C1F3C3C3E005EDEE3 /* CStatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CStatisticsViewController.m; sourceTree = "<group>"; };
+		F112C8121FECDA7D00BFB5B1 /* TNCustomSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNCustomSegment.h; sourceTree = "<group>"; };
+		F112C8131FECDA7E00BFB5B1 /* TNCustomSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNCustomSegment.m; sourceTree = "<group>"; };
+		F1257A841FB2DFF20010A0F7 /* EveryNewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EveryNewModel.h; sourceTree = "<group>"; };
+		F1257A851FB2DFF20010A0F7 /* EveryNewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EveryNewModel.m; sourceTree = "<group>"; };
+		F1257A871FB2E03B0010A0F7 /* EveryNewTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EveryNewTableViewCell.h; sourceTree = "<group>"; };
+		F1257A881FB2E03B0010A0F7 /* EveryNewTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EveryNewTableViewCell.m; sourceTree = "<group>"; };
+		F1257A891FB2E03B0010A0F7 /* EveryNewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EveryNewTableViewCell.xib; sourceTree = "<group>"; };
 		F1499BDD1EFB627B00B6042B /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
 		F1499BDE1EFB627B00B6042B /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
 		F1499C061EFB9CF700B6042B /* TrackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackViewController.h; sourceTree = "<group>"; };
 		F1499C071EFB9CF700B6042B /* TrackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackViewController.m; sourceTree = "<group>"; };
 		F1499C081EFB9CF700B6042B /* TrackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrackViewController.xib; sourceTree = "<group>"; };
-		F1499C151EFB9D3900B6042B /* EveryDayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EveryDayViewController.h; sourceTree = "<group>"; };
-		F1499C161EFB9D3900B6042B /* EveryDayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EveryDayViewController.m; sourceTree = "<group>"; };
-		F1499C171EFB9D3900B6042B /* EveryDayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EveryDayViewController.xib; sourceTree = "<group>"; };
+		F14D49F91FCAA6F5000BDAAA /* HisSearchModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HisSearchModel.h; sourceTree = "<group>"; };
+		F14D49FA1FCAA6F5000BDAAA /* HisSearchModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HisSearchModel.m; sourceTree = "<group>"; };
+		F14D49FC1FCAA76E000BDAAA /* HisSearchTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HisSearchTableViewCell.h; sourceTree = "<group>"; };
+		F14D49FD1FCAA76E000BDAAA /* HisSearchTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HisSearchTableViewCell.m; sourceTree = "<group>"; };
+		F14D49FE1FCAA76E000BDAAA /* HisSearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HisSearchTableViewCell.xib; sourceTree = "<group>"; };
 		F154FC9B1F9EE560002DEC70 /* AddListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddListViewController.h; sourceTree = "<group>"; };
 		F154FC9C1F9EE560002DEC70 /* AddListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddListViewController.m; sourceTree = "<group>"; };
 		F1550A731F9F2B09007496C4 /* AddListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddListModel.h; sourceTree = "<group>"; };
@@ -205,8 +254,27 @@
 		F1550A781F9F2B21007496C4 /* AddListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddListTableViewCell.xib; sourceTree = "<group>"; };
 		F15B503B1F5F8A8100900C4E /* AddListTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddListTextViewController.h; sourceTree = "<group>"; };
 		F15B503C1F5F8A8100900C4E /* AddListTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddListTextViewController.m; sourceTree = "<group>"; };
+		F166D94A1FE0C8EB007CBE8D /* ScanListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanListTableViewCell.h; sourceTree = "<group>"; };
+		F166D94B1FE0C8EB007CBE8D /* ScanListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanListTableViewCell.m; sourceTree = "<group>"; };
+		F166D94C1FE0C8EB007CBE8D /* ScanListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScanListTableViewCell.xib; sourceTree = "<group>"; };
+		F166D94F1FE0C90B007CBE8D /* ScanListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanListModel.h; sourceTree = "<group>"; };
+		F166D9501FE0C90B007CBE8D /* ScanListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanListModel.m; sourceTree = "<group>"; };
+		F168A25B1FD51C6200CC97B0 /* ShopCarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopCarModel.h; sourceTree = "<group>"; };
+		F168A25C1FD51C6300CC97B0 /* ShopCarModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopCarModel.m; sourceTree = "<group>"; };
+		F168A2611FD51F2B00CC97B0 /* GoodsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodsCell.h; sourceTree = "<group>"; };
+		F168A2621FD51F2B00CC97B0 /* GoodsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodsCell.m; sourceTree = "<group>"; };
+		F168A2631FD51F2B00CC97B0 /* GoodsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoodsCell.xib; sourceTree = "<group>"; };
+		F16E0DAE1FB9223200A2F23F /* EveryShopHeaderFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EveryShopHeaderFooterView.h; sourceTree = "<group>"; };
+		F16E0DAF1FB9223200A2F23F /* EveryShopHeaderFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EveryShopHeaderFooterView.m; sourceTree = "<group>"; };
 		F17492131F98B8A0002A359D /* HQPickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HQPickerView.h; sourceTree = "<group>"; };
 		F17492141F98B8A0002A359D /* HQPickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HQPickerView.m; sourceTree = "<group>"; };
+		F1787AE41FF0A825009B14E1 /* PasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordView.h; sourceTree = "<group>"; };
+		F1787AE51FF0A825009B14E1 /* PasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordView.m; sourceTree = "<group>"; };
+		F17ADC411FCFECEF005E08B2 /* DifferenceListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DifferenceListModel.h; sourceTree = "<group>"; };
+		F17ADC421FCFECEF005E08B2 /* DifferenceListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DifferenceListModel.m; sourceTree = "<group>"; };
+		F17ADC441FCFED0E005E08B2 /* DifferenceListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DifferenceListTableViewCell.h; sourceTree = "<group>"; };
+		F17ADC451FCFED0E005E08B2 /* DifferenceListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DifferenceListTableViewCell.m; sourceTree = "<group>"; };
+		F17ADC461FCFED0E005E08B2 /* DifferenceListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DifferenceListTableViewCell.xib; sourceTree = "<group>"; };
 		F18642171F023B5700054425 /* UpdownHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdownHeadView.h; sourceTree = "<group>"; };
 		F18642181F023B5700054425 /* UpdownHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdownHeadView.m; sourceTree = "<group>"; };
 		F1866B261F5FCE2F0072C131 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
@@ -223,8 +291,17 @@
 		F192E3131F7B7F6700C1EEB9 /* UpDownNewTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpDownNewTableViewCell.h; sourceTree = "<group>"; };
 		F192E3141F7B7F6700C1EEB9 /* UpDownNewTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpDownNewTableViewCell.m; sourceTree = "<group>"; };
 		F192E3151F7B7F6700C1EEB9 /* UpDownNewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpDownNewTableViewCell.xib; sourceTree = "<group>"; };
+		F19364A91FAAEE0C002F0CE2 /* EveryDayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EveryDayViewController.h; sourceTree = "<group>"; };
+		F19364AA1FAAEE0C002F0CE2 /* EveryDayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EveryDayViewController.m; sourceTree = "<group>"; };
+		F19364B21FAAF202002F0CE2 /* EveryNewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EveryNewViewController.h; sourceTree = "<group>"; };
+		F19364B31FAAF202002F0CE2 /* EveryNewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EveryNewViewController.m; sourceTree = "<group>"; };
+		F19364B41FAAF202002F0CE2 /* EveryNewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EveryNewViewController.xib; sourceTree = "<group>"; };
 		F198816B1F7DF48A000D1343 /* UpDownNewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpDownNewModel.h; sourceTree = "<group>"; };
 		F198816C1F7DF48A000D1343 /* UpDownNewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpDownNewModel.m; sourceTree = "<group>"; };
+		F1A7ECFA1FCEAEA60028CB18 /* ScanListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanListViewController.h; sourceTree = "<group>"; };
+		F1A7ECFB1FCEAEA60028CB18 /* ScanListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanListViewController.m; sourceTree = "<group>"; };
+		F1B2A1D31FC2815D0056CCD3 /* EceryHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EceryHeadView.h; sourceTree = "<group>"; };
+		F1B2A1D41FC2815D0056CCD3 /* EceryHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EceryHeadView.m; sourceTree = "<group>"; };
 		F1B6FBF61F396097000433A6 /* FrontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontViewController.h; sourceTree = "<group>"; };
 		F1B6FBF71F396097000433A6 /* FrontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontViewController.m; sourceTree = "<group>"; };
 		F1B8CB681F676D9D007D4383 /* PurchaseSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseSearchViewController.h; sourceTree = "<group>"; };
@@ -234,10 +311,26 @@
 		F1B8CB701F676E88007D4383 /* PurchaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseTableViewCell.h; sourceTree = "<group>"; };
 		F1B8CB711F676E88007D4383 /* PurchaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseTableViewCell.m; sourceTree = "<group>"; };
 		F1B8CB721F676E88007D4383 /* PurchaseTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PurchaseTableViewCell.xib; sourceTree = "<group>"; };
+		F1BC20B11FA80B50006A3F25 /* CarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarViewController.h; sourceTree = "<group>"; };
+		F1BC20B21FA80B50006A3F25 /* CarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarViewController.m; sourceTree = "<group>"; };
+		F1BC20B31FA80B50006A3F25 /* CarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarViewController.xib; sourceTree = "<group>"; };
 		F1BCCD1C1F1C8A0F0037B552 /* ZJBLStoreShopTypeAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJBLStoreShopTypeAlert.h; sourceTree = "<group>"; };
 		F1BCCD1D1F1C8A0F0037B552 /* ZJBLStoreShopTypeAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJBLStoreShopTypeAlert.m; sourceTree = "<group>"; };
 		F1BCCD1F1F1C8A1F0037B552 /* UIColor+JGHexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JGHexColor.h"; sourceTree = "<group>"; };
 		F1BCCD201F1C8A1F0037B552 /* UIColor+JGHexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JGHexColor.m"; sourceTree = "<group>"; };
+		F1CE37BF1FA1C80D005F23D0 /* comboDownArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = comboDownArrow.png; sourceTree = "<group>"; };
+		F1CE37C01FA1C80D005F23D0 /* comboDownArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "comboDownArrow@2x.png"; sourceTree = "<group>"; };
+		F1CE37C11FA1C80D005F23D0 /* FSComboListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSComboListView.h; sourceTree = "<group>"; };
+		F1CE37C21FA1C80D005F23D0 /* FSComboListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSComboListView.m; sourceTree = "<group>"; };
+		F1CE37C31FA1C80D005F23D0 /* UIImage+FSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FSAdditions.h"; sourceTree = "<group>"; };
+		F1CE37C41FA1C80D005F23D0 /* UIImage+FSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FSAdditions.m"; sourceTree = "<group>"; };
+		F1CEF9591FC7BC8100C18D42 /* HisIntoSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HisIntoSearchViewController.h; sourceTree = "<group>"; };
+		F1CEF95A1FC7BC8100C18D42 /* HisIntoSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HisIntoSearchViewController.m; sourceTree = "<group>"; };
+		F1D418C31FD6226800323FC4 /* BcodeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BcodeModel.h; sourceTree = "<group>"; };
+		F1D418C41FD6226800323FC4 /* BcodeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BcodeModel.m; sourceTree = "<group>"; };
+		F1D418C61FD6228400323FC4 /* BcodeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BcodeTableViewCell.h; sourceTree = "<group>"; };
+		F1D418C71FD6228400323FC4 /* BcodeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BcodeTableViewCell.m; sourceTree = "<group>"; };
+		F1D418C81FD6228400323FC4 /* BcodeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BcodeTableViewCell.xib; sourceTree = "<group>"; };
 		F1D717D91F60D5FC007C723A /* StockViewControllerTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockViewControllerTextViewController.h; sourceTree = "<group>"; };
 		F1D717DA1F60D5FC007C723A /* StockViewControllerTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockViewControllerTextViewController.m; sourceTree = "<group>"; };
 		F1D717DC1F60E172007C723A /* PurchaseViewTextController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseViewTextController.h; sourceTree = "<group>"; };
@@ -249,6 +342,23 @@
 		F1D88FB71F9DC9D0007602DF /* StockTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockTableViewCell.xib; sourceTree = "<group>"; };
 		F1D88FBB1F9DD5A4007602DF /* StockSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockSearchViewController.h; sourceTree = "<group>"; };
 		F1D88FBC1F9DD5A4007602DF /* StockSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockSearchViewController.m; sourceTree = "<group>"; };
+		F1DB210C1FC8F7E500E56F76 /* HisIntoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HisIntoViewController.h; sourceTree = "<group>"; };
+		F1DB210D1FC8F7E500E56F76 /* HisIntoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HisIntoViewController.m; sourceTree = "<group>"; };
+		F1DE73121FCBAE370099DF4D /* HisDetailedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HisDetailedViewController.h; sourceTree = "<group>"; };
+		F1DE73131FCBAE370099DF4D /* HisDetailedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HisDetailedViewController.m; sourceTree = "<group>"; };
+		F1DE73151FCBE6760099DF4D /* HisDetailedHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HisDetailedHeadView.h; sourceTree = "<group>"; };
+		F1DE73161FCBE6760099DF4D /* HisDetailedHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HisDetailedHeadView.m; sourceTree = "<group>"; };
+		F1DF2A001FD7837600D15206 /* UITextField+IndexPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+IndexPath.h"; sourceTree = "<group>"; };
+		F1DF2A011FD7837700D15206 /* UITextField+IndexPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+IndexPath.m"; sourceTree = "<group>"; };
+		F1F6BDE31FBD15D000D07B86 /* WTShopcatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTShopcatViewController.m; sourceTree = "<group>"; };
+		F1F6BDE41FBD15D000D07B86 /* WTShopcatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTShopcatCell.m; sourceTree = "<group>"; };
+		F1F6BDE51FBD15D000D07B86 /* WTShopcatHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTShopcatHeadView.m; sourceTree = "<group>"; };
+		F1F6BDE61FBD15D000D07B86 /* WTShopcatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTShopcatCell.h; sourceTree = "<group>"; };
+		F1F6BDE71FBD15D000D07B86 /* WTShopcatModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTShopcatModel.h; sourceTree = "<group>"; };
+		F1F6BDE81FBD15D000D07B86 /* WTShopcatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTShopcatViewController.h; sourceTree = "<group>"; };
+		F1F6BDE91FBD15D000D07B86 /* WTShopcatHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTShopcatHeadView.h; sourceTree = "<group>"; };
+		F1F6BDEA1FBD15D000D07B86 /* WTShopcatModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTShopcatModel.m; sourceTree = "<group>"; };
+		F1F6BDEB1FBD15D100D07B86 /* WTShopcatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTShopcatCell.xib; sourceTree = "<group>"; };
 		F1F9C1CA1F3AAE1000CDD3BF /* FrontViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontViewModel.h; sourceTree = "<group>"; };
 		F1F9C1CB1F3AAE1000CDD3BF /* FrontViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontViewModel.m; sourceTree = "<group>"; };
 		F1F9C1CF1F3AB34A00CDD3BF /* FrontTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontTableViewCell.h; sourceTree = "<group>"; };
@@ -362,7 +472,6 @@
 			children = (
 				F1499BE01EFB9A3000B6042B /* 分页面 */,
 				3B332F271EF8CDDC004B2135 /* 管理器 */,
-				3B332F281EF8CDDC004B2135 /* 其他类库 */,
 				3B332F291EF8CDDC004B2135 /* 主界面 */,
 				3B332F2A1EF8CDDC004B2135 /* 主要基类 */,
 				3B332F2B1EF8CDDC004B2135 /* PCH */,
@@ -373,6 +482,7 @@
 		3B332F271EF8CDDC004B2135 /* 管理器 */ = {
 			isa = PBXGroup;
 			children = (
+				3B332F281EF8CDDC004B2135 /* 其他类库 */,
 				3B332F6D1EF8E31A004B2135 /* HomeManager */,
 				3B332F671EF8E31A004B2135 /* 网络请求 */,
 				3B332F6C1EF8E31A004B2135 /* 用户信息 */,
@@ -429,6 +539,7 @@
 		3B332F3A1EF8E1C3004B2135 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				F1CE37BE1FA1C80D005F23D0 /* FSComboListView */,
 				3B332F561EF8E1E6004B2135 /* 气泡提示 */,
 				3B332F591EF8E1E6004B2135 /* MBProgressHUD */,
 			);
@@ -557,12 +668,9 @@
 		F104E2741F3C3BA4005EDEE3 /* 配送子页面 */ = {
 			isa = PBXGroup;
 			children = (
-				F104E2751F3C3C23005EDEE3 /* AStatisticsViewController.h */,
-				F104E2761F3C3C23005EDEE3 /* AStatisticsViewController.m */,
-				F104E2781F3C3C32005EDEE3 /* BStatisticsViewController.h */,
-				F104E2791F3C3C32005EDEE3 /* BStatisticsViewController.m */,
-				F104E27B1F3C3C3E005EDEE3 /* CStatisticsViewController.h */,
-				F104E27C1F3C3C3E005EDEE3 /* CStatisticsViewController.m */,
+				F17ADC401FCFEAB8005E08B2 /* C */,
+				F17ADC3F1FCFEAB2005E08B2 /* V */,
+				F17ADC3E1FCFEAA6005E08B2 /* M */,
 			);
 			name = "配送子页面";
 			sourceTree = "<group>";
@@ -570,6 +678,7 @@
 		F1499BE01EFB9A3000B6042B /* 分页面 */ = {
 			isa = PBXGroup;
 			children = (
+				F1CEF9551FC7BC1E00C18D42 /* HIS入库 */,
 				F1499BE31EFB9A3000B6042B /* 药品采购目录遴选 */,
 				F104E26A1F3C3336005EDEE3 /* 药房补货列表 */,
 				F1499BE11EFB9A3000B6042B /* 前置库库存查询 */,
@@ -600,6 +709,9 @@
 				F1BCCD201F1C8A1F0037B552 /* UIColor+JGHexColor.m */,
 				F1BCCD1C1F1C8A0F0037B552 /* ZJBLStoreShopTypeAlert.h */,
 				F1BCCD1D1F1C8A0F0037B552 /* ZJBLStoreShopTypeAlert.m */,
+				F1BC20B11FA80B50006A3F25 /* CarViewController.h */,
+				F1BC20B21FA80B50006A3F25 /* CarViewController.m */,
+				F1BC20B31FA80B50006A3F25 /* CarViewController.xib */,
 				F1499C061EFB9CF700B6042B /* TrackViewController.h */,
 				F1499C071EFB9CF700B6042B /* TrackViewController.m */,
 				F1499C081EFB9CF700B6042B /* TrackViewController.xib */,
@@ -634,9 +746,9 @@
 		F1499BE51EFB9A3000B6042B /* 药房日均量补货 */ = {
 			isa = PBXGroup;
 			children = (
-				F1499C151EFB9D3900B6042B /* EveryDayViewController.h */,
-				F1499C161EFB9D3900B6042B /* EveryDayViewController.m */,
-				F1499C171EFB9D3900B6042B /* EveryDayViewController.xib */,
+				F19364A91FAAEE0C002F0CE2 /* EveryDayViewController.h */,
+				F19364AA1FAAEE0C002F0CE2 /* EveryDayViewController.m */,
+				F19364AE1FAAEE68002F0CE2 /* 新增 */,
 			);
 			path = "药房日均量补货";
 			sourceTree = "<group>";
@@ -656,6 +768,7 @@
 		F1499BE71EFB9A3000B6042B /* 配送统计信息查看 */ = {
 			isa = PBXGroup;
 			children = (
+				F1787AE31FF0A825009B14E1 /* passwordView */,
 				F104E2711F3C39CD005EDEE3 /* StatisticsViewController.h */,
 				F104E2721F3C39CD005EDEE3 /* StatisticsViewController.m */,
 				F104E2741F3C3BA4005EDEE3 /* 配送子页面 */,
@@ -691,6 +804,66 @@
 				F1550A781F9F2B21007496C4 /* AddListTableViewCell.xib */,
 			);
 			path = C;
+			sourceTree = "<group>";
+		};
+		F1787AE31FF0A825009B14E1 /* passwordView */ = {
+			isa = PBXGroup;
+			children = (
+				F1787AE41FF0A825009B14E1 /* PasswordView.h */,
+				F1787AE51FF0A825009B14E1 /* PasswordView.m */,
+			);
+			path = passwordView;
+			sourceTree = "<group>";
+		};
+		F17ADC3E1FCFEAA6005E08B2 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				F168A25B1FD51C6200CC97B0 /* ShopCarModel.h */,
+				F168A25C1FD51C6300CC97B0 /* ShopCarModel.m */,
+				F17ADC411FCFECEF005E08B2 /* DifferenceListModel.h */,
+				F17ADC421FCFECEF005E08B2 /* DifferenceListModel.m */,
+				F1D418C31FD6226800323FC4 /* BcodeModel.h */,
+				F1D418C41FD6226800323FC4 /* BcodeModel.m */,
+				F166D94F1FE0C90B007CBE8D /* ScanListModel.h */,
+				F166D9501FE0C90B007CBE8D /* ScanListModel.m */,
+			);
+			name = M;
+			sourceTree = "<group>";
+		};
+		F17ADC3F1FCFEAB2005E08B2 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				F168A2611FD51F2B00CC97B0 /* GoodsCell.h */,
+				F168A2621FD51F2B00CC97B0 /* GoodsCell.m */,
+				F168A2631FD51F2B00CC97B0 /* GoodsCell.xib */,
+				F17ADC441FCFED0E005E08B2 /* DifferenceListTableViewCell.h */,
+				F17ADC451FCFED0E005E08B2 /* DifferenceListTableViewCell.m */,
+				F17ADC461FCFED0E005E08B2 /* DifferenceListTableViewCell.xib */,
+				F1D418C61FD6228400323FC4 /* BcodeTableViewCell.h */,
+				F1D418C71FD6228400323FC4 /* BcodeTableViewCell.m */,
+				F1D418C81FD6228400323FC4 /* BcodeTableViewCell.xib */,
+				F166D94A1FE0C8EB007CBE8D /* ScanListTableViewCell.h */,
+				F166D94B1FE0C8EB007CBE8D /* ScanListTableViewCell.m */,
+				F166D94C1FE0C8EB007CBE8D /* ScanListTableViewCell.xib */,
+			);
+			name = V;
+			sourceTree = "<group>";
+		};
+		F17ADC401FCFEAB8005E08B2 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				F112C8121FECDA7D00BFB5B1 /* TNCustomSegment.h */,
+				F112C8131FECDA7E00BFB5B1 /* TNCustomSegment.m */,
+				F104E2751F3C3C23005EDEE3 /* AStatisticsViewController.h */,
+				F104E2761F3C3C23005EDEE3 /* AStatisticsViewController.m */,
+				F104E2781F3C3C32005EDEE3 /* BStatisticsViewController.h */,
+				F104E2791F3C3C32005EDEE3 /* BStatisticsViewController.m */,
+				F104E27B1F3C3C3E005EDEE3 /* CStatisticsViewController.h */,
+				F104E27C1F3C3C3E005EDEE3 /* CStatisticsViewController.m */,
+				F1A7ECFA1FCEAEA60028CB18 /* ScanListViewController.h */,
+				F1A7ECFB1FCEAEA60028CB18 /* ScanListViewController.m */,
+			);
+			name = C;
 			sourceTree = "<group>";
 		};
 		F1866B1E1F5FCE2F0072C131 /* BRPickerView */ = {
@@ -762,11 +935,55 @@
 		F192E3121F7B7F2F00C1EEB9 /* C */ = {
 			isa = PBXGroup;
 			children = (
+				F1DF2A001FD7837600D15206 /* UITextField+IndexPath.h */,
+				F1DF2A011FD7837700D15206 /* UITextField+IndexPath.m */,
 				F192E3131F7B7F6700C1EEB9 /* UpDownNewTableViewCell.h */,
 				F192E3141F7B7F6700C1EEB9 /* UpDownNewTableViewCell.m */,
 				F192E3151F7B7F6700C1EEB9 /* UpDownNewTableViewCell.xib */,
 			);
 			name = C;
+			sourceTree = "<group>";
+		};
+		F19364AE1FAAEE68002F0CE2 /* 新增 */ = {
+			isa = PBXGroup;
+			children = (
+				F1F6BDE21FBD15A500D07B86 /* shop */,
+				F19364B01FAAEE7E002F0CE2 /* V */,
+				F19364B11FAAEE89002F0CE2 /* C */,
+				F19364AF1FAAEE77002F0CE2 /* M */,
+			);
+			path = "新增";
+			sourceTree = "<group>";
+		};
+		F19364AF1FAAEE77002F0CE2 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				F1257A841FB2DFF20010A0F7 /* EveryNewModel.h */,
+				F1257A851FB2DFF20010A0F7 /* EveryNewModel.m */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		F19364B01FAAEE7E002F0CE2 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				F19364B21FAAF202002F0CE2 /* EveryNewViewController.h */,
+				F19364B31FAAF202002F0CE2 /* EveryNewViewController.m */,
+				F19364B41FAAF202002F0CE2 /* EveryNewViewController.xib */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		F19364B11FAAEE89002F0CE2 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				F16E0DAE1FB9223200A2F23F /* EveryShopHeaderFooterView.h */,
+				F16E0DAF1FB9223200A2F23F /* EveryShopHeaderFooterView.m */,
+				F1257A871FB2E03B0010A0F7 /* EveryNewTableViewCell.h */,
+				F1257A881FB2E03B0010A0F7 /* EveryNewTableViewCell.m */,
+				F1257A891FB2E03B0010A0F7 /* EveryNewTableViewCell.xib */,
+			);
+			path = C;
 			sourceTree = "<group>";
 		};
 		F1B8CB671F676D6A007D4383 /* 查询 */ = {
@@ -799,6 +1016,63 @@
 			name = C;
 			sourceTree = "<group>";
 		};
+		F1CE37BE1FA1C80D005F23D0 /* FSComboListView */ = {
+			isa = PBXGroup;
+			children = (
+				F1CE37BF1FA1C80D005F23D0 /* comboDownArrow.png */,
+				F1CE37C01FA1C80D005F23D0 /* comboDownArrow@2x.png */,
+				F1CE37C11FA1C80D005F23D0 /* FSComboListView.h */,
+				F1CE37C21FA1C80D005F23D0 /* FSComboListView.m */,
+				F1CE37C31FA1C80D005F23D0 /* UIImage+FSAdditions.h */,
+				F1CE37C41FA1C80D005F23D0 /* UIImage+FSAdditions.m */,
+			);
+			path = FSComboListView;
+			sourceTree = "<group>";
+		};
+		F1CEF9551FC7BC1E00C18D42 /* HIS入库 */ = {
+			isa = PBXGroup;
+			children = (
+				F1CEF9581FC7BC1E00C18D42 /* V */,
+				F1CEF9561FC7BC1E00C18D42 /* C */,
+				F1CEF9571FC7BC1E00C18D42 /* M */,
+			);
+			path = "HIS入库";
+			sourceTree = "<group>";
+		};
+		F1CEF9561FC7BC1E00C18D42 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				F14D49FC1FCAA76E000BDAAA /* HisSearchTableViewCell.h */,
+				F14D49FD1FCAA76E000BDAAA /* HisSearchTableViewCell.m */,
+				F14D49FE1FCAA76E000BDAAA /* HisSearchTableViewCell.xib */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		F1CEF9571FC7BC1E00C18D42 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				F14D49F91FCAA6F5000BDAAA /* HisSearchModel.h */,
+				F14D49FA1FCAA6F5000BDAAA /* HisSearchModel.m */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		F1CEF9581FC7BC1E00C18D42 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				F1CEF9591FC7BC8100C18D42 /* HisIntoSearchViewController.h */,
+				F1CEF95A1FC7BC8100C18D42 /* HisIntoSearchViewController.m */,
+				F1DB210C1FC8F7E500E56F76 /* HisIntoViewController.h */,
+				F1DB210D1FC8F7E500E56F76 /* HisIntoViewController.m */,
+				F1DE73121FCBAE370099DF4D /* HisDetailedViewController.h */,
+				F1DE73131FCBAE370099DF4D /* HisDetailedViewController.m */,
+				F1DE73151FCBE6760099DF4D /* HisDetailedHeadView.h */,
+				F1DE73161FCBE6760099DF4D /* HisDetailedHeadView.m */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
 		F1D88FB01F9DC76F007602DF /* M */ = {
 			isa = PBXGroup;
 			children = (
@@ -825,6 +1099,24 @@
 				F1D88FBC1F9DD5A4007602DF /* StockSearchViewController.m */,
 			);
 			path = "查询";
+			sourceTree = "<group>";
+		};
+		F1F6BDE21FBD15A500D07B86 /* shop */ = {
+			isa = PBXGroup;
+			children = (
+				F1B2A1D31FC2815D0056CCD3 /* EceryHeadView.h */,
+				F1B2A1D41FC2815D0056CCD3 /* EceryHeadView.m */,
+				F1F6BDE61FBD15D000D07B86 /* WTShopcatCell.h */,
+				F1F6BDE41FBD15D000D07B86 /* WTShopcatCell.m */,
+				F1F6BDEB1FBD15D100D07B86 /* WTShopcatCell.xib */,
+				F1F6BDE91FBD15D000D07B86 /* WTShopcatHeadView.h */,
+				F1F6BDE51FBD15D000D07B86 /* WTShopcatHeadView.m */,
+				F1F6BDE71FBD15D000D07B86 /* WTShopcatModel.h */,
+				F1F6BDEA1FBD15D000D07B86 /* WTShopcatModel.m */,
+				F1F6BDE81FBD15D000D07B86 /* WTShopcatViewController.h */,
+				F1F6BDE31FBD15D000D07B86 /* WTShopcatViewController.m */,
+			);
+			path = shop;
 			sourceTree = "<group>";
 		};
 		F1F9C1C91F3AADD300CDD3BF /* M */ = {
@@ -964,15 +1256,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1499C191EFB9D3900B6042B /* EveryDayViewController.xib in Resources */,
 				F1499C0A1EFB9CF700B6042B /* TrackViewController.xib in Resources */,
+				F1F6BDF01FBD15D100D07B86 /* WTShopcatCell.xib in Resources */,
+				F1CE37C61FA1C80D005F23D0 /* comboDownArrow@2x.png in Resources */,
 				F1B8CB741F676E88007D4383 /* PurchaseTableViewCell.xib in Resources */,
 				3B332F021EF8CCB8004B2135 /* LaunchScreen.storyboard in Resources */,
 				3B332EFF1EF8CCB8004B2135 /* Assets.xcassets in Resources */,
+				F1257A8B1FB2E03B0010A0F7 /* EveryNewTableViewCell.xib in Resources */,
 				F1F9C1D31F3AB34A00CDD3BF /* FrontTableViewCell.xib in Resources */,
+				F14D4A001FCAA76E000BDAAA /* HisSearchTableViewCell.xib in Resources */,
+				F1BC20B51FA80B50006A3F25 /* CarViewController.xib in Resources */,
+				F17ADC481FCFED0E005E08B2 /* DifferenceListTableViewCell.xib in Resources */,
 				F1550A7A1F9F2B21007496C4 /* AddListTableViewCell.xib in Resources */,
+				F168A2651FD51F2B00CC97B0 /* GoodsCell.xib in Resources */,
 				F1D88FB91F9DC9D0007602DF /* StockTableViewCell.xib in Resources */,
+				F19364B61FAAF202002F0CE2 /* EveryNewViewController.xib in Resources */,
+				F1CE37C51FA1C80D005F23D0 /* comboDownArrow.png in Resources */,
 				F192E3171F7B7F6700C1EEB9 /* UpDownNewTableViewCell.xib in Resources */,
+				F1D418CA1FD6228400323FC4 /* BcodeTableViewCell.xib in Resources */,
+				F166D94E1FE0C8EB007CBE8D /* ScanListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1137,16 +1439,27 @@
 			files = (
 				3B332F5E1EF8E1E6004B2135 /* CMPopTipView.m in Sources */,
 				3B332EF71EF8CCB8004B2135 /* AppDelegate.m in Sources */,
+				F1DF2A021FD7837700D15206 /* UITextField+IndexPath.m in Sources */,
+				F16E0DB01FB9223200A2F23F /* EveryShopHeaderFooterView.m in Sources */,
 				3B332F7B1EF8E420004B2135 /* UserInfoModel.m in Sources */,
 				3B332F4F1EF8E1D1004B2135 /* NSDateFormatter+Category.m in Sources */,
+				F1DE73141FCBAE370099DF4D /* HisDetailedViewController.m in Sources */,
+				F1DB210E1FC8F7E500E56F76 /* HisIntoViewController.m in Sources */,
+				F112C8141FECDA7E00BFB5B1 /* TNCustomSegment.m in Sources */,
+				F14D49FB1FCAA6F5000BDAAA /* HisSearchModel.m in Sources */,
+				F1DE73171FCBE6760099DF4D /* HisDetailedHeadView.m in Sources */,
 				F1866B421F5FCE820072C131 /* BRTextField.m in Sources */,
 				F154FC9D1F9EE560002DEC70 /* AddListViewController.m in Sources */,
 				3B332F4D1EF8E1D1004B2135 /* Foundation+Log.m in Sources */,
 				F1550A751F9F2B09007496C4 /* AddListModel.m in Sources */,
 				3B332F661EF8E2AD004B2135 /* LoginViewController.m in Sources */,
 				F1D88FB81F9DC9D0007602DF /* StockTableViewCell.m in Sources */,
+				F1A7ECFC1FCEAEA60028CB18 /* ScanListViewController.m in Sources */,
+				F1F6BDEE1FBD15D100D07B86 /* WTShopcatHeadView.m in Sources */,
 				F1866B431F5FCE820072C131 /* NSDate+BRAdd.m in Sources */,
 				3B332F811EF8E477004B2135 /* NetWorkDataManager.m in Sources */,
+				F1257A861FB2DFF20010A0F7 /* EveryNewModel.m in Sources */,
+				F1257A8A1FB2E03B0010A0F7 /* EveryNewTableViewCell.m in Sources */,
 				F15B503D1F5F8A8100900C4E /* AddListTextViewController.m in Sources */,
 				F1550A791F9F2B21007496C4 /* AddListTableViewCell.m in Sources */,
 				3B332F501EF8E1D1004B2135 /* NSString+Category.m in Sources */,
@@ -1159,27 +1472,37 @@
 				F1F9C1D21F3AB34A00CDD3BF /* FrontTableViewCell.m in Sources */,
 				3B332F7E1EF8E42C004B2135 /* UserInfoManager.m in Sources */,
 				F1866B391F5FCE2F0072C131 /* BaseView.m in Sources */,
+				F1CE37C81FA1C80D005F23D0 /* UIImage+FSAdditions.m in Sources */,
 				3B332F771EF8E3B7004B2135 /* Account.m in Sources */,
+				F17ADC431FCFECEF005E08B2 /* DifferenceListModel.m in Sources */,
 				F1866B3B1F5FCE2F0072C131 /* BRStringPickerView.m in Sources */,
 				3B332F781EF8E3B7004B2135 /* AccountTool.m in Sources */,
 				F1B8CB6E1F676E51007D4383 /* PurchaseModel.m in Sources */,
 				F1D717DE1F60E172007C723A /* PurchaseViewTextController.m in Sources */,
+				F1B2A1D51FC2815D0056CCD3 /* EceryHeadView.m in Sources */,
 				3B332F511EF8E1D1004B2135 /* UIBarButtonItem+Extension.m in Sources */,
+				F14D49FF1FCAA76E000BDAAA /* HisSearchTableViewCell.m in Sources */,
+				F1BC20B41FA80B50006A3F25 /* CarViewController.m in Sources */,
 				F1D88FB41F9DC7EC007602DF /* StockModel.m in Sources */,
+				F19364B51FAAF202002F0CE2 /* EveryNewViewController.m in Sources */,
 				F104E27D1F3C3C3E005EDEE3 /* CStatisticsViewController.m in Sources */,
 				3B332F5F1EF8E1E6004B2135 /* MBProgressHUD+MJ.m in Sources */,
+				F19364AC1FAAEE0C002F0CE2 /* EveryDayViewController.m in Sources */,
 				3B332F551EF8E1D1004B2135 /* UIViewController+Category.m in Sources */,
 				F104E2771F3C3C23005EDEE3 /* AStatisticsViewController.m in Sources */,
 				3B332F4E1EF8E1D1004B2135 /* NSDate+Category.m in Sources */,
 				3B332F391EF8CE9A004B2135 /* ConstKey.m in Sources */,
 				F1F9C1CC1F3AAE1000CDD3BF /* FrontViewModel.m in Sources */,
 				F1B8CB731F676E88007D4383 /* PurchaseTableViewCell.m in Sources */,
+				F168A25D1FD51C6300CC97B0 /* ShopCarModel.m in Sources */,
 				3B332F521EF8E1D1004B2135 /* UIButton+Category.m in Sources */,
 				F1B6FBF81F396097000433A6 /* FrontViewController.m in Sources */,
 				3B332F601EF8E1E6004B2135 /* MBProgressHUD.m in Sources */,
 				F1D717DB1F60D5FC007C723A /* StockViewControllerTextViewController.m in Sources */,
 				F104E2731F3C39CD005EDEE3 /* StatisticsViewController.m in Sources */,
+				F1CE37C71FA1C80D005F23D0 /* FSComboListView.m in Sources */,
 				F1866B3A1F5FCE2F0072C131 /* BRDatePickerView.m in Sources */,
+				F1D418C91FD6228400323FC4 /* BcodeTableViewCell.m in Sources */,
 				F1B8CB6A1F676D9D007D4383 /* PurchaseSearchViewController.m in Sources */,
 				F104E27A1F3C3C32005EDEE3 /* BStatisticsViewController.m in Sources */,
 				3B332F541EF8E1D1004B2135 /* UIView+Extension.m in Sources */,
@@ -1190,14 +1513,23 @@
 				F1BCCD1E1F1C8A0F0037B552 /* ZJBLStoreShopTypeAlert.m in Sources */,
 				3B332EF41EF8CCB8004B2135 /* main.m in Sources */,
 				3B38CCC21F04D02400B76A75 /* UpDownViewController.m in Sources */,
+				F1F6BDED1FBD15D100D07B86 /* WTShopcatCell.m in Sources */,
+				F1787AE61FF0A825009B14E1 /* PasswordView.m in Sources */,
+				F166D94D1FE0C8EB007CBE8D /* ScanListTableViewCell.m in Sources */,
 				3B332F331EF8CE21004B2135 /* RootNavgationController.m in Sources */,
+				F17ADC471FCFED0E005E08B2 /* DifferenceListTableViewCell.m in Sources */,
 				3B332F6F1EF8E31A004B2135 /* HTTPManager.m in Sources */,
+				F1F6BDEF1FBD15D100D07B86 /* WTShopcatModel.m in Sources */,
 				F1499C091EFB9CF700B6042B /* TrackViewController.m in Sources */,
 				3B332F631EF8E254004B2135 /* HomeViewController.m in Sources */,
 				F1F9D6731F42E4960083249F /* UpDownSearchViewController.m in Sources */,
 				3B332F531EF8E1D1004B2135 /* UIImage+Category.m in Sources */,
-				F1499C181EFB9D3900B6042B /* EveryDayViewController.m in Sources */,
+				F1F6BDEC1FBD15D100D07B86 /* WTShopcatViewController.m in Sources */,
 				F18642191F023B5700054425 /* UpdownHeadView.m in Sources */,
+				F166D9511FE0C90B007CBE8D /* ScanListModel.m in Sources */,
+				F168A2641FD51F2B00CC97B0 /* GoodsCell.m in Sources */,
+				F1CEF95B1FC7BC8100C18D42 /* HisIntoSearchViewController.m in Sources */,
+				F1D418C51FD6226800323FC4 /* BcodeModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1342,7 +1674,7 @@
 				DEVELOPMENT_TEAM = 36CGP7LVDZ;
 				GCC_PREFIX_HEADER = $SRCROOT/DrugDep/Classes/PCH/PrefixHeader.h;
 				INFOPLIST_FILE = DrugDep/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DrugDep.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1357,7 +1689,7 @@
 				DEVELOPMENT_TEAM = 36CGP7LVDZ;
 				GCC_PREFIX_HEADER = $SRCROOT/DrugDep/Classes/PCH/PrefixHeader.h;
 				INFOPLIST_FILE = DrugDep/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DrugDep.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";

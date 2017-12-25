@@ -53,6 +53,9 @@
     [button setFrame:CGRectMake(20, 20, SCREEN_WIDTH - 40, 40)];
     [button addBlockForControlEvents:UIControlEventTouchUpInside block:^(id  _Nonnull sender) {
     
+        //存储
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        [defaults setObject:_statusTF.text forKey:@"statusTF"];
         //查询后跳转
         AddListViewController * AddListSearchV = [[AddListViewController alloc]init];
         [self.navigationController pushViewController:AddListSearchV animated:YES];
@@ -201,7 +204,7 @@
         _statusTF.placeholder = @"请选择状态";
         __weak typeof(self) weakSelf = self;
         _statusTF.tapAcitonBlock = ^{
-            [BRStringPickerView showStringPickerWithTitle:@"请选择状态：" dataSource:@[@"暂存",@"提交"] defaultSelValue:@"" isAutoSelect:YES resultBlock:^(id selectValue) {
+            [BRStringPickerView showStringPickerWithTitle:@"请选择状态：" dataSource:@[@"提交",@"暂存"] defaultSelValue:@"暂存" isAutoSelect:YES resultBlock:^(id selectValue) {
                 weakSelf.statusTF.text = selectValue;
             }];
         };

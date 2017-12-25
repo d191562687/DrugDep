@@ -12,13 +12,20 @@
 #import "AStatisticsViewController.h"
 #import "BStatisticsViewController.h"
 #import "CStatisticsViewController.h"
-
+//扫码
+#import "HMScannerController.h"
+#import "ScanListViewController.h"
+#import "PasswordView.h"
 
 @interface StatisticsViewController ()<UITableViewDataSource,UITableViewDelegate>
+{
+    PasswordView *passView;
+}
 
 @property (strong,nonatomic) UITableView * tableView;
 @property (strong,nonatomic) NSArray * array;
-
+//扫码
+@property (weak, nonatomic) UILabel *scanResultLabel;
 
 @end
 
@@ -26,15 +33,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"配送统计";
     
     [self setupSubViews];
+    
+    //self.title = @"HIS查询";
+
 }
 
 - (void)setupSubViews
 {
     
-    self.array = @[@[@"配送信息列表",@"配送信息统计对比",@"配送信息年对比图"]];
+    self.array = @[@[@"扫码查询",@"助记码查询",@"配送差异表"]];
     [self.view addSubview:self.tableView];
     
 }
@@ -70,16 +79,52 @@
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
             //配送信息列表
-            AStatisticsViewController * AStatisticsVC = [[AStatisticsViewController alloc]init];
-            [self
-             .navigationController pushViewController:AStatisticsVC animated:YES];
+//            AStatisticsViewController * AStatisticsVC = [[AStatisticsViewController alloc]init];
+//            [self
+//             .navigationController pushViewController:AStatisticsVC animated:YES];
+            
+            NSString *cardName = @"";
+            UIImage *avatar = [UIImage imageNamed:@"avatar"];
+            
+            HMScannerController *scanner = [HMScannerController scannerWithCardName:cardName avatar:avatar completion:^(NSString *stringValue) {
+                
+                self.scanResultLabel.text = stringValue;
+                NSLog(@"--  %@ --",stringValue);
+                //存储
+                NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+                [defaults setObject:stringValue forKey:@"stringValue"];
+                
+                
+                ScanListViewController * ScanVC = [[ScanListViewController alloc]init];
+                [self.navigationController pushViewController:ScanVC animated:YES];
+                
+            }];
+            
+            [scanner setTitleColor:[UIColor whiteColor] tintColor:[UIColor greenColor]];
+            
+            [self showDetailViewController:scanner sender:nil];
             
         }else if (indexPath.row == 1)
         {
-            //配送信息统计对比
-            BStatisticsViewController * BStatisticsVC = [[BStatisticsViewController alloc]init];
-            [self
-             .navigationController pushViewController:BStatisticsVC animated:YES];
+            passView = [[PasswordView alloc] initWithTitle:@"助记码查询" cancelBtn:@"取消" sureBtn:@"确定" btnClickBlock:^(NSInteger index,NSString *str) {
+                if (index == 0) {
+                    NSLog(@"0000000");
+                }else if (index == 1){
+                    NSLog(@"111111");
+                    NSLog(@"^^^^^%@",str);
+                    //存储
+                    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+                    [defaults setObject:str forKey:@"number"];
+                    //配送信息统计对比
+                    BStatisticsViewController * BStatisticsVC = [[BStatisticsViewController alloc]init];
+                    [self
+                     .navigationController pushViewController:BStatisticsVC animated:YES];
+
+                }
+            }];
+            [passView show];
+
+            
  
             
         }else if (indexPath.row == 2)

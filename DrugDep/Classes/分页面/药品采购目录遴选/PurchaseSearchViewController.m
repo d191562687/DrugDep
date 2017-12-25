@@ -10,9 +10,10 @@
 #import <MJRefresh.h>
 #import <MJExtension.h>
 #import "MBProgressHUD.h"
+#import "UserInfoManager.h"
 #import "PurchaseModel.h"
 #import "PurchaseTableViewCell.h"
-#import "UserInfoManager.h"
+
 
 
 @interface PurchaseSearchViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -23,6 +24,8 @@
 
 @property (strong,nonatomic) NSString * pass;
 @property (strong,nonatomic) NSString * user;
+//页数
+@property (assign,nonatomic) NSString * displayNumer;
 
 @end
 
@@ -37,10 +40,10 @@
 #pragma 表格相关
 - (void)setupSubviews
 {
-
     [self.view addSubview:self.tableView];
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         //数据请求
+        [self add];
         [self loadWithName:@""];
     }];
     /** 每次加载先刷新数据 */
@@ -70,7 +73,6 @@
     //    }
     //
     
-    
       NSString *url = @"http://192.168.1.34:9000/app/drugStoresPurchasePlan/purchaseSelectionList";
     //读取
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -88,8 +90,9 @@
     NSLog(@"%@====%@",self.user,self.pass);
   
 //    NSLog(@"%@-%@-%@-%@-%@-%@-%@-%@-",code,medicalname,productname,factoryname,medicalmode,packageSpec,medicalspec,metricname);
+
     NSDictionary *params = @{
-                             @"currentPage": @"1",
+                             @"currentPage":_displayNumer,
                              @"officeId": @"95ce99bda3cd4309b0b114d05ffda55c",
                              @"pageSize": @"10",
                              @"passWord": self.pass,
@@ -145,6 +148,19 @@
     
     return cell;
 }
+-(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    
+    //_pullUp 是否可以上拉加载，向上拉的偏移超过50就加载
+    if (_tableView && scrollView.frame.size.height+scrollView.contentOffset.y > scrollView.contentSize.height + 50)
+    {
+    
+        [self add];
+        [self loadWithName:@""];//调用加载方法
+        
+        [self.tableView reloadData];
+    }
+}
 #pragma mark - 懒加载
 - (UITableView *)tableView{
     if (!_tableView) {
@@ -160,6 +176,16 @@
     }
     return _tableView;
 }
+- (void)updateDisplay{
+    _displayNumer = [NSString stringWithFormat:@"%d",_ccont];
+    NSLog(@"cccc ==  %@",_displayNumer);
+}
+- (void)add
+{
+    _ccont = _ccont + 1;
+    [self updateDisplay];
+}
+
 
 
 @end

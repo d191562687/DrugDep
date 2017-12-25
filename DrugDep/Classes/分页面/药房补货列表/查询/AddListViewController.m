@@ -52,15 +52,17 @@
 
     NSString *url = @"http://192.168.1.34:9000/app/drugStoresPurchasePlan/list.do";
     //读取
-//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-//    NSString * identificationTF = [defaults objectForKey:@"identificationTF"];
-//    NSString * numberTF = [defaults objectForKey:@"numberTF"];
-//    NSString * nameTF = [defaults objectForKey:@"nameTF"];
-//    NSString * productionTF = [defaults objectForKey:@"productionTF"];
-//    NSString * dispatchingTF = [defaults objectForKey:@"dispatchingTF"];
-//    UserInfoModel *userModel = [[UserInfoManager sharedManager] getUserInfo];
-//    self.pass = userModel.passWord;
-//    self.user = userModel.loginName;
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString * statusTF = [defaults objectForKey:@"statusTF"];
+    //判断状态
+    if ([statusTF  isEqual: @"暂存"]) {
+        statusTF = @"1";
+    }else if ([statusTF  isEqual: @"提交"]){
+        statusTF = @"2";
+    }
+    UserInfoModel *userModel = [[UserInfoManager sharedManager] getUserInfo];
+    self.pass = userModel.passWord;
+    self.user = userModel.loginName;
 //    json={
 //        "currentPage": "1",
 //        "officeId": "95ce99bda3cd4309b0b114d05ffda55c",
@@ -69,22 +71,14 @@
 //        "status": "1",
 //        "userName": "majp01"
 //    }
-    
-//    json={
-//        "currentPage": "1",
-//        "officeId": "95ce99bda3cd4309b0b114d05ffda55c",
-//        "pageSize": "2",
-//        "passWord": "test1234",
-//        "status": "1",
-//        "userName": "majp01"
-//    }
+
     NSDictionary *params = @{
                              @"currentPage":@"1",
                              @"officeId":@"95ce99bda3cd4309b0b114d05ffda55c",
                              @"pageSize":@"5",
-                             @"passWord":@"test1234",
-                             @"userName":@"majp01",
-                             @"status": @"2"
+                             @"passWord":self.pass,
+                             @"userName":self.user,
+                             @"status": statusTF
                              };
     
     NSString *p1Str = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:params options:0 error:nil] encoding:NSUTF8StringEncoding];

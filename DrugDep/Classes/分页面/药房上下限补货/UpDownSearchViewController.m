@@ -13,6 +13,7 @@
 #import "FrontViewModel.h"
 #import "FrontTableViewCell.h"
 
+
 @interface UpDownSearchViewController ()<UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate>
 /** 搜索表 */
 @property (nonatomic, strong) UITableView * searchTableView;
@@ -31,6 +32,8 @@
     [super viewDidLoad];
     
     [self setupSubviews];
+    
+
 }
 
 /** 当搜索内容改变时开始搜索 */
@@ -90,6 +93,9 @@
     /** 获取当前的模型，设置cell数据 */
     FrontViewModel * model = self.dataSource[indexPath.row];
     cell.ActFrontModel = model;
+    
+    // 核心方法
+    
     
     return cell;
 }

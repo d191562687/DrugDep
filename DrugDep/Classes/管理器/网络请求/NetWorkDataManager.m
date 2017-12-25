@@ -45,12 +45,16 @@
         NSString *code = [[responseObject objectForKey:@"code"] description];
         NSString *message = [[responseObject objectForKey:@"desc"] description];
         if ([code isEqualToString:@"0000"]) {
-            NSDictionary *user = [responseObject objectForKey:@"user"];
-#warning office的信息没保存，方法跟保存user一样  
-#warning NSDictionary *office = [responseObject objectForKey:@"office"];
+        NSDictionary *user = [responseObject objectForKey:@"user"];
+//#warning office的信息没保存，方法跟保存user一样  
+        NSDictionary *officeid = [responseObject objectForKey:@"office"];
+        NSString * dicId = [officeid objectForKey:@"id"];
+
             // 保存用户信息
             UserInfoModel *userModel = [UserInfoModel mj_objectWithKeyValues:user];
             userModel.passWord = pass;
+            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+            [defaults setObject:dicId forKey:@"dicID"];
             [self saveUserInfoWithModel:userModel Competion:^{
                 success();
             }];
@@ -118,10 +122,17 @@
 //实时追踪
 - (void)trackWithSuccess:(SuccessBlock)success Fail:(FailBlock)fail{
     
-    NSString *url = @"http://192.168.1.231:9000/transfer-manager-web/app/appCarSingeRealLocation/carList.do";
-    //    NSString *url = @"http://192.168.1.34:9000/a/login"; // 外网
+    NSString *url = @"http://192.168.1.231:9000/transfer-manager-web/app/appCarSingeRealLocation/areaDetal.do";
+    //    NSString *url = @"http://192.168.1.231:9000/transfer-manager-web/app/appCarSingeRealLocation/carList.do"; // 外网
     
-    [HTTPManager POST:url params:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+    NSDictionary *params = @{
+                             @"vehicle":@"京HX1890"
+                             };
+    
+    NSString *p1Str = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:params options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSDictionary *json = @{@"json":p1Str};
+    
+    [HTTPManager POST:url params:json success:^(NSURLSessionDataTask *task, id responseObject) {
         NSLog(@"实时追踪 = %@",responseObject);
         NSString *code = [[responseObject objectForKey:@"code"] description];
         NSString *message = [[responseObject objectForKey:@"desc"] description];
@@ -152,7 +163,6 @@
 - (void)carWithSuccess:(SuccessBlock)success Fail:(FailBlock)fail{
     
     NSString *url = @"http://192.168.1.231:9000/transfer-manager-web/app/appCarSingeRealLocation/areaDetal.do";
-    //    NSString *url = @"http://192.168.1.34:9000/a/login"; // 外网
     NSDictionary *params = @{
                              @"vehicle":@"京HX1890"
                              };
@@ -175,6 +185,30 @@
         NSLog(@"错误：   %@",error.localizedDescription);
     }];
     
+    
+}
+
+// 药房一键补货
+- (void)oneRepairWithUserName:(NSString *)userName PassWord:(NSString *)pass Success:(SuccessBlock)success Fail:(FailBlock)fail
+{
+    NSString *url = @"http://192.168.1.34:9000/app/drugStoresPurchasePlan/storeBuy";
+
+    NSDictionary *params = @{
+                             @"officeId":@"95ce99bda3cd4309b0b114d05ffda55c",
+                             @"typeCode":@"",
+                             @"passWord":@"test1234",
+                             @"userName":@"majp01",
+                             };
+    NSDictionary *json = @{@"json":[self switchToJsonStrFrom:params]};
+    
+    [HTTPManager POST:url params:json success:^(NSURLSessionDataTask *task, id responseObject) {
+        
+       // NSLog(@"补货信息 ===   %@",responseObject);
+        
+    } fail:^(NSURLSessionDataTask *task, NSError *error) {
+        fail(error.localizedDescription);
+        NSLog(@"错误：   %@",error.localizedDescription);
+    }];
     
 }
 

@@ -27,6 +27,10 @@
 /**类初始化方法*/
 + (instancetype)actcellWithactFrontModel:(UITableView *)tableView;
 
+- (void)setDataString:(NSString *)dataString
+          andIndexPath:(NSIndexPath *)indexPath;
 
+- (void)setActFrontModel:(UpDownNewModel *)actFrontModel
+            andIndexPath:(NSIndexPath *)indexPath;
 
 @end

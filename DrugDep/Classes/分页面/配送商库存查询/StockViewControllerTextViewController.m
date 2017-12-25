@@ -36,7 +36,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [super viewDidLoad];
     self.navigationItem.title = @"配送商库查询";
     self.tableView.hidden = NO;
     

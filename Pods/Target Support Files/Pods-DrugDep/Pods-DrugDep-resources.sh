@@ -80,9 +80,11 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "HMQRCodeScanner/HMQRCodeScanner/QRCode/HMScanner.bundle"
   install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "HMQRCodeScanner/HMQRCodeScanner/QRCode/HMScanner.bundle"
   install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
 fi
 

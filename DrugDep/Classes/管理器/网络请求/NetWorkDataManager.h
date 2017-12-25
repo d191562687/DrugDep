@@ -34,6 +34,8 @@ typedef void (^SuccessStringBlock)(NSString *string); // 字符串类型的回�
 // 退出登录，清除当前账号的缓存
 - (void)returnCurrentAccountCompletion:(void (^)())completion;
 
+// 药房一键补货
+- (void)oneRepairWithUserName:(NSString *)userName PassWord:(NSString *)pass Success:(SuccessBlock)success Fail:(FailBlock)fail;
 
 
 @end

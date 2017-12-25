@@ -27,6 +27,7 @@
 @property (strong,nonatomic) NSString * typeName;
 
 
+
 @property (nonatomic,assign) NSInteger  count;
 
 @property (nonatomic,copy) NSString * price;
