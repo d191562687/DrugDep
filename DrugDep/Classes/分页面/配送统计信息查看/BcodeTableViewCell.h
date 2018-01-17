@@ -29,7 +29,12 @@
 //String ypdm;        // 药品编码
 @property (strong,nonatomic) IBOutlet UILabel * ypdm;
 //String qlsl;        // 申请数量
-@property (strong,nonatomic) IBOutlet UITextField * qlsl;
+@property (strong,nonatomic) IBOutlet UIButton * qlsl;
+//退款
+@property (strong, nonatomic) IBOutlet UIButton *refund;
+
+@property (weak, nonatomic) IBOutlet UIButton *firstChoose;
+@property (weak, nonatomic) IBOutlet UIButton *secondChoose;
 
 /** 创建数据模型 */
 @property (strong,nonatomic) BcodeModel * ActBcodeModel;

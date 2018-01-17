@@ -27,5 +27,15 @@
 //String qlsl;        // 申请数量
 @property (strong,nonatomic) NSString * qlsl;
 
+// 出库单号
+@property (strong,nonatomic) NSString * ckdh;
+//
+@property (strong,nonatomic) NSString * djbh;
+//
+@property (strong,nonatomic) NSString * shhshl;
+//
+@property (strong,nonatomic) NSString * djSn;
+//
+@property (strong,nonatomic) NSString * status;
 
 @end

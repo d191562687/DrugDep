@@ -89,7 +89,7 @@
 //    }
     
     NSDictionary *params = @{
-                             @"data":@"69",
+                             @"data":@"s",
                              @"officeId": dicID,
                              @"passWord": self.pass,
                              @"userName": self.user,
@@ -151,53 +151,53 @@
    
     ScanListModel * model = self.resultArray[indexPath.row];
     
-//    NSString *url = @"http://192.168.1.34:9000/app/outStorage/confirmDetail.do";
-//    //读取
-//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-//    NSString * dicID = [defaults objectForKey:@"dicID"];
-// //   NSString * stringValue = [defaults objectForKey:@"stringValue"];
-//    UserInfoModel *userModel = [[UserInfoManager sharedManager] getUserInfo];
-//    self.pass = userModel.passWord;
-//    self.user = userModel.loginName;
-//
-//    ScanListModel * model = [[ScanListModel alloc]init];
-//    model = self.resultArray[indexPath.row];
-//
-//    NSDictionary * modeldata = @{
-//                             @"djSn":model.djSn,
-//                             @"djbh": model.djbh,
-//                             @"shhshl": model.shhshl,
-//                             @"status": @"1",
-//                             @"ckdh": model.ckdh,
-//                             };
-//    NSArray * dataArr = [[NSArray alloc]initWithObjects:modeldata, nil];
-//
-//    NSDictionary *params = @{
-//                             @"data":dataArr,
-//                             @"officeId": dicID,
-//                             @"passWord": self.pass,
-//                             @"userName": self.user,
-//                             };
-//    NSString *p1Str = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:params options:0 error:nil] encoding:NSUTF8StringEncoding];
-//    NSDictionary *json = @{@"json":p1Str};
-//
-//     NSLog(@"json= %@",json);
-//
-//    [HTTPManager POST:url params:json success:^(NSURLSessionDataTask *task, id responseObject) {
-//        [self.tableView.mj_header endRefreshing];
-//        // 成功
-//        NSArray *data = [responseObject objectForKey:@"data"];
-//        self.resultArray = [ScanListModel mj_objectArrayWithKeyValuesArray:data];
-////        NSLog(@"self.responseObject= %@",responseObject);
-////        NSLog(@"self.data= %@",data);
-//        NSLog(@"self.resultArray = %@",self.resultArray);
-//
-//        [self loadWithName:@""];
-//
-//    } fail:^(NSURLSessionDataTask *task, NSError *error) {
-//        [self.tableView.mj_header endRefreshing];
-//        [self sendAlertAction:error.localizedDescription];
-//    }];
+    NSString *url = @"http://192.168.1.34:9000/app/outStorage/confirmDetail.do";
+    //读取
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString * dicID = [defaults objectForKey:@"dicID"];
+ //   NSString * stringValue = [defaults objectForKey:@"stringValue"];
+    UserInfoModel *userModel = [[UserInfoManager sharedManager] getUserInfo];
+    self.pass = userModel.passWord;
+    self.user = userModel.loginName;
+
+    //ScanListModel * model = [[ScanListModel alloc]init];
+    model = self.resultArray[indexPath.row];
+
+    NSDictionary * modeldata = @{
+                             @"djSn":model.djSn,
+                             @"djbh": model.djbh,
+                             @"shhshl": model.shhshl,
+                             @"status": @"1",
+                             @"ckdh": model.ckdh,
+                             };
+    NSArray * dataArr = [[NSArray alloc]initWithObjects:modeldata, nil];
+
+    NSDictionary *params = @{
+                             @"data":dataArr,
+                             @"officeId": dicID,
+                             @"passWord": self.pass,
+                             @"userName": self.user,
+                             };
+    NSString *p1Str = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:params options:0 error:nil] encoding:NSUTF8StringEncoding];
+    NSDictionary *json = @{@"json":p1Str};
+
+     NSLog(@"json= %@",json);
+
+    [HTTPManager POST:url params:json success:^(NSURLSessionDataTask *task, id responseObject) {
+        [self.tableView.mj_header endRefreshing];
+        // 成功
+        NSArray *data = [responseObject objectForKey:@"data"];
+        self.resultArray = [ScanListModel mj_objectArrayWithKeyValuesArray:data];
+//        NSLog(@"self.responseObject= %@",responseObject);
+//        NSLog(@"self.data= %@",data);
+        NSLog(@"self.resultArray = %@",self.resultArray);
+
+        [self loadWithName:@""];
+
+    } fail:^(NSURLSessionDataTask *task, NSError *error) {
+        [self.tableView.mj_header endRefreshing];
+        [self sendAlertAction:error.localizedDescription];
+    }];
 
 }
 

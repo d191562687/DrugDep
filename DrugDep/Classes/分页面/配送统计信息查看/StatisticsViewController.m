@@ -121,12 +121,11 @@
                      .navigationController pushViewController:BStatisticsVC animated:YES];
 
                 }
+                
             }];
             [passView show];
 
-            
- 
-            
+
         }else if (indexPath.row == 2)
         {
             //配送信息年对比图
@@ -136,6 +135,8 @@
         }
     }
 }
+
+
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
 {

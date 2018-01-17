@@ -126,11 +126,4 @@
     
 }
 
-//- (void)setDataString:(NSString *)dataString andIndexPath:(NSIndexPath *)indexPath{
-//    // 核心代码
-//    self.countLabel.indexPath = indexPath;
-//    self.countLabel.text = dataString;
-//}
-
-
 @end

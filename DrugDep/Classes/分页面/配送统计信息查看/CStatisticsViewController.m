@@ -150,13 +150,16 @@
     
     NSString *url = @"http://192.168.1.34:9000/app/outStorage/unConfirmListEnd.do";
     //读取
-   // NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    //读取
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString * dicID = [defaults objectForKey:@"dicID"];
+    
     UserInfoModel *userModel = [[UserInfoManager sharedManager] getUserInfo];
     self.pass = userModel.passWord;
     self.user = userModel.loginName;
 
     NSDictionary *params = @{
-                             @"officeId": @"95ce99bda3cd4309b0b114d05ffda55c",
+                             @"officeId": dicID,
                              @"passWord": self.pass,
                              @"userName": self.user,
                              };
