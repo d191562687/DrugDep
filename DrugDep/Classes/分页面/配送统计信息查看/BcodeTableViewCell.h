@@ -29,12 +29,14 @@
 //String ypdm;        // 药品编码
 @property (strong,nonatomic) IBOutlet UILabel * ypdm;
 //String qlsl;        // 申请数量
-@property (strong,nonatomic) IBOutlet UIButton * qlsl;
+@property (strong,nonatomic) IBOutlet UILabel * qlsl;
 //退款
 @property (strong, nonatomic) IBOutlet UIButton *refund;
 
-@property (weak, nonatomic) IBOutlet UIButton *firstChoose;
-@property (weak, nonatomic) IBOutlet UIButton *secondChoose;
+@property (strong, nonatomic) UIButton *firstChoose;
+@property (strong, nonatomic) UIButton *secondChoose;
+@property (strong, nonatomic) UIButton * remodelButton;
+@property (strong, nonatomic) UIButton * alterButton;
 
 /** 创建数据模型 */
 @property (strong,nonatomic) BcodeModel * ActBcodeModel;

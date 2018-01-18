@@ -13,6 +13,7 @@
 #import "UserInfoManager.h"
 #import "DifferenceListModel.h"
 #import "DifferenceListTableViewCell.h"
+#import "BStatisticsViewController.h"
 
 
 @interface CStatisticsViewController ()<UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate>
@@ -68,9 +69,9 @@
 #pragma 表格相关
 - (void)setupSubviews
 {
-    //UI创建
-    [self createSearchBar];
-    [self.view addSubview:self.searchTableView];
+//    //UI创建
+//    [self createSearchBar];
+//    [self.view addSubview:self.searchTableView];
     self.searchTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         //数据请求
         [self loadWithName:@""];
@@ -98,7 +99,69 @@
     DifferenceListModel * model = self.dataSource[indexPath.row];
     cell.ActDifferenceListModel = model;
     
+    //在cell里面添加按钮的点击事件;
+    [cell.firstChoose addTarget:self action:@selector(onBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [cell.secondChoose addTarget:self action:@selector(onBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    //设置tag值区分点击的是哪个按钮
+    cell.firstChoose.tag=1;
+    cell.secondChoose.tag=2;
+    
     return cell;
+}
+
+-(void)onBtnClick:(UIButton *)sender{
+    DifferenceListTableViewCell *cell=(DifferenceListTableViewCell *)sender.superview.superview;
+    NSIndexPath *indexPath=[self.searchTableView indexPathForCell:cell];
+    
+    //这个就是添加新选中的按钮答案到字典,根据indexPath作为key,并改变选中时的背景图片
+    if (sender.tag == 1) {
+        
+        [self.navigationController popViewControllerAnimated:YES];
+        
+    }else if (sender.tag == 2){
+        NSLog(@"下次处理");
+        DifferenceListModel * model = [[DifferenceListModel alloc]init];
+        model = self.dataSource[indexPath.row];
+        NSString *url = @"http://192.168.1.34:9000/app/outStorage/confirmDetail.do";
+        //读取
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        NSString * dicID = [defaults objectForKey:@"dicID"];
+        UserInfoModel *userModel = [[UserInfoManager sharedManager] getUserInfo];
+        self.pass = userModel.passWord;
+        self.user = userModel.loginName;
+        //NSLog(@" -- %@   %@   %@   %@ ",model.djSn,model.djbh,model.sl,model.ckdh);
+        NSDictionary * modeldata1 = @{
+                                      @"djSn":model.djSn,
+                                      @"djbh": model.djbh,
+                                      @"shhshl":model.sl,
+                                      @"status": @"2",
+                                      @"ckdh": model.ckdh,
+                                      };
+
+        NSArray * dataArr1 = [[NSArray alloc]initWithObjects:modeldata1, nil];
+
+        NSDictionary *params1 = @{
+                                  @"data":dataArr1,
+                                  @"officeId": dicID,
+                                  @"passWord": self.pass,
+                                  @"userName": self.user,
+                                  };
+        NSString *p1Str = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:params1 options:0 error:nil] encoding:NSUTF8StringEncoding];
+        NSDictionary *json = @{@"json":p1Str};
+    
+        
+        [HTTPManager POST:url params:json success:^(NSURLSessionDataTask *task, id responseObject) {
+            [self.searchTableView.mj_header endRefreshing];
+            // 成功
+            NSArray *data = [responseObject objectForKey:@"data"];
+            [self loadWithName:@""];
+            
+        } fail:^(NSURLSessionDataTask *task, NSError *error) {
+            [self.searchTableView.mj_header endRefreshing];
+            [self sendAlertAction:error.localizedDescription];
+        }];
+        
+    }
 }
 /** cell点击 */
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -125,12 +188,13 @@
 #pragma mark - 懒加载
 - (UITableView *)searchTableView{
     if (!_searchTableView) {
-        _searchTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 50, SCREEN_WIDTH, SCREEN_HEIGHT - 64 -50) style:UITableViewStylePlain];
+        _searchTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - 64) style:UITableViewStylePlain];
         
-        _searchTableView.rowHeight = 160;
+        _searchTableView.rowHeight = 185;
         _searchTableView.dataSource = self;
         _searchTableView.delegate = self;
         _searchTableView.backgroundColor = self.view.backgroundColor;
+//        _searchTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         [self.view addSubview:_searchTableView];
     }
     return _searchTableView;

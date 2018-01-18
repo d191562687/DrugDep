@@ -1674,7 +1674,7 @@
 				DEVELOPMENT_TEAM = 36CGP7LVDZ;
 				GCC_PREFIX_HEADER = $SRCROOT/DrugDep/Classes/PCH/PrefixHeader.h;
 				INFOPLIST_FILE = DrugDep/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DrugDep.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1689,7 +1689,7 @@
 				DEVELOPMENT_TEAM = 36CGP7LVDZ;
 				GCC_PREFIX_HEADER = $SRCROOT/DrugDep/Classes/PCH/PrefixHeader.h;
 				INFOPLIST_FILE = DrugDep/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DrugDep.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";

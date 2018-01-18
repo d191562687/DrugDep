@@ -29,6 +29,8 @@
 //String qlsl;        // 申请数量
 @property (strong,nonatomic) IBOutlet UILabel * qlsl;
 
+@property (strong, nonatomic) UIButton *firstChoose;
+@property (strong, nonatomic) UIButton *secondChoose;
 
 /** 创建数据模型 */
 @property (strong,nonatomic) DifferenceListModel * ActDifferenceListModel;

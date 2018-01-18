@@ -88,15 +88,15 @@
             
             HMScannerController *scanner = [HMScannerController scannerWithCardName:cardName avatar:avatar completion:^(NSString *stringValue) {
                 
-                self.scanResultLabel.text = stringValue;
-                NSLog(@"--  %@ --",stringValue);
+//                self.scanResultLabel.text = stringValue;
+//                NSLog(@"--  %@ --",stringValue);
                 //存储
                 NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-                [defaults setObject:stringValue forKey:@"stringValue"];
+                [defaults setObject:stringValue forKey:@"number"];
                 
-                
-                ScanListViewController * ScanVC = [[ScanListViewController alloc]init];
-                [self.navigationController pushViewController:ScanVC animated:YES];
+                BStatisticsViewController * BStatisticsVC = [[BStatisticsViewController alloc]init];
+                [self
+                 .navigationController pushViewController:BStatisticsVC animated:YES];
                 
             }];
             
@@ -115,7 +115,7 @@
                     //存储
                     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
                     [defaults setObject:str forKey:@"number"];
-                    //配送信息统计对比
+                    //
                     BStatisticsViewController * BStatisticsVC = [[BStatisticsViewController alloc]init];
                     [self
                      .navigationController pushViewController:BStatisticsVC animated:YES];

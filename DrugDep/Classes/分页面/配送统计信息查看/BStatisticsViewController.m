@@ -57,11 +57,21 @@
 #pragma 表格相关
 - (void)setupSubviews
 {
-    
     [self.view addSubview:self.tableView];
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         //数据请求
         [self loadWithName:@""];
+    }];
+    /** 每次加载先刷新数据 */
+    [self.tableView.mj_header beginRefreshing];
+}
+
+- (void)setupSubviewsT
+{
+    [self.view addSubview:self.tableView];
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        //数据请求
+        [self loadWithChoice];
     }];
     /** 每次加载先刷新数据 */
     [self.tableView.mj_header beginRefreshing];
@@ -131,11 +141,13 @@
    //在cell里面添加按钮的点击事件;
     [cell.firstChoose addTarget:self action:@selector(onBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [cell.secondChoose addTarget:self action:@selector(onBtnClick:) forControlEvents:UIControlEventTouchUpInside];
-    [cell.qlsl addTarget:self action:@selector(onBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [cell.alterButton addTarget:self action:@selector(onBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [cell.remodelButton addTarget:self action:@selector(onBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     //设置tag值区分点击的是哪个按钮
     cell.firstChoose.tag=1;
     cell.secondChoose.tag=2;
-    cell.qlsl.tag = 3;
+    cell.alterButton.tag = 3;
+    cell.remodelButton.tag = 4;
     
     return cell;
 }
@@ -264,7 +276,22 @@
                     // 呈现警告视图
                     [self presentViewController:alertDialog animated:YES completion:nil];
  
-                }else{
+                }else if ([str isEqualToString:@""]){
+                    NSString *title = @"输入数量为0";
+                    NSString *message = @"你需要重新输入";
+                    NSString *okButtonTitle = @"OK";
+                    // 初始化
+                    UIAlertController *alertDialog = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+                    // 创建操作
+                    UIAlertAction *okAction = [UIAlertAction actionWithTitle:okButtonTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+                        // 操作具体内容
+                    }];
+                    // 添加操作
+                    [alertDialog addAction:okAction];
+                    // 呈现警告视图
+                    [self presentViewController:alertDialog animated:YES completion:nil];
+                }
+                else{
                     NSString *url = @"http://192.168.1.34:9000/app/outStorage/confirmDetail.do";
                     //读取
                     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -273,9 +300,7 @@
                     UserInfoModel *userModel = [[UserInfoManager sharedManager] getUserInfo];
                     self.pass = userModel.passWord;
                     self.user = userModel.loginName;
-                    
-                    //    NSLog(@"modeldata1= %@--%@--%@--%@",model.djSn,model.djbh,model.shhshl,model.ckdh);
-                    
+
                     NSDictionary * modeldata1 = @{
                                                   @"djSn":model.djSn,
                                                   @"djbh": model.djbh,
@@ -304,9 +329,6 @@
                         // 成功
                         NSArray *data = [responseObject objectForKey:@"data"];
                         self.resultArray = [BcodeModel mj_objectArrayWithKeyValuesArray:data];
-                        //        NSLog(@"self.responseObject= %@",responseObject);
-                        //        NSLog(@"self.data= %@",data);
-                        NSLog(@"self.resultArray = %@",self.resultArray);
                         
                         [self loadWithName:@""];
                         
@@ -315,11 +337,50 @@
                         [self sendAlertAction:error.localizedDescription];
                     }];
                 }
-     
             }
         }];
         [passView show];
-
+    }else if(sender.tag == 4){
+        NSLog(@"重制");
+        BcodeModel * model = [[BcodeModel alloc]init];
+        model = self.resultArray[indexPath.row];
+        NSString *url = @"http://192.168.1.34:9000/app/outStorage/cancelDetail.do";
+        //读取
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        NSString * dicID = [defaults objectForKey:@"dicID"];
+        UserInfoModel *userModel = [[UserInfoManager sharedManager] getUserInfo];
+        self.pass = userModel.passWord;
+        self.user = userModel.loginName;
+        NSDictionary * modeldata1 = @{
+                                      @"djSn":model.djSn,
+                                      @"djbh": model.djbh,
+                                      @"shhshl":model.sl,
+                                      @"status": @"0",
+                                      @"ckdh": model.ckdh,
+                                      };
+        NSArray * dataArr1 = [[NSArray alloc]initWithObjects:modeldata1, nil];
+        NSDictionary *params1 = @{
+                                  @"data":dataArr1,
+                                  @"officeId": dicID,
+                                  @"passWord": self.pass,
+                                  @"userName": self.user,
+                                  };
+        NSString *p1Str = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:params1 options:0 error:nil] encoding:NSUTF8StringEncoding];
+        NSDictionary *json = @{@"json":p1Str};
+        
+        NSLog(@"json= %@",json);
+        
+        [HTTPManager POST:url params:json success:^(NSURLSessionDataTask *task, id responseObject) {
+            [self.tableView.mj_header endRefreshing];
+            // 成功
+            NSArray *data = [responseObject objectForKey:@"data"];
+            self.resultArray = [BcodeModel mj_objectArrayWithKeyValuesArray:data];
+            [self loadWithChoice];
+        } fail:^(NSURLSessionDataTask *task, NSError *error) {
+            [self.tableView.mj_header endRefreshing];
+            [self sendAlertAction:error.localizedDescription];
+        }];
+    
     }
 }
 
@@ -331,9 +392,7 @@
     BcodeModel * model = [[BcodeModel alloc]init];
     model = self.resultArray[indexPath.row];
     
-    
     NSLog(@"点击的数据  --   %@",model);
-
 }
 
 
@@ -342,12 +401,12 @@
     if (!_tableView) {
         _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0,0, SCREEN_WIDTH, SCREEN_HEIGHT - 64) style:UITableViewStylePlain];
         
-        _tableView.rowHeight = 180;
+        _tableView.rowHeight = 185;
         _tableView.dataSource = self;
         _tableView.delegate = self;
         _tableView.backgroundColor = self.view.backgroundColor;
         //        _tableView.separatorColor = NavColor;
-        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+//        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         [self.view addSubview:_tableView];
     }
     return _tableView;
@@ -359,10 +418,10 @@
     self.selectIndex = selectIndex;
     switch (self.selectIndex) {
         case 0:
-            [self loadWithName:@""];
+            [self setupSubviews];
             break;
         case 1:
-            [self loadWithChoice];
+            [self setupSubviewsT];
             break;
             
         default:
